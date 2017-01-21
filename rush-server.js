@@ -47,7 +47,7 @@ module.exports = {
                 currentPlayer.questionIndex++;
                 currentPlayer.score = currentPlayer.score + (isRightAnswer ? 1 : 0);
                 io.emit('playerlistupdate', J(players));
-                if (currentPlayer.score > 4) {
+                if (currentPlayer.score > 5) {
                     io.emit('end', currentPlayer.name);
                     return;
                 }

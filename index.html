@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="author" content="Iuliu Visovan">
     <meta name="description" content="do you thinkg like google">
     <meta name="author" content="Iuliu Vișovan">
@@ -29,25 +29,27 @@
     </div>
     <div style="display: none" class="flex-centered" data-bind="visible: IsStarted() && !Winner()">
         <div data-bind="visible: Loading">
-            <h1>Ready?</h3>
+            <h3>Ready?</h3>
         </div>
-        <div data-bind="visible: !Loading()" style="text-align: center">
-            <h1>What is this?</h3>
-                <img class="question-image" data-bind="attr: { src: CurrentQuestion }" /><br/>
-                <input style="margin-bottom: 30px" onkeydown="event.keyCode == 13 && manager.Answer()" data-bind="textInput: CurrentAnswer"
+        <div data-bind="visible: !Loading()" style="text-align: center; width: 100%">
+            <img class="question-image" data-bind="attr: { src: CurrentQuestion }" /><br/>
+            <div style="display: flex;justify-content: space-between; align-items: center; margin: 0 7px">
+                <h3 style="margin: 0">What is this?</h3>
+                <input step="margin: 0" placeholder="Your answer here..." onkeydown="event.keyCode == 13 && manager.Answer()" data-bind="textInput: CurrentAnswer"
                 />
-                <div class="progress-area">
-                    <div class="player-progress my-progress">
-                        <div data-bind="style: { width: CurrentPlayerScore() * 20 + '%' }" class="progress"></div>
-                        <h3 class="player-progress-name">You</h3>
-                    </div>
-                    <div class="others-progress" data-bind="foreach: Players">
-                        <div class="player-progress">
-                            <div data-bind="style: { width: score * 20 + '%' }" class="progress"></div>
-                            <h3 class="player-progress-name" data-bind="text: name"></h3>
-                        </div>
-                    </div>
+            </div>
+            <div class="progress-area">
+                <div class="player-progress my-progress">
+                    <div data-bind="style: { width: CurrentPlayerScore() * 20 + '%' }" class="progress"></div>
+                    <h3 class="player-progress-name">You</h3>
                 </div>
+                <!-- ko foreach: Players -->
+                <div class="player-progress">
+                    <div data-bind="style: { width: score * 20 + '%' }" class="progress"></div>
+                    <h3 class="player-progress-name" data-bind="text: name"></h3>
+                </div>
+                <!-- /ko -->
+            </div>
         </div>
     </div>
     <div style="display: none" data-bind="visible: Winner()" class="flex-centered">
