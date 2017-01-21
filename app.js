@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var server = app.listen(3000, () => console.log('Running on 3000!'));
+var server = app.listen(process.env.PORT || 3000, () => console.log('Running on 3000!'));
 var io = require('socket.io').listen(server);
 var path = require('path');
 var handler = require('./rush-server');
