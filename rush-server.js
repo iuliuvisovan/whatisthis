@@ -3,7 +3,7 @@ var existingWords;
 
 const fs = require('fs');
 const ImagesClient = require('google-images');
-const googleClient = new ImagesClient('012529666448905206368:ldg-wfa5wmc', 'AIzaSyCZiHDBCcIzdqKa1SL0XBlxtUUcf_VqO-c');
+var googleClient;
 
 module.exports = {
     init: (io) => {
@@ -103,6 +103,8 @@ var setWordImages = () => {
 
 function updateImageForWord(word) {
     return new Promise((resolve, reject) => {
+        googleClient = new ImagesClient('007960637259156093421:jn6qog3skvm', 'AIzaSyBfucJbnA_QUnXMEdZf7yZv1fOpFF7Iyw4');
+
         googleClient.search(word.word).then(images => {
             word.imageUrl = images[0].url;
             resolve();
