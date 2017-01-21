@@ -12,7 +12,8 @@ module.exports = {
             players.push({
                 id: socket.id,
                 name: '<some unknown guy>',
-                score: 0
+                score: 0,
+                questionIndex: 0
             });
             io.emit('playerlistupdate', J(players));
             socket.on('playerUpdated', playerJson => {
@@ -42,7 +43,8 @@ module.exports = {
             });
             socket.on('answerPush', response => {
                 var currentPlayer = findPlayer(socket.id);
-                var isRightAnswer = response.toLowerCase().trim() == questions.pop().word.toLowerCase().trim();
+                var isRightAnswer = response.toLowerCase().trim() == questions[questions.length - 1 - currentPlayer.questionIndex].word.toLowerCase().trim();
+                currentPlayer.questionIndex++;
                 currentPlayer.score = currentPlayer.score + (isRightAnswer ? 1 : 0);
                 io.emit('playerlistupdate', J(players));
                 if (currentPlayer.score > 4) {
@@ -50,7 +52,7 @@ module.exports = {
                     return;
                 }
                 socket.emit('questionArrived', JSON.stringify({
-                    question: questions[questions.length - 1].imageUrl,
+                    question: questions[questions.length - 1 - currentPlayer.questionIndex].imageUrl,
                     currentPlayerScore: currentPlayer.score
                 }));
             });
