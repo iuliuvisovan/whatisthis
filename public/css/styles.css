@@ -1,0 +1,56 @@
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-centered div+div {
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+}
+
+.player {
+    background: midnightblue;
+    color: white;
+    padding: 15px;
+    border: 1px solid darkblue;
+    margin: 10px;
+}
+
+.player-progress {
+    border: 1px solid black;
+    height: 50px;
+    padding: 3px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.player-progress .progress {
+    height: 100%;
+    background: darkslateblue;
+}
+
+.player-progress.my-progress {
+    height: 100px;
+}
+
+.player-progress.my-progress .progress {
+    background: darkslateblue;
+}
+
+.player-progress-name {
+    display: block;
+    position: absolute;
+    color: lightslategray;
+    margin: 0 15px;
+}
+
+.question-image {
+    max-height: 250px; 
+}

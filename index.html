@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>rush</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="io.js test">
+    <meta name="author" content="Iuliu Vișovan">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="flex-centered" data-bind="visible: !IsStarted() && !Winner()">
+        <h1>Hi</h1>
+        <h3>Do you have a name?</h3>
+        <input data-bind="textInput: CurrentPlayerName" placeholder="Yes sir. My name is..">
+        <br/>
+        <h3>Other players:</h3>
+        <div data-bind="foreach: Players">
+            <div class="player" data-bind="text: name"></div>
+        </div>
+        <h3 data-bind="visible: Players().length">
+            Good. We wait for some others or <a href="#" data-bind="click: Go">we can go</a>?
+        </h3>
+    </div>
+    <div class="flex-centered" data-bind="visible: IsStarted() && !Winner()">
+        <div data-bind="visible: Loading">
+            <h1>Ready?</h3>
+        </div>
+        <div data-bind="visible: !Loading()" style="text-align: center">
+            <h1>What is this?</h3>
+            <img class="question-image" data-bind="attr: { src: CurrentQuestion }"/><br/>
+            <input style="margin-bottom: 30px" onkeydown="event.keyCode == 13 && manager.Answer()" data-bind="textInput: CurrentAnswer"/>
+            <div class="progress-area">
+                <div class="player-progress my-progress">
+                    <div data-bind="style: { width: CurrentPlayerScore() * 20 + '%' }" class="progress"></div>
+                    <h3 class="player-progress-name">You</h3>
+                </div>
+                <div class="others-progress" data-bind="foreach: Players">
+                    <div class="player-progress">
+                        <div data-bind="style: { width: score * 20 + '%' }" class="progress"></div>
+                        <h3 class="player-progress-name" data-bind="text: name"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-bind="visible: Winner()" class="flex-centered">
+        <h1>Game over!</h1>
+        <h3>Winner:</h3>
+        <h2 data-bind="text: Winner"></h3>
+    </div>
+    <input type="hidden" id="nToken" value="3/4,5,7/645-432-651" />
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/socket.io-client/dist/socket.io.js"></script>
+    <script src="/bower_components/knockout/dist/knockout.debug.js"></script>
+    <script src="/js/rush-client.js"></script>
+</body>
+
+</html>
