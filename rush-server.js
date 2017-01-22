@@ -1,6 +1,10 @@
 var players = [];
 var existingWords;
 
+//iuliuvisovan
+//API KEY: AIzaSyBfucJbnA_QUnXMEdZf7yZv1fOpFF7Iyw4
+//CSE ID: 007960637259156093421:jn6qog3skvm
+
 //thezingcollection2
 //API KEY: AIzaSyCZiHDBCcIzdqKa1SL0XBlxtUUcf_VqO-c
 //CSE ID: 012529666448905206368:ldg-wfa5wmc
@@ -15,7 +19,7 @@ var googleClient;
 
 module.exports = {
     init: (io) => {
-        // setWordImages();
+        setWordImages();
         io.on('connection', socket => {
             players.push({
                 id: socket.id,
@@ -90,7 +94,7 @@ var J = (string) => JSON.stringify(string);
 var questions = [];
 var operators = ['+', '-'];
 var populateQuestions = () => {
-    var availableWords = JSON.parse(fs.readFileSync('words.json', 'utf8'));
+    var availableWords = JSON.parse(fs.readFileSync('words.json', 'utf8')).filter(x => x.imageUrl.length);
     for (var i = 0; i < 50; i++) {
         var randNum = Math.floor(Math.random() * (availableWords.length - 1));
         if (!questions.some(x => x.word == availableWords[randNum].word))
@@ -123,12 +127,20 @@ var setWordImages = () => {
 
 function updateImageForWord(word) {
     return new Promise((resolve, reject) => {
+        //thezingcollection2
+        // googleClient = new ImagesClient('012529666448905206368:ldg-wfa5wmc', 'AIzaSyCZiHDBCcIzdqKa1SL0XBlxtUUcf_VqO-c');
+
+        //iuliuvisovan
+        // googleClient = new ImagesClient('007960637259156093421:jn6qog3skvm', 'AIzaSyBfucJbnA_QUnXMEdZf7yZv1fOpFF7Iyw4');
+
+        //lamaieeee
         googleClient = new ImagesClient('016970297345844598714:yudpwuyp-yq', 'AIzaSyAjoJ0G13cV1SKfZTT0M2OwxVmkVRVWigk');
+
 
         googleClient.search(word.word).then(images => {
             let imageUrl = "";
             images.sort((a,b) => a.size < b.size ? 1 : -1).forEach(image => {
-                if(image.height > 250) { 
+                if(image.height > 250 && !image.url.includes('pixabay')) { 
                     imageUrl = image.url;
                     return;
                 }
