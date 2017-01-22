@@ -1852,10 +1852,6 @@
         "imageUrl": "http://pngimg.com/upload/seat_PNG11838.png"
     },
     {
-        "word": "stable",
-        "imageUrl": "https://cdn.pixabay.com/photo/2015/11/22/21/50/california-1057356_960_720.jpg"
-    },
-    {
         "word": "storm",
         "imageUrl": "https://lh3.ggpht.com/oy_trWmjINZxAUZVA1gdDXeiyAtNNP_p-JOkOGJ2__deRhlOY68_Y0tF0An0f31R_Q=h900"
     },
@@ -2316,10 +2312,6 @@
         "imageUrl": "http://1.bp.blogspot.com/-aQ7AHkokNOw/U7hCA2QztOI/AAAAAAAAIRo/aIpS7rLFRm0/s1600/Pull.png"
     },
     {
-        "word": "raw",
-        "imageUrl": "http://www.wwe.com/f/styles/wwe_large/public/all/2016/07/RAW_Show_Sub_Header_0--d6407183df1034ff8c1396fd4b6c97a0.jpg"
-    },
-    {
         "word": "soft",
         "imageUrl": "http://www.foambymail.com/Merchant2/graphics/00000001/ss_hand.jpg"
     },
@@ -2450,5 +2442,25 @@
     {
         "word": "stretch",
         "imageUrl": "http://www.piwcworcester.org/wp-content/uploads/2016/07/stretch.png"
+    },
+    {
+        "word": "spain",
+        "imageUrl": "https://wwwnc.cdc.gov/travel/images/map-spain.png"
+    },
+    {
+        "word": "italy",
+        "imageUrl": "http://kids.nationalgeographic.com/content/dam/kids/photos/Countries/H-P/italy-flag.gif"
+    },
+    {
+        "word": "romania",
+        "imageUrl": "https://www.w3.org/2013/share-psi/bp/Flag_of_Romania.svg"
+    },
+    {
+        "word": "hungary",
+        "imageUrl": "http://fact.geoba.se/gr/flags/hu-t.gif"
+    },
+    {
+        "word": "norway",
+        "imageUrl": "http://static4.uk.businessinsider.com/image/5799146fdd0895d2528b4a6b-480/norway.jpg"
     }
 ]

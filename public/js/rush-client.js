@@ -75,6 +75,7 @@ var RushManager = function () {
             photo.src = img.src;
         });
         socket.emit('go');
+        self.Winner('');
         self.Loading(true);
         self.IsStarted(true);
         var firstOne = new Audio('/audio/first.mp3');

@@ -1,6 +1,14 @@
 var players = [];
 var existingWords;
 
+//thezingcollection2
+//API KEY: AIzaSyCZiHDBCcIzdqKa1SL0XBlxtUUcf_VqO-c
+//CSE ID: 012529666448905206368:ldg-wfa5wmc
+
+//lamaieeee
+//API KEY: AIzaSyAjoJ0G13cV1SKfZTT0M2OwxVmkVRVWigk
+//CSE ID: 016970297345844598714:yudpwuyp-yq
+
 const fs = require('fs');
 const ImagesClient = require('google-images');
 var googleClient;
@@ -115,10 +123,17 @@ var setWordImages = () => {
 
 function updateImageForWord(word) {
     return new Promise((resolve, reject) => {
-        googleClient = new ImagesClient('012529666448905206368:ldg-wfa5wmc', 'AIzaSyCZiHDBCcIzdqKa1SL0XBlxtUUcf_VqO-c');
+        googleClient = new ImagesClient('016970297345844598714:yudpwuyp-yq', 'AIzaSyAjoJ0G13cV1SKfZTT0M2OwxVmkVRVWigk');
 
         googleClient.search(word.word).then(images => {
-            word.imageUrl = images[0].url;
+            let imageUrl = "";
+            images.sort((a,b) => a.size < b.size ? 1 : -1).forEach(image => {
+                if(image.height > 250) { 
+                    imageUrl = image.url;
+                    return;
+                }
+            });
+            word.imageUrl = imageUrl;
             resolve();
         }).catch(err => console.dir(err));
     });

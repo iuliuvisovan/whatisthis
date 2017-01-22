@@ -461,7 +461,6 @@ milk
 mouth
 pipe
 seat
-stable
 storm
 chain
 cream
@@ -577,7 +576,6 @@ tap
 win
 attack
 pull
-raw
 soft
 solid
 round
@@ -611,3 +609,8 @@ female
 kiss
 smile
 stretch
+spain
+italy
+romania
+hungary
+norway
