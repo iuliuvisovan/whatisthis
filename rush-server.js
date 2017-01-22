@@ -7,8 +7,8 @@ var googleClient;
 
 module.exports = {
     init: (io) => {
+        // setWordImages();
         io.on('connection', socket => {
-            // setWordImages();
             players.push({
                 id: socket.id,
                 name: '<some unknown guy>',

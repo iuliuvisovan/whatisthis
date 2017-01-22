@@ -15,7 +15,19 @@ rain forest
 kakapo
 sunshine
 9gag
-jeans
+Jeans
+Bread
+CFR Cluj
+Steaua Bucuresti
+Dinamo Bucuresti
+Iasi
+La Tour Eiffel
+World Trade Center
+Nija
+Samurai
+Clothes
+drawer
+west coast
 gold
 kettle
 tennis
@@ -47,3 +59,133 @@ Skirt
 Passport
 Hippo
 Salami
+Lizard
+Wizard
+Sweater
+Anne Frank
+Axolotl
+Fur
+Fox
+Rally
+Wheel
+Crave
+T-Rex
+Bobby pin
+Flag
+Ukulele
+Turtle
+Maze
+Feather
+Magnet
+Pluto
+Torch
+Bunny
+Cinema
+Mount Everest
+California
+Formula-1
+Queen
+Lady Diana
+Umbrella
+Rihanna
+Charlie Sheen
+Malibu
+Marabou
+Stamp
+Treadmill
+Saddle
+Needle
+Berry
+Casette
+Ballet
+Starfish
+Ash
+Wires
+Valley
+Plastic bag
+Whiskey
+Yellow
+Orange juice
+Tukan
+Lion
+Savanna
+Cinderella
+Dust
+Ring
+Airplane
+Mane
+Yoghurt
+Salvador Dali
+Cheese
+Dalmatian dog
+Necklace
+Cup
+Lightning
+Ladybug 
+Bat
+Goldfish
+Gym
+Cotton
+President
+Origami
+Library
+Ferrari
+Sky
+Puddle
+Calculator
+Diamond
+Leaflet
+Folk dance
+Banana
+Panther
+Mr. Bean
+Clover
+Atlantis
+Ninja
+Vulkano
+Carrot
+Pirate
+Belt
+Waiter
+Button
+Babar
+Ice
+Cookie
+Ham
+Plate
+Boat
+Oil
+Rain
+Butcher
+Kiosk
+Vivaldi
+Coke
+Ocean
+Ferret
+Pyjama
+Train
+Steam
+Coffee
+Bucket
+Basketball
+Honey
+Pie
+Frame
+Button
+Lip
+Nose
+Ear
+Church
+Cup
+Sugar
+Salt
+Water
+Faucet
+Toilet
+Paper
+Laptop
+Real Madrid
+Wallet
+Headphones
+Phone
+TV
