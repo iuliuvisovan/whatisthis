@@ -35,6 +35,8 @@ var RushManager = function () {
     self.Winner = ko.observable('');
 
     self.SendAnswer = function (forced) {
+        if (self.LoadingNextImage())
+            return;
         if (!self.CurrentAnswer().length && !forced)
             return;
         self.LoadingNextImage(true);
