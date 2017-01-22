@@ -18,16 +18,16 @@ sunshine
 Jeans
 Bread
 CFR Cluj
-Steaua Bucuresti
-Dinamo Bucuresti
+Steaua Bucharest
+Dinamo Bucharest
 Iasi
 La Tour Eiffel
 World Trade Center
-Nija
+Ninja
 Samurai
 Clothes
+Tupac
 drawer
-west coast
 gold
 kettle
 tennis
@@ -95,7 +95,7 @@ Stamp
 Treadmill
 Saddle
 Needle
-Berry
+Berries
 Casette
 Ballet
 Starfish
@@ -117,7 +117,7 @@ Mane
 Yoghurt
 Salvador Dali
 Cheese
-Dalmatian dog
+Dalmatian
 Necklace
 Cup
 Lightning
@@ -136,7 +136,6 @@ Calculator
 Diamond
 Leaflet
 Folk dance
-Banana
 Panther
 Mr. Bean
 Clover
@@ -172,7 +171,7 @@ Honey
 Pie
 Frame
 Button
-Lip
+Lips
 Nose
 Ear
 Church

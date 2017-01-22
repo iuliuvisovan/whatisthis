@@ -64,7 +64,7 @@
             <div class="nope" data-bind="visible: CurrentCorrectAnswer().length">
                 Nope, Google says that was (a/an) "<span data-bind="text: CurrentCorrectAnswer"></span>".
             </div>
-            <img class="question-image" data-bind="attr: { src: CurrentQuestion }" /><br/>
+            <img id="questionImage" class="question-image" data-bind="attr: { src: CurrentQuestion }" /><br/>
             <div style="display: flex;justify-content: space-between; align-items: center; margin: -47px 5px 0 0px">
                 <h3 style="margin: 0; background: rgba(255, 255, 255, 0.6); color: #00bcd4;padding: 6px; margin-top: -418px">What is this?</h3>
                 <input autofocus placeholder="Your answer here..." onkeydown="event.keyCode == 13 && manager.SendAnswer()" data-bind="textInput: CurrentAnswer"

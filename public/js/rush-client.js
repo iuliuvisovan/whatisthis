@@ -47,9 +47,19 @@ var RushManager = function () {
     self.Go = function () {
         socket.on('questionArrived', (question) => {
             self.CurrentQuestion(JSON.parse(question).question);
+
             self.CurrentCorrectAnswerHidden = JSON.parse(question).answer;
             self.CurrentPlayerScore(JSON.parse(question).currentPlayerScore);
-            self.LoadingNextImage(false);
+            $(".question-image").ready();
+            var photo = document.getElementById('questionImage');
+            var img = new Image();
+            img.addEventListener('load', () => {
+                self.LoadingNextImage(false);
+                if ($(".question-image").width() > $(window).width())
+                    $(".question-image").css('margin-left', ($(window).width() - $(".question-image").width()) / 2)
+            }, false);
+            img.src = JSON.parse(question).question;
+            photo.src = img.src;
         });
         socket.emit('go');
         self.Loading(true);

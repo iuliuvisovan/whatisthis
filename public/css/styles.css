@@ -27,7 +27,7 @@ input {
 }
 
 .player-progress {
-    border: 1px solid black;
+    border: 1px solid #ddd;
     padding: 1px;
     position: relative;
     display: flex;
@@ -56,6 +56,8 @@ input {
     color: white;
     margin: 0 3px;
     white-space: nowrap;
+    font-weight: 100;
+    font-size: 14px;
 }
 
 .question-image {
