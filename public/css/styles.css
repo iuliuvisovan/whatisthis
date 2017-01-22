@@ -93,3 +93,12 @@ input {
 .loading-next-image img {
     width: 100%;
 }
+
+@media(min-width: 1024px) {
+    #h3WhatIsThis {
+        margin-left: 30vw!important;
+    }
+    #inputCurrentAnswer {
+        margin-right: 30vw;
+    }
+}
