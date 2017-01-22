@@ -29,7 +29,7 @@
             Great. <br/>You can wait invite more friends or <a href="#" style="color: #FF5722" data-bind="click: Go">start right now</a>.
         </h3>
     </div>
-    <div class="flex-centered" data-bind="visible: !IsStarted() && !Winner() && SomeoneRageQuit()" style="padding: 15px">
+    <div class="flex-centered" data-bind="visible: !IsStarted() && !Winner() && SomeoneRageQuit()" style="padding: 15px; display: none">
         <h1 style="text-align: center">Someone left, game over.</h1>
         <input data-bind="textInput: CurrentPlayerName" placeholder="My name's'">
         <br/>
