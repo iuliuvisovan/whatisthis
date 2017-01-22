@@ -33,10 +33,12 @@ var RushManager = function () {
 
     self.Winner = ko.observable('');
 
-    self.SendAnswer = function () {
+    self.SendAnswer = function (forced) {
+        if(!self.CurrentAnswer().length && !forced)
+            return;
         self.LoadingNextImage(true);
         socket.emit('answerPush', self.CurrentAnswer());
-        if (self.CurrentAnswer().trim().toLowerCase() != self.CurrentCorrectAnswerHidden.trim().toLowerCase()) {
+        if (!forced && self.CurrentAnswer().trim().toLowerCase() != self.CurrentCorrectAnswerHidden.trim().toLowerCase()) {
             self.CurrentCorrectAnswer(self.CurrentCorrectAnswerHidden);
             currentAnswerTimeout && clearTimeout(currentAnswerTimeout);
             currentAnswerTimeout = setTimeout(() => {
@@ -60,6 +62,9 @@ var RushManager = function () {
                 self.LoadingNextImage(false);
                 if ($(".question-image").width() > $(window).width())
                     $(".question-image").css('margin-left', ($(window).width() - $(".question-image").width()) / 2)
+            }, false);
+            img.addEventListener('error', () => {
+                self.SendAnswer(true);
             }, false);
             img.src = JSON.parse(question).question;
             photo.src = img.src;
