@@ -74,8 +74,12 @@ var RushManager = function () {
             img.src = JSON.parse(question).question;
             photo.src = img.src;
         });
+
+
         socket.emit('go');
         self.Winner('');
+        self.LoadingNextImage(true);
+        self.SomeoneRageQuit(false);
         self.Loading(true);
         self.IsStarted(true);
         var firstOne = new Audio('/audio/first.mp3');
