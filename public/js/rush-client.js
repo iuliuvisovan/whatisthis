@@ -53,36 +53,13 @@ var RushManager = function () {
 
 
     self.Go = function () {
-        socket.on('questionArrived', (question) => {
-            self.CurrentQuestion(JSON.parse(question).question);
-
-            self.CurrentCorrectAnswerHidden = JSON.parse(question).answer;
-            self.CurrentPlayerScore(JSON.parse(question).currentPlayerScore);
-            $(".question-image").ready();
-            var photo = document.getElementById('questionImage');
-            var img = new Image();
-            img.addEventListener('load', () => {
-                self.LoadingNextImage(false);
-                setTimeout(() => {
-                    if ($(".question-image").width() > $(window).width())
-                        $(".question-image").css('margin-left', ($(window).width() - $(".question-image").width()) / 2)
-                }, 500);
-            }, false);
-            img.addEventListener('error', () => {
-                self.SendAnswer(true);
-            }, false);
-            img.src = JSON.parse(question).question;
-            photo.src = img.src;
-        });
-
-
         socket.emit('go');
-        
+
         self.Winner('');
         self.CurrentPlayerScore(0);
         self.CurrentAnswer('');
-        self.LoadingNextImage(true);
         self.SomeoneRageQuit(false);
+        self.LoadingNextImage(false);
         self.Loading(true);
         self.IsStarted(true);
         var firstOne = new Audio('/audio/first.mp3');
@@ -114,6 +91,10 @@ var RushManager = function () {
 
     self.Init = () => {
         socket = io();
+        var savedName = localStorage.getItem('currentPlayerName');
+        if (savedName && savedName.length) {
+            self.CurrentPlayerName(savedName);
+        }
         socket.on('playerlistupdate', players => {
             self.Players(JSON.parse(players).filter(x => x.id != socket.id));
         });
@@ -124,6 +105,27 @@ var RushManager = function () {
             setTimeout(() => {
                 $(`[data-playerId="${playerId}"]`).removeClass('missed');
             }, 2500);
+        });
+        socket.on('questionArrived', (question) => {
+            self.CurrentQuestion(JSON.parse(question).question);
+
+            self.CurrentCorrectAnswerHidden = JSON.parse(question).answer;
+            self.CurrentPlayerScore(JSON.parse(question).currentPlayerScore);
+            $(".question-image").ready();
+            var photo = document.getElementById('questionImage');
+            var img = new Image();
+            img.addEventListener('load', () => {
+                self.LoadingNextImage(false);
+                setTimeout(() => {
+                    if ($(".question-image").width() > $(window).width())
+                        $(".question-image").css('margin-left', ($(window).width() - $(".question-image").width()) / 2)
+                }, 500);
+            }, false);
+            img.addEventListener('error', () => {
+                self.SendAnswer(true);
+            }, false);
+            img.src = JSON.parse(question).question;
+            photo.src = img.src;
         });
         socket.on('go', () => {
             !self.IsStarted() && self.Go();
@@ -138,9 +140,5 @@ var RushManager = function () {
                 self.Winner(winner);
             }, 500);
         });
-        var savedName = localStorage.getItem('currentPlayerName');
-        if (savedName && savedName.length) {
-            self.CurrentPlayerName(savedName);
-        }
     }
 }

@@ -19,7 +19,7 @@ var googleClient;
 
 module.exports = {
     init: (io) => {
-        setWordImages();
+        // setWordImages();
         io.on('connection', socket => {
             players.push({
                 id: socket.id,
@@ -43,11 +43,16 @@ module.exports = {
                 isGameStarted = false;
             });
             socket.on('go', () => {
+                players.forEach((player) => {
+                    player.score = 0;
+                    player.questionIndex = 0;
+                });
                 if (isGameStarted)
                     return;
                 populateQuestions();
                 socket.broadcast.emit('go');
                 isGameStarted = true;
+                io.emit('playerlistupdate', J(players));
                 io.emit('questionArrived', JSON.stringify({
                     question: questions[questions.length - 1].imageUrl,
                     answer: questions[questions.length - 1].word,
@@ -58,18 +63,19 @@ module.exports = {
                 var currentPlayer = findPlayer(socket.id);
                 var isRightAnswer = response.toLowerCase().trim() == questions[questions.length - 1 - currentPlayer.questionIndex].word.toLowerCase().trim();
                 currentPlayer.questionIndex++;
-                if(isRightAnswer)
-                currentPlayer.score = currentPlayer.score + 1;
+                if (isRightAnswer)
+                    currentPlayer.score = currentPlayer.score + 1;
                 else {
                     io.emit('playermissed', socket.id);
                 }
 
                 io.emit('playerlistupdate', J(players));
                 if (currentPlayer.score > 5) {
+                    isGameStarted = false;
                     io.emit('end', currentPlayer.name);
                     players.forEach((player) => {
                         player.score = 0;
-                        questionIndex = 0;
+                        player.questionIndex = 0;
                     })
                     return;
                 }
@@ -139,8 +145,8 @@ function updateImageForWord(word) {
 
         googleClient.search(word.word).then(images => {
             let imageUrl = "";
-            images.sort((a,b) => a.size < b.size ? 1 : -1).forEach(image => {
-                if(image.height > 250 && !image.url.includes('pixabay')) { 
+            images.sort((a, b) => a.size < b.size ? 1 : -1).forEach(image => {
+                if (image.height > 250 && !image.url.includes('pixabay')) {
                     imageUrl = image.url;
                     return;
                 }
