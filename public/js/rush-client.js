@@ -28,14 +28,14 @@ var RushManager = function () {
     self.CurrentAnswer = ko.observable('');
     self.CurrentCorrectAnswer = ko.observable('');
     self.CurrentCorrectAnswerHidden = '';
-    self.LoadingNextImage = ko.observable(false);
+    self.LoadingNextImage = ko.observable(true);
     self.SomeoneRageQuit = ko.observable(false);
     self.CountDownSeconds = ko.observable(3);
 
     self.Winner = ko.observable('');
 
     self.SendAnswer = function (forced) {
-        if (self.LoadingNextImage())
+        if (self.LoadingNextImage() && !forced)
             return;
         if (!self.CurrentAnswer().length && !forced)
             return;

@@ -41,6 +41,21 @@
             Ok. <br/><a href="#" style="color: #FF5722" data-bind="click: Go">Go?</a>
         </h3>
     </div>
+    <div class="flex-centered" data-bind="visible: !IsStarted() && Winner() && !SomeoneRageQuit()" style="padding: 15px; display: none">
+        <h1>Game over!</h1>
+        <h3 style="margin: 0">Winner:</h3>
+        <h1 style="margin: 0" data-bind="text: Winner"></h1>
+        <h3>What's your name?</h3>
+        <input data-bind="textInput: CurrentPlayerName" placeholder="My name's'">
+        <br/>
+        <h3>Other players:</h3>
+        <div data-bind="foreach: Players">
+            <div class="player" data-bind="text: name"></div>
+        </div>
+        <h3 data-bind="visible: Players().length" style="text-align: center;">
+            Wanna <br/><a href="#" style="color: #FF5722" data-bind="click: Go">Go again?</a>
+        </h3>
+    </div>
     <div style="display: none" class="flex-centered" data-bind="visible: IsStarted() && !Winner()">
         <div data-bind="visible: Loading">
             <h3>Ready?</h3>
@@ -51,7 +66,7 @@
                 <div class="loading-next-image" data-bind="visible: LoadingNextImage">
                     <img src="http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif" />
                 </div>
-                <div class="player-progress my-progress" >
+                <div class="player-progress my-progress">
                     <div data-bind="style: { width: CurrentPlayerScore() * 19 + '%' }" class="progress"></div>
                     <h3 class="player-progress-name">You</h3>
                 </div>
@@ -63,22 +78,16 @@
                 <!-- /ko -->
             </div>
             <div class="nope" data-bind="visible: CurrentCorrectAnswer().length">
-                Nope, Google says that was (a/an) "<span style="text-shadow: 1px 1px rgba(0,0,0,0.4);" data-bind="text: CurrentCorrectAnswer"></span>".
+                Nope, Google says that was a<span data-bind="visible: CurrentCorrectAnswer().startsWith('a') || CurrentCorrectAnswer().startsWith('e') || CurrentCorrectAnswer().startsWith('i')  ||  CurrentCorrectAnswer().startsWith('o')">n</span>
+                "<span style="text-shadow: 1px 1px rgba(0,0,0,0.4);" data-bind="text: CurrentCorrectAnswer"></span>".
             </div>
             <img id="questionImage" class="question-image" data-bind="attr: { src: CurrentQuestion }" /><br/>
             <div style="display: flex;justify-content: space-between; align-items: center; margin: -47px 5px 0 0px">
                 <h3 id="h3WhatIsThis" style="margin: 0; background: rgba(255, 255, 255, 0.6); color: #00bcd4;padding: 6px; margin-top: -418px">What is this?</h3>
-                <input id="inputCurrentAnswer" autofocus placeholder="Your answer here..." 
-                onkeydown="event.keyCode == 13 && manager.SendAnswer()"
+                <input id="inputCurrentAnswer" autofocus placeholder="Your answer here..." onkeydown="event.keyCode == 13 && manager.SendAnswer()"
                     data-bind="textInput: CurrentAnswer" />
             </div>
         </div>
-    </div>
-    <div style="display: none" data-bind="visible: Winner()" class="flex-centered">
-        <h1>Game over!</h1>
-        <h3>Winner:</h3>
-        <h2 data-bind="text: Winner">
-            </h3>
     </div>
     <input type="hidden" id="nToken" value="3/4,5,7/645-432-651" />
     <script src="/bower_components/jquery/dist/jquery.js"></script>
