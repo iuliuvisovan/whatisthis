@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .flex-centered {
@@ -14,12 +15,17 @@ input {
 }
 
 .player {
-    background: midnightblue;
+    background: #FF5722;
     color: white;
     padding: 15px;
-    border: 1px solid darkblue;
+    border: 1px solid #BF360C;
     margin: 10px;
 }
+
+.progress-area {
+    position: relative;
+}
+
 .player-progress {
     border: 1px solid black;
     padding: 1px;
@@ -49,9 +55,39 @@ input {
     position: absolute;
     color: white;
     margin: 0 3px;
+    white-space: nowrap;
 }
 
 .question-image {
-    max-height: 250px; 
-    max-width: 100vw; 
+    height: 250px;
+    pointer-events: none;
+}
+
+input {
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid #BF360C;
+    background: rgba(255, 255, 255, 1);
+}
+
+.nope {
+    position: absolute;
+    width: 171px;
+    top: 240px;
+    color: #F44336;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+}
+
+.loading-next-image {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    color: white;
+    width: 35px;
+    padding: 5px;
+}
+
+.loading-next-image img {
+    width: 100%;
 }

@@ -27,17 +27,18 @@ module.exports = {
                 players = players.filter(x => x.id != socket.id);
                 io.emit('playerlistupdate', J(players));
                 if (isGameStarted)
-                    io.emit('interupt');
+                    io.emit('interrupt');
                 isGameStarted = false;
             });
             socket.on('go', () => {
                 if (isGameStarted)
                     return;
-                initQuestions();
+                populateQuestions();
                 socket.broadcast.emit('go');
                 isGameStarted = true;
                 io.emit('questionArrived', JSON.stringify({
                     question: questions[questions.length - 1].imageUrl,
+                    answer: questions[questions.length - 1].word,
                     currentPlayerScore: 0
                 }));
             });
@@ -51,8 +52,11 @@ module.exports = {
                     io.emit('end', currentPlayer.name);
                     return;
                 }
+                if (currentPlayer.questionIndex > questions.length - 1)
+                    populateQuestions();
                 socket.emit('questionArrived', JSON.stringify({
                     question: questions[questions.length - 1 - currentPlayer.questionIndex].imageUrl,
+                    answer: questions[questions.length - 1 - currentPlayer.questionIndex].word,
                     currentPlayerScore: currentPlayer.score
                 }));
             });
@@ -68,8 +72,7 @@ var J = (string) => JSON.stringify(string);
 
 var questions = [];
 var operators = ['+', '-'];
-var initQuestions = () => {
-    questions = [];
+var populateQuestions = () => {
     var availableWords = JSON.parse(fs.readFileSync('words.json', 'utf8'));
     for (var i = 0; i < 50; i++) {
         var randNum = Math.floor(Math.random() * (availableWords.length - 1));

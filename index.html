@@ -9,11 +9,14 @@
     <meta name="author" content="Iuliu Visovan">
     <meta name="description" content="do you thinkg like google">
     <meta name="author" content="Iuliu Vișovan">
+    <meta name="theme-color" content="#191970">
     <link rel="stylesheet" href="css/styles.css">
+    <link id="favicon" rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
 <body>
-    <div class="flex-centered" data-bind="visible: !IsStarted() && !Winner()">
+    <div class="flex-centered" data-bind="visible: !IsStarted() && !Winner() && !SomeoneRageQuit()" style="padding: 15px">
         <h1>Hi</h1>
         <h3>Do you have a name?</h3>
         <input data-bind="textInput: CurrentPlayerName" placeholder="Yes sir. My name is..">
@@ -22,32 +25,50 @@
         <div data-bind="foreach: Players">
             <div class="player" data-bind="text: name"></div>
         </div>
-        <h3 data-bind="visible: Players().length">
-            Good. We wait for some others or <a href="#" data-bind="click: Go">we can go</a>?
+        <h3 data-bind="visible: Players().length" style="text-align: center;">
+            Great. <br/>You can wait invite more friends or <a href="#" style="color: #FF5722" data-bind="click: Go">start right now</a>.
+        </h3>
+    </div>
+    <div class="flex-centered" data-bind="visible: !IsStarted() && !Winner() && SomeoneRageQuit()" style="padding: 15px">
+        <h1 style="text-align: center">Someone left, game over.</h1>
+        <input data-bind="textInput: CurrentPlayerName" placeholder="My name's'">
+        <br/>
+        <h3>Other players:</h3>
+        <div data-bind="foreach: Players">
+            <div class="player" data-bind="text: name"></div>
+        </div>
+        <h3 data-bind="visible: Players().length" style="text-align: center;">
+            Ok. <br/><a href="#" style="color: #FF5722" data-bind="click: Go">Go?</a>
         </h3>
     </div>
     <div style="display: none" class="flex-centered" data-bind="visible: IsStarted() && !Winner()">
         <div data-bind="visible: Loading">
-            <h3>Ready?</h3>
+            <h1>Ready?</h3>
         </div>
         <div data-bind="visible: !Loading()" style="text-align: center; width: 100%">
-            <img class="question-image" data-bind="attr: { src: CurrentQuestion }" /><br/>
-            <div style="display: flex;justify-content: space-between; align-items: center; margin: 0 7px">
-                <h3 style="margin: 0">What is this?</h3>
-                <input step="margin: 0" placeholder="Your answer here..." onkeydown="event.keyCode == 13 && manager.Answer()" data-bind="textInput: CurrentAnswer"
-                />
-            </div>
             <div class="progress-area">
+                <div class="loading-next-image" data-bind="visible: LoadingNextImage">
+                    <img src="http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif" />
+                </div>
                 <div class="player-progress my-progress">
-                    <div data-bind="style: { width: CurrentPlayerScore() * 20 + '%' }" class="progress"></div>
+                    <div data-bind="style: { width: CurrentPlayerScore() * 19 + '%' }" class="progress"></div>
                     <h3 class="player-progress-name">You</h3>
                 </div>
                 <!-- ko foreach: Players -->
                 <div class="player-progress">
-                    <div data-bind="style: { width: score * 20 + '%' }" class="progress"></div>
+                    <div data-bind="style: { width: score * 19 + '%' }" class="progress"></div>
                     <h3 class="player-progress-name" data-bind="text: name"></h3>
                 </div>
                 <!-- /ko -->
+            </div>
+            <div class="nope" data-bind="visible: CurrentCorrectAnswer().length">
+                Nope, Google says that was (a/an) "<span data-bind="text: CurrentCorrectAnswer"></span>".
+            </div>
+            <img class="question-image" data-bind="attr: { src: CurrentQuestion }" /><br/>
+            <div style="display: flex;justify-content: space-between; align-items: center; margin: -47px 5px 0 0px">
+                <h3 style="margin: 0; background: rgba(255, 255, 255, 0.6); color: #00bcd4;padding: 6px; margin-top: -418px">What is this?</h3>
+                <input autofocus placeholder="Your answer here..." onkeydown="event.keyCode == 13 && manager.SendAnswer()" data-bind="textInput: CurrentAnswer"
+                />
             </div>
         </div>
     </div>
