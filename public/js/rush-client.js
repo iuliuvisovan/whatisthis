@@ -14,10 +14,13 @@ var RushManager = function () {
     self.CurrentPlayerName = ko.observable('');
     self.CurrentPlayerScore = ko.observable(0);
 
-    self.CurrentPlayerName.subscribe(newValue => socket.emit('playerUpdated', JSON.stringify({
-        name: self.CurrentPlayerName(),
-        score: self.CurrentPlayerScore(),
-    })));
+    self.CurrentPlayerName.subscribe(newValue => {
+        localStorage.setItem('currentPlayerName', newValue);
+        socket.emit('playerUpdated', JSON.stringify({
+            name: self.CurrentPlayerName(),
+            score: self.CurrentPlayerScore(),
+        }));
+    });
 
     self.IsStarted = ko.observable(false);
     self.Loading = ko.observable(false);
@@ -98,5 +101,9 @@ var RushManager = function () {
                 self.Winner(winner);
             }, 500);
         });
+        var savedName = localStorage.getItem('currentPlayerName');
+        if (savedName && savedName.length) {
+            self.CurrentPlayerName(savedName);
+        }
     }
 }
