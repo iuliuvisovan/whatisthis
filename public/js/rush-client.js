@@ -77,7 +77,10 @@ var RushManager = function () {
 
 
         socket.emit('go');
+        
         self.Winner('');
+        self.CurrentPlayerScore(0);
+        self.CurrentAnswer('');
         self.LoadingNextImage(true);
         self.SomeoneRageQuit(false);
         self.Loading(true);
