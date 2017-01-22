@@ -30,11 +30,12 @@ var RushManager = function () {
     self.CurrentCorrectAnswerHidden = '';
     self.LoadingNextImage = ko.observable(false);
     self.SomeoneRageQuit = ko.observable(false);
+    self.CountDownSeconds = ko.observable(3);
 
     self.Winner = ko.observable('');
 
     self.SendAnswer = function (forced) {
-        if(!self.CurrentAnswer().length && !forced)
+        if (!self.CurrentAnswer().length && !forced)
             return;
         self.LoadingNextImage(true);
         socket.emit('answerPush', self.CurrentAnswer());
@@ -60,8 +61,10 @@ var RushManager = function () {
             var img = new Image();
             img.addEventListener('load', () => {
                 self.LoadingNextImage(false);
-                if ($(".question-image").width() > $(window).width())
-                    $(".question-image").css('margin-left', ($(window).width() - $(".question-image").width()) / 2)
+                setTimeout(() => {
+                    if ($(".question-image").width() > $(window).width())
+                        $(".question-image").css('margin-left', ($(window).width() - $(".question-image").width()) / 2)
+                }, 500);
             }, false);
             img.addEventListener('error', () => {
                 self.SendAnswer(true);
@@ -72,9 +75,20 @@ var RushManager = function () {
         socket.emit('go');
         self.Loading(true);
         self.IsStarted(true);
+        var firstOne = new Audio('/audio/first.mp3');
+        firstOne.loop = false;
+        firstOne.play();
+        var intervalCountdownSound = setInterval(() => {
+            self.CountDownSeconds(self.CountDownSeconds() - 1);
+            let first = new Audio('/audio/first.mp3');
+            first.loop = false;
+            first.play();
+        }, 1000);
         setTimeout(() => {
+            clearInterval(intervalCountdownSound);
             self.Loading(false);
-        }, 2000);
+            self.CountDownSeconds(3);
+        }, 3000);
     }
 
     self.Interrupt = function () {
@@ -92,6 +106,14 @@ var RushManager = function () {
         socket = io();
         socket.on('playerlistupdate', players => {
             self.Players(JSON.parse(players).filter(x => x.id != socket.id));
+        });
+        socket.on('playermissed', playerId => {
+            setTimeout(() => {
+                $(`[data-playerId="${playerId}"]`).addClass('missed');
+            }, 0);
+            setTimeout(() => {
+                $(`[data-playerId="${playerId}"]`).removeClass('missed');
+            }, 2500);
         });
         socket.on('go', () => {
             !self.IsStarted() && self.Go();

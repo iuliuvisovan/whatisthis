@@ -46,10 +46,19 @@ module.exports = {
                 var currentPlayer = findPlayer(socket.id);
                 var isRightAnswer = response.toLowerCase().trim() == questions[questions.length - 1 - currentPlayer.questionIndex].word.toLowerCase().trim();
                 currentPlayer.questionIndex++;
-                currentPlayer.score = currentPlayer.score + (isRightAnswer ? 1 : 0);
+                if(isRightAnswer)
+                currentPlayer.score = currentPlayer.score + 1;
+                else {
+                    io.emit('playermissed', socket.id);
+                }
+
                 io.emit('playerlistupdate', J(players));
                 if (currentPlayer.score > 5) {
                     io.emit('end', currentPlayer.name);
+                    players.forEach((player) => {
+                        player.score = 0;
+                        questionIndex = 0;
+                    })
                     return;
                 }
                 if (currentPlayer.questionIndex > questions.length - 1)
@@ -106,7 +115,7 @@ var setWordImages = () => {
 
 function updateImageForWord(word) {
     return new Promise((resolve, reject) => {
-        googleClient = new ImagesClient('007960637259156093421:jn6qog3skvm', 'AIzaSyBfucJbnA_QUnXMEdZf7yZv1fOpFF7Iyw4');
+        googleClient = new ImagesClient('012529666448905206368:ldg-wfa5wmc', 'AIzaSyCZiHDBCcIzdqKa1SL0XBlxtUUcf_VqO-c');
 
         googleClient.search(word.word).then(images => {
             word.imageUrl = images[0].url;

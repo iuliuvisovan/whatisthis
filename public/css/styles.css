@@ -46,6 +46,21 @@ input {
     background: #FF5722;
 }
 
+.player-progress.missed {
+    background: pink;
+    animation-name: missed;
+    animation-duration: 2500ms;
+}
+
+@keyframes missed {
+    from {
+        background: pink;
+    }
+    to {
+        background: white;
+    }
+}
+
 .player-progress.my-progress .progress {
     background: #00BCD4;
 }
