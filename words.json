@@ -532,10 +532,6 @@
         "imageUrl": "https://dilogrenme.com/assets/img/uploads/drawer.jpg"
     },
     {
-        "word": "gold",
-        "imageUrl": "http://cdn.inquisitr.com/wp-content/uploads/2016/04/Gold-Apple.jpg"
-    },
-    {
         "word": "kettle",
         "imageUrl": "http://i.ebayimg.com/00/z/PSYAAMXQUmFSe48t/$T2eC16h,!wwFJcpBy,CgBSe48tpZN!~~_32.JPG"
     },
@@ -784,10 +780,6 @@
         "imageUrl": "https://www.gpzmedlab.com/resize/shared/images/product/bd-sn.jpg?lr=t&bh=250"
     },
     {
-        "word": "berries",
-        "imageUrl": "http://www.naturalarthritistreatments.net/wp-content/uploads/Berries-for-gout.jpg"
-    },
-    {
         "word": "casette",
         "imageUrl": "https://ih1.redbubble.net/image.120439344.7080/sticker,375x360.png"
     },
@@ -1032,10 +1024,6 @@
         "imageUrl": "https://www.magictricks.com/assets/images/trickspix/airbornecokecan2.jpg"
     },
     {
-        "word": "ocean",
-        "imageUrl": "https://i.ytimg.com/vi/dygfsoyijVo/hqdefault.jpg"
-    },
-    {
         "word": "ferret",
         "imageUrl": "http://www.petmd.com/sites/default/files/first-ferret.jpg"
     },
@@ -1100,20 +1088,12 @@
         "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIyODA2NDg4NV5BMl5BanBnXkFtZTcwMjg4NDAwMw@@._V1_UX182_CR0,0,182,268_AL_.jpg"
     },
     {
-        "word": "water",
-        "imageUrl": "https://lh3.googleusercontent.com/vZl9Gh52QCw2NubAtKDgpSpBdROySRocmSUtUUQh7b5aX_XZRHxqSJZelCxueyUAM3U=w300"
-    },
-    {
         "word": "faucet",
         "imageUrl": "http://www.macobserver.com/imgs/teaser_images/20131231bitcoinfaucet.jpg"
     },
     {
         "word": "toilet",
         "imageUrl": "http://cainsableplumbing.com/wp-content/uploads/2013/09/water-efficient-toilet.jpg"
-    },
-    {
-        "word": "paper",
-        "imageUrl": "https://lh3.googleusercontent.com/w3MA6GeOjbP2tanUnp6J6I1t-wMFzeAuuN7rvEMXCYDKntCjTiDtgdieRWNq8RELhyQQ=w300"
     },
     {
         "word": "laptop",
@@ -1174,10 +1154,6 @@
     {
         "word": "lamp",
         "imageUrl": "http://scene7.targetimg1.com/is/image/Target/14544305?wid=360&hei=360&qlt=80&fmt=pjpeg"
-    },
-    {
-        "word": "deer",
-        "imageUrl": "https://lh3.googleusercontent.com/bf9O7G5DNT0h15Hi7JOKmfCpp2NlTrUUq7N0nevpf4L5kjYaNQ3XYf2LMane15dlMmE=h310"
     },
     {
         "word": "taxi",
@@ -1272,8 +1248,8 @@
         "imageUrl": "https://lh3.googleusercontent.com/qzX7sPgNRK01q0dJMfd6S1I5ICpuML2GWBs0V1wqDtrRodV_izQBl4mhAWgSzrvqvF8=w300"
     },
     {
-        "word": "matchbox",
-        "imageUrl": "https://thumbs.dreamstime.com/x/matchbox-isolated-hazard-sign-16169277.jpg"
+        "word": "matches",
+        "imageUrl": "http://static3.businessinsider.com/image/56e6df8952bcd029008b6261-480/led-matches.png"
     },
     {
         "word": "candle",
@@ -1708,10 +1684,6 @@
         "imageUrl": "http://cdn.playbuzz.com/cdn/d85bc304-8b4b-44f1-8d1b-2591f0b695d1/695e174b-aa73-4bcf-8cb5-8c687e7753ec_560_420.jpg"
     },
     {
-        "word": "king",
-        "imageUrl": "http://www.conn-selmer.com/files/1313/3670/6086/1950_King_Logo_bw.jpg"
-    },
-    {
         "word": "piano",
         "imageUrl": "http://virtualpiano.net/wp-content/themes/twentyfourteen-child/images/Virtual_Piano.jpg"
     },
@@ -1784,10 +1756,6 @@
         "imageUrl": "http://miriadna.com/desctopwalls/images/max/Across-the-field.jpg"
     },
     {
-        "word": "fish",
-        "imageUrl": "http://i.imgur.com/prm1a8l.jpg"
-    },
-    {
         "word": "back",
         "imageUrl": "http://i1319.photobucket.com/albums/t667/biancazen2/MyFatPocket%202014/women-back-medium_zps778ffb68.jpg"
     },
@@ -1838,10 +1806,6 @@
     {
         "word": "card",
         "imageUrl": "https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1397407/300/200/m2/fpnw/wm0/palm-geometry-business-card-template-all-.jpg?1466845593&s=55ec8a702540d1260252d84035798692"
-    },
-    {
-        "word": "list",
-        "imageUrl": "http://www.reneweveryday.com/assets/1/7/Make_a_List.jpg"
     },
     {
         "word": "fat",
@@ -1992,10 +1956,6 @@
         "imageUrl": "http://static1.squarespace.com/static/55ca5c3ee4b00863c0b9cfae/t/55ca6276e4b060e921677f12/1460063425953/"
     },
     {
-        "word": "summer",
-        "imageUrl": "http://nick.mtvnimages.com/nick/promos-thumbs/games/nick-summer-sports-stars/nick-summer-sports-stars-game-screenshot-16x9.jpg?quality=0.75&maxdimension=600"
-    },
-    {
         "word": "track",
         "imageUrl": "https://static1.squarespace.com/static/5470e5a7e4b0125b62ca8eff/547e0b29e4b0e1f3b241865e/547e0b2ae4b028f0a2a3d8c4/1417546540672/trackshoes-small.jpg"
     },
@@ -2074,10 +2034,6 @@
     {
         "word": "campaign",
         "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY0NjI3MzM2Nl5BMl5BanBnXkFtZTcwNDgxNjA5Nw@@._V1_UX182_CR0,0,182,268_AL_.jpg"
-    },
-    {
-        "word": "character",
-        "imageUrl": "http://media02.hongkiat.com/cartoon-character-design-tutorials/26-blue-vector-character.jpg"
     },
     {
         "word": "club",
@@ -2206,10 +2162,6 @@
     {
         "word": "path",
         "imageUrl": "https://lh5.ggpht.com/0rz9IRFrKhPvveP_LiT85z_M2GXSz7lAoq8d3lzToZwZL7HBfnU5FYcp-9SXU69G7z4=w300"
-    },
-    {
-        "word": "sea",
-        "imageUrl": "https://i.ytimg.com/vi/CxOpLWjiBZY/maxresdefault.jpg"
     },
     {
         "word": "ticket",
@@ -2370,10 +2322,6 @@
     {
         "word": "rice",
         "imageUrl": "http://i.ndtvimg.com/i/2015-03/rice-625_625x350_71426749881.jpg"
-    },
-    {
-        "word": "telephone",
-        "imageUrl": "http://i.ebayimg.com/00/s/MzAwWDMwMA==/z/krcAAOSwR0JUNg6S/$_35.JPG?set_id=2"
     },
     {
         "word": "winter",
@@ -2888,10 +2836,6 @@
         "imageUrl": "http://sm.pcmag.com/t/pcmag_in/review/s/scratch/scratch_1xgb.640.jpg"
     },
     {
-        "word": "laugh",
-        "imageUrl": "https://i.ytimg.com/vi/UdfXYZ0RsZs/maxresdefault.jpg"
-    },
-    {
         "word": "Mobile",
         "imageUrl": "http://www.pakistankakhudahafiz.com/pkkhnew/wp-content/uploads/2016/10/get_mobile_phone_deals.jpg"
     },
@@ -3040,10 +2984,6 @@
         "imageUrl": "http://updatepedia.com/wp-content/uploads/2016/02/Smile-11-1.jpg"
     },
     {
-        "word": "stretch",
-        "imageUrl": "http://www.thecoveringchurch.com/wp-content/uploads/2015/12/STRETCH.jpg"
-    },
-    {
         "word": "spain",
         "imageUrl": "https://wwwnc.cdc.gov/travel/images/map-spain.png"
     },
@@ -3130,10 +3070,6 @@
     {
         "word": "Casino",
         "imageUrl": "http://www.i-online-casinos.com/images/casino-illustration11.jpg"
-    },
-    {
-        "word": "Pope",
-        "imageUrl": "http://i2.cdn.cnn.com/cnnnext/dam/assets/150618084447-02-pope-francis-file-large-169.jpg"
     },
     {
         "word": "Italy",
@@ -3290,10 +3226,6 @@
     {
         "word": "Hitler",
         "imageUrl": "http://a1.files.biography.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTE4MDAzNDEwNTU1MDc4MTU4.jpg"
-    },
-    {
-        "word": "Stallin",
-        "imageUrl": "http://hw-img.datpiff.com/mc8b971e/Fame_Reek_No_Stallin_the_Mixtape-front.jpg"
     },
     {
         "word": "Vlad Tepes",

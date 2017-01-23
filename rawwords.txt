@@ -1,3 +1,4 @@
+
 Colosseum
 Johnny depp
 Arnold schwarzenegger
@@ -131,7 +132,6 @@ einstein
 clothes
 tupac
 drawer
-gold
 kettle
 tennis
 engine
@@ -194,7 +194,6 @@ stamp
 treadmill
 saddle
 needle
-berries
 casette
 ballet
 starfish
@@ -256,7 +255,6 @@ butcher
 kiosk
 vivaldi
 coke
-ocean
 ferret
 pyjama
 train
@@ -273,10 +271,8 @@ ear
 church
 sugar
 salt
-water
 faucet
 toilet
-paper
 laptop
 real madrid
 wallet
@@ -292,7 +288,6 @@ hijab
 hammer
 table
 lamp
-deer
 taxi
 bicycle
 yoyo
@@ -316,7 +311,7 @@ snowflake
 puppet
 doll
 dice
-matchbox
+matches
 candle
 pyramid
 desert
@@ -425,7 +420,6 @@ chocolate
 desk
 garbage
 insect
-king
 piano
 potato
 salad
@@ -444,7 +438,6 @@ money
 game
 Air
 field
-fish
 back
 Hand
 Canon
@@ -458,7 +451,6 @@ letter
 radio
 price
 card
-list
 fat
 key
 light
@@ -496,7 +488,6 @@ exit
 plant
 plastic
 spot
-summer
 track
 wing
 brain
@@ -517,7 +508,6 @@ stick
 title
 bowl
 campaign
-character
 club
 edge
 fan
@@ -550,7 +540,6 @@ street
 tree
 wave
 path
-sea
 ticket
 angle
 blue
@@ -591,7 +580,6 @@ hole
 hook
 parking
 rice
-telephone
 winter
 bag
 battle
@@ -720,7 +708,6 @@ ac/dc
 Twitter
 suzuki
 scratch
-laugh
 Mobile
 royal
 strain
@@ -758,7 +745,6 @@ drunk
 female
 kiss
 smile
-stretch
 spain
 italy
 romania
@@ -781,7 +767,6 @@ Titanic
 Hollywood
 Las vegas
 Casino
-Pope
 Italy
 pasta
 Britney spears
@@ -816,12 +801,12 @@ Scarf
 Theatre
 Crib
 Lawn mower
+
 Jesus Christ
 God
 Napoleon
 Shakespeare
 Hitler
-Stallin
 Vlad Tepes
 Dracula
 George Bush
