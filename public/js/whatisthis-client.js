@@ -122,10 +122,10 @@ var RushManager = function () {
             var img = new Image();
             img.addEventListener('load', () => {
                 self.LoadingNextImage(false);
-                setTimeout(() => {
-                    if ($(".question-image").width() > $(window).width())
-                        $(".question-image").css('margin-left', ($(window).width() - $(".question-image").width()) / 2)
-                }, 500);
+                // setTimeout(() => {
+                //     if ($(".question-image").width() > $(window).width())
+                //         $(".question-image").css('margin-left', ($(window).width() - $(".question-image").width()) / 2)
+                // }, 500);
             }, false);
             img.addEventListener('error', () => {
                 self.SendAnswer(true);

@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow: hidden;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -82,9 +83,19 @@ input {
     font-size: 14px;
 }
 
-.question-image {
+.question-image-wrapper {
     height: 250px;
     pointer-events: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: -1;
+}
+
+.question-image {
+    height: 100%;
 }
 
 input {
