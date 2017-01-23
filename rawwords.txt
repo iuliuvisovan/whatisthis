@@ -1,3 +1,97 @@
+Colosseum
+Johnny depp
+Arnold schwarzenegger
+Leonardo dicaprio
+Brad pitt
+Morgan freeman
+Will smith
+Mark zuckerberg
+Adele
+Angela merkel
+Barack obama
+Michael jackson
+Michael Schumacher
+Valentino Rossi
+Paris Hilton
+Sebastian Vettel
+Lewis Hamilton
+Felipe Massa
+Fernando Alonso
+Zac Efron
+Jim Parsons
+Nail
+Sock
+IKEA
+Nissan
+Chevrolet
+PayPal
+Lidl
+Kaufland
+Ebay
+Opel
+Mitsubishi
+Android
+Windows
+Microsoft
+Google
+Apple
+Samsung
+Amazon
+Microsoft
+Walmart
+Tesco
+lidl
+Vodafone
+Facebook
+Mercedes
+Disney
+Starbucks
+HP
+BMW
+Kobe Bryant
+Novak Djokovic
+Roger Federer
+Rafael Nadal
+Serena Williams
+Lebron James
+Pele
+Javascript
+Monitor
+HTML
+Robot
+Laser
+Hair
+Moustache
+Beard
+Eyebrows
+Eyelashes
+earrings
+Donut
+Pizza
+KFC
+McDonalds
+Burger King
+Burger
+Sandwich
+Im hungry af I would eat a duck sorry if you find this word :D
+Adidas
+Nike
+Suit
+Tie
+Maradona
+Zidane
+Di Stefano
+Ronaldinho
+Ronaldo
+David Beckham
+Victoria Beckham
+Shakira
+Madonna
+Ibrahimovic
+Kaka
+Cristiano Ronaldo
+Lionel Messi
+Wayne Rooney
 cat
 house
 mouse
@@ -20,11 +114,20 @@ bread
 cfr cluj
 steaua bucharest
 dinamo bucharest
+Justin bieber
+Selena gomez
+Donald trump
+Niagara falls
+Rushmore
+The grand canyon
+The pope
+Sydney opera
 iasi
 eiffel tower
 world trade center
 ninja
-samurai
+Samurai
+einstein
 clothes
 tupac
 drawer
@@ -312,13 +415,11 @@ tooth
 vehicle
 airport
 baseball
-farmer
 gate
 hospital
 river
 village
 warning
-breath
 chest
 chocolate
 desk
@@ -345,9 +446,15 @@ Air
 field
 fish
 back
-hand
+Hand
+Canon
+Xbox
+Playstation
+Dove
+youtube
 book
-market
+Market
+letter
 radio
 price
 card
@@ -366,7 +473,7 @@ rock
 dog
 scale
 sun
-eye
+eyes
 fire
 box
 metal
@@ -580,9 +687,38 @@ round
 slide
 digging
 hunting
-survey
+Survey
+A
+B
+C
+D
+E
+F
+G
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+z
 tie
-adult
+Adult
+The beatles
+ac/dc
+Twitter
+suzuki
 scratch
 laugh
 Mobile
@@ -592,7 +728,23 @@ swimming
 wash
 crash
 grab
-hide
+Hide
+Eminem
+Vladimir putin
+50 cent
+Nicki minaj
+Elvis presley
+Mariah carey
+Tim berners-lee
+Bill gates
+Steve jobs
+Snoop dogg
+Kanye west
+Kim kardashiam
+Drake
+skrillex
+Lil wayne
+future
 quote
 sink
 slip
@@ -611,4 +763,81 @@ spain
 italy
 romania
 hungary
-norway
+Norway
+Sphinx
+Pyramid
+The great wall
+Taj mahal
+Big ben
+Tower of pisa
+Mecca
+Lochness
+Dracula
+Sagrada Familia
+Everest
+Stonehenge
+Obama
+Titanic
+Hollywood
+Las vegas
+Casino
+Pope
+Italy
+pasta
+Britney spears
+Shakespeare
+Red john
+Eggs
+Mozzarella
+Mexico
+Envelop
+Pepsi
+Freddie mercury
+The beatles
+Tiesto
+David guetta
+Angela merkel
+Forrest gump
+Sandals
+High heels
+Steering wheel
+Tomato
+Salad
+Corn
+Popcorn
+Sheep
+Crow
+Wolf
+Cigar
+Library
+Notebook
+Keychain
+Scarf
+Theatre
+Crib
+Lawn mower
+Jesus Christ
+God
+Napoleon
+Shakespeare
+Hitler
+Stallin
+Vlad Tepes
+Dracula
+George Bush
+Super Mario
+Pokemon
+Minecraft
+Word of warcraft
+Mario
+Pacman
+GTA
+Counter Strike
+Dota 2
+Ping pong
+Cricket
+Voleyball
+Football
+Sims
+Shrek
+Donkey
