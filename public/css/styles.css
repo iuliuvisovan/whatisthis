@@ -49,12 +49,19 @@ input {
 .player-progress.missed {
     background: pink;
     animation-name: missed;
-    animation-duration: 2500ms;
+    animation-duration: 3500ms;
+}
+
+.player-progress.missed:after {
+    content: attr(data-lastmissedword);
+    color: white;
+    display: block;
+    margin-left: 9px;
 }
 
 @keyframes missed {
     from {
-        background: pink;
+        background: rgba(255, 0, 0, 0.6);
     }
     to {
         background: white;

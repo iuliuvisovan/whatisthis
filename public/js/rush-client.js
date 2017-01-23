@@ -41,7 +41,7 @@ var RushManager = function () {
             return;
         self.LoadingNextImage(true);
         socket.emit('answerPush', self.CurrentAnswer());
-        if (!forced && self.CurrentAnswer().trim().toLowerCase() != self.CurrentCorrectAnswerHidden.trim().toLowerCase()) {
+        if (!forced && !stringMatcher.isLevenshteinMatch(self.CurrentAnswer(), self.CurrentCorrectAnswerHidden)) {
             self.CurrentCorrectAnswer(self.CurrentCorrectAnswerHidden);
             currentAnswerTimeout && clearTimeout(currentAnswerTimeout);
             currentAnswerTimeout = setTimeout(() => {
@@ -54,6 +54,7 @@ var RushManager = function () {
 
     self.Go = function () {
         socket.emit('go');
+        ga('send', 'event', 'Game', 'action', 'play');
 
         self.Winner('');
         self.CurrentPlayerScore(0);
@@ -79,6 +80,7 @@ var RushManager = function () {
     }
 
     self.Interrupt = function () {
+        ga('send', 'event', 'Game', 'action', 'interrupt');
         self.IsStarted(false);
         self.Loading(false);
         self.LoadingNextImage(false);
@@ -86,6 +88,7 @@ var RushManager = function () {
     }
 
     self.End = function () {
+        ga('send', 'event', 'Game', 'action', 'end');
         self.IsStarted(false);
     }
 
@@ -94,17 +97,20 @@ var RushManager = function () {
         var savedName = localStorage.getItem('currentPlayerName');
         if (savedName && savedName.length) {
             self.CurrentPlayerName(savedName);
+            ga('send', 'event', 'Game', 'playerRejoin', savedName);
         }
         socket.on('playerlistupdate', players => {
             self.Players(JSON.parse(players).filter(x => x.id != socket.id));
         });
-        socket.on('playermissed', playerId => {
+        socket.on('playermissed', (playerDataJson) => {
+            var playerData = JSON.parse(playerDataJson);
             setTimeout(() => {
-                $(`[data-playerId="${playerId}"]`).addClass('missed');
+                $(`[data-playerId="${playerData.playerId}"]`).addClass('missed');
+                $(`[data-playerId="${playerData.playerId}"]`).attr('data-lastmissedword', playerData.playerMissedWord);
             }, 0);
             setTimeout(() => {
-                $(`[data-playerId="${playerId}"]`).removeClass('missed');
-            }, 2500);
+                $(`[data-playerId="${playerData.playerId}"]`).removeClass('missed');
+            }, 3500);
         });
         socket.on('questionArrived', (question) => {
             self.CurrentQuestion(JSON.parse(question).question);

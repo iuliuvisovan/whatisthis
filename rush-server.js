@@ -15,6 +15,7 @@ var existingWords;
 
 const fs = require('fs');
 const ImagesClient = require('google-images');
+const stringMatcher = require('./public/js/levenstein');
 var googleClient;
 
 module.exports = {
@@ -28,6 +29,14 @@ module.exports = {
                 questionIndex: 0
             });
             io.emit('playerlistupdate', J(players));
+            if (isGameStarted) {
+                socket.emit('go');
+                socket.emit('questionArrived', JSON.stringify({
+                    question: questions[questions.length - 1].imageUrl,
+                    answer: questions[questions.length - 1].word,
+                    currentPlayerScore: 0
+                }));
+            }
             socket.on('playerUpdated', playerJson => {
                 var player = JSON.parse(playerJson);
                 var localPlayer = findPlayer(socket.id);
@@ -38,17 +47,24 @@ module.exports = {
             socket.on('disconnect', playerJson => {
                 players = players.filter(x => x.id != socket.id);
                 io.emit('playerlistupdate', J(players));
-                if (isGameStarted)
-                    io.emit('interrupt');
-                isGameStarted = false;
+                if (players.length < 2) {
+                    if (isGameStarted) {
+                        io.emit('interrupt');
+                    }
+                    players.forEach((player) => {
+                        player.score = 0;
+                        player.questionIndex = 0;
+                    });
+                    isGameStarted = false;
+                }
             });
             socket.on('go', () => {
+                if (isGameStarted)
+                    return;
                 players.forEach((player) => {
                     player.score = 0;
                     player.questionIndex = 0;
                 });
-                if (isGameStarted)
-                    return;
                 populateQuestions();
                 socket.broadcast.emit('go');
                 isGameStarted = true;
@@ -61,16 +77,16 @@ module.exports = {
             });
             socket.on('answerPush', response => {
                 var currentPlayer = findPlayer(socket.id);
-                var isRightAnswer = response.toLowerCase().trim() == questions[questions.length - 1 - currentPlayer.questionIndex].word.toLowerCase().trim();
+                var isRightAnswer = stringMatcher.isLevenshteinMatch(response, questions[questions.length - 1 - currentPlayer.questionIndex].word);
                 currentPlayer.questionIndex++;
                 if (isRightAnswer)
                     currentPlayer.score = currentPlayer.score + 1;
                 else {
-                    io.emit('playermissed', socket.id);
+                    io.emit('playermissed', JSON.stringify({ playerId: socket.id, playerMissedWord: response}));
                 }
 
                 io.emit('playerlistupdate', J(players));
-                if (currentPlayer.score > 5) {
+                if (currentPlayer.score > 8) {
                     isGameStarted = false;
                     io.emit('end', currentPlayer.name);
                     players.forEach((player) => {

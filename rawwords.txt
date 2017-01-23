@@ -21,7 +21,7 @@ cfr cluj
 steaua bucharest
 dinamo bucharest
 iasi
-la tour eiffel
+eiffel tower
 world trade center
 ninja
 samurai
@@ -131,7 +131,6 @@ puddle
 calculator
 diamond
 leaflet
-folk dance
 panther
 mr. bean
 clover
@@ -242,7 +241,6 @@ rose
 doge
 jungle
 tiger
-totally spies
 bloo
 burrito
 camera
