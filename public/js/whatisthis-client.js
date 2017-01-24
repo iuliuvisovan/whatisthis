@@ -38,7 +38,8 @@ var RushManager = function () {
     self.SomeoneRageQuit = ko.observable(false);
     self.CountDownSeconds = ko.observable(3);
 
-    self.Winner = ko.observable('');
+    self.WinnerName = ko.observable('');
+    self.WinnerId = ko.observable('');
 
     self.SendAnswer = function (forced) {
         if (self.LoadingNextImage() && !forced)
@@ -62,7 +63,8 @@ var RushManager = function () {
         socket.emit('go');
         ga('send', 'event', 'Game', 'action', 'play');
 
-        self.Winner('');
+        self.WinnerName('');
+        self.WinnerId('');
         self.CurrentPlayerScore(0);
         self.CurrentAnswer('');
         self.SomeoneRageQuit(false);
@@ -176,9 +178,8 @@ var RushManager = function () {
             self.CurrentPlayerScore(self.CurrentPlayerScore() + 1);
             setTimeout(() => {
                 self.End();
-                if (JSON.parse(winner).socketId == socket.id)
-                    self.CurrentPlayerWinCount(self.CurrentPlayerWinCount() + 1);
-                self.Winner(JSON.parse(winner).name);
+                self.WinnerName(JSON.parse(winner).name);
+                self.WinnerId(JSON.parse(winner).id);
             }, 500);
         });
     }

@@ -74,7 +74,6 @@ McDonalds
 Burger King
 Burger
 Sandwich
-Im hungry af I would eat a duck sorry if you find this word :D
 Adidas
 Nike
 Suit
@@ -83,7 +82,6 @@ Maradona
 Zidane
 Di Stefano
 Ronaldinho
-Ronaldo
 David Beckham
 Victoria Beckham
 Shakira
@@ -625,7 +623,6 @@ nurse
 sandwich
 surprise
 yard
-alarm
 bottle
 cable
 cloud
@@ -664,7 +661,6 @@ win
 attack
 pull
 soft
-solid
 round
 slide
 digging

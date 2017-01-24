@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="page flex-centered" data-bind="visible: !IsStarted() && !Winner() && !SomeoneRageQuit()" style="padding: 15px">
+    <div class="page flex-centered" data-bind="visible: !IsStarted() && !WinnerId() && !SomeoneRageQuit()" style="padding: 15px">
         <h1 style="margin: 0">Hi</h1>
         <h3>Do you have a name?</h3>
         <input data-bind="textInput: CurrentPlayerName" placeholder="Yes sir. My name is..">
@@ -28,20 +28,20 @@
             Great. <br/>You can wait invite more friends or <a href="#" style="color: #FF5722" data-bind="click: Go">start right now</a>.
         </h3>
     </div>
-    <div class="page flex-centered" data-bind="visible: !IsStarted() && !Winner() && SomeoneRageQuit()" style="padding: 15px; display: none">
+    <div class="page flex-centered" data-bind="visible: !IsStarted() && !WinnerId() && SomeoneRageQuit()" style="padding: 15px; display: none">
         <h1 style="text-align: center">Your opponent left, game can't continue :(</h1>
         <input data-bind="textInput: CurrentPlayerName" placeholder="My name's'">
         <h5 class="score-count">You have <span data-bind="text: CurrentPlayerWinCount">0</span> wins thus far.</h5>
         <br/>
-       <div data-bind='component: { name: "player-list", params: { Players: Players }}'></div>
+        <div data-bind='component: { name: "player-list", params: { Players: Players }}'></div>
         <h3 data-bind="visible: Players().length" style="text-align: center;">
             Ok. <br/><a href="#" style="color: #FF5722" data-bind="click: Go">Go?</a>
         </h3>
     </div>
-    <div class="page flex-centered" data-bind="visible: !IsStarted() && Winner() && !SomeoneRageQuit()" style="padding: 15px; display: none">
+    <div class="page flex-centered" data-bind="visible: !IsStarted() && WinnerId() && !SomeoneRageQuit()" style="padding: 15px; display: none">
         <h1>Game over!</h1>
         <h3 style="margin: 0">Winner:</h3>
-        <h1 style="margin: 0" data-bind="text: Winner"></h1>
+        <h1 style="margin: 0" data-bind="text: WinnerName, style: { color: WinnerId() == (socket && socket.id) ? '#00BCD4' : '#FF5722' }"></h1>
         <h3>Your name:</h3>
         <input data-bind="textInput: CurrentPlayerName" placeholder="My name's'">
         <h5 class="score-count">You have <span data-bind="text: CurrentPlayerWinCount">0</span> wins thus far.</h5>
@@ -51,7 +51,7 @@
             Wanna <br/><a href="#" style="color: #FF5722" data-bind="click: Go">Go again?</a>
         </h3>
     </div>
-    <div style="display: none" class="flex-centered" data-bind="visible: IsStarted() && !Winner()">
+    <div style="display: none" class="flex-centered" data-bind="visible: IsStarted() && !WinnerId()">
         <div data-bind="visible: Loading">
             <h3>Ready?</h3>
             <h1 style="text-align: center" data-bind="text: CountDownSeconds">Ready?</h1>
@@ -73,14 +73,13 @@
                 <!-- /ko -->
             </div>
             <div class="nope" data-bind="visible: CurrentCorrectAnswer().length">
-                Nope, Google says that was a<span data-bind="visible: CurrentCorrectAnswer().startsWith('a') || CurrentCorrectAnswer().startsWith('e') || CurrentCorrectAnswer().startsWith('i')  ||  CurrentCorrectAnswer().startsWith('o')">n</span>                "
-                <span style="text-shadow: 1px 1px rgba(0,0,0,0.4);" data-bind="text: CurrentCorrectAnswer"></span>".
+                Nope, Google says that was <span style="text-shadow: 1px 1px rgba(0,0,0,0.4);" data-bind="text: '\'' + CurrentCorrectAnswer() + '\''"></span>.
             </div>
             <div class="question-image-wrapper">
                 <img id="questionImage" class="question-image" data-bind="attr: { src: CurrentQuestion }" /><br/>
             </div>
             <div style="display: flex;justify-content: space-between; align-items: center; margin: 212px 5px 0 0px">
-                <h3 id="h3WhatIsThis" style="margin: 0; background: rgba(255, 255, 255, 0.6); color: #00bcd4;padding: 6px; margin-top: -418px">What is this?</h3>
+                <h3 id="h3WhatIsThis" style="margin: 0; background: transparent; color: #FF5722; padding: 6px; margin-top: -418px; text-shadow: 1px 1px 2px white;">What is this?</h3>
                 <input id="inputCurrentAnswer" autofocus placeholder="Your answer here..." onkeydown="event.keyCode == 13 && manager.SendAnswer()"
                     data-bind="textInput: CurrentAnswer" />
             </div>
