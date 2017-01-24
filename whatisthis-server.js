@@ -42,7 +42,7 @@ module.exports = {
                 var player = JSON.parse(playerJson);
                 var localPlayer = findPlayer(socket.id);
                 localPlayer.name = player.name || '<no name>';
-                localPlayer.score = player.score;
+                localPlayer.score = (!isGameStarted ? player.score : 0);
                 localPlayer.winCount = player.winCount;
                 socket.broadcast.emit('playerlistupdate', J(players));
             });
@@ -78,6 +78,8 @@ module.exports = {
                 }));
             });
             socket.on('answerPush', response => {
+                if (!isGameStarted)
+                    return;
                 var currentPlayer = findPlayer(socket.id);
                 var isRightAnswer = stringMatcher.isLevenshteinMatch(response, questions[questions.length - 1 - currentPlayer.questionIndex].word);
                 currentPlayer.questionIndex++;

@@ -140,12 +140,10 @@ var RushManager = function () {
         socket.on('playermissed', (playerDataJson) => {
             var playerData = JSON.parse(playerDataJson);
             setTimeout(() => {
+                $(`[data-playerId="${playerData.playerId}"]`).removeClass('missed');
                 $(`[data-playerId="${playerData.playerId}"]`).addClass('missed');
                 $(`[data-playerId="${playerData.playerId}"]`).attr('data-lastmissedword', playerData.playerMissedWord);
             }, 0);
-            setTimeout(() => {
-                $(`[data-playerId="${playerData.playerId}"]`).removeClass('missed');
-            }, 3500);
         });
         socket.on('questionArrived', (question) => {
             self.CurrentQuestion(JSON.parse(question).question);
@@ -157,10 +155,6 @@ var RushManager = function () {
             var img = new Image();
             img.addEventListener('load', () => {
                 self.LoadingNextImage(false);
-                // setTimeout(() => {
-                //     if ($(".question-image").width() > $(window).width())
-                //         $(".question-image").css('margin-left', ($(window).width() - $(".question-image").width()) / 2)
-                // }, 500);
             }, false);
             img.addEventListener('error', () => {
                 self.SendAnswer(true);

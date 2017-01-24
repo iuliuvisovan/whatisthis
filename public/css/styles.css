@@ -49,7 +49,7 @@ input {
 }
 
 .player-progress.missed {
-    background: pink;
+    background: white;
     animation-name: missed;
     animation-duration: 3500ms;
 }

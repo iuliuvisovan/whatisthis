@@ -1,5 +1,373 @@
 [
     {
+        "word": "Colosseum",
+        "imageUrl": "http://www.history.com/s3static/video-thumbnails/AETN-History_Prod/24/153/History_Rome_Colisseum_SF_still_624x352.jpg"
+    },
+    {
+        "word": "Johnny depp",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/JohnnyDeppHWOFJune2013.jpg/220px-JohnnyDeppHWOFJune2013.jpg"
+    },
+    {
+        "word": "Arnold schwarzenegger",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTI3MDc4NzUyMV5BMl5BanBnXkFtZTcwMTQyMTc5MQ@@._V1_UY317_CR19,0,214,317_AL_.jpg"
+    },
+    {
+        "word": "Leonardo dicaprio",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjI0MTg3MzI0M15BMl5BanBnXkFtZTcwMzQyODU2Mw@@._V1_UY317_CR10,0,214,317_AL_.jpg"
+    },
+    {
+        "word": "Brad pitt",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA1MjE2MTQ2MV5BMl5BanBnXkFtZTcwMjE5MDY0Nw@@._V1_UX214_CR0,0,214,317_AL_.jpg"
+    },
+    {
+        "word": "Morgan freeman",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc0MDMyMzI2OF5BMl5BanBnXkFtZTcwMzM2OTk1MQ@@._V1_UX214_CR0,0,214,317_AL_.jpg"
+    },
+    {
+        "word": "Will smith",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTczMzk1MjU1MV5BMl5BanBnXkFtZTcwNDk2MzAyMg@@._V1_UY317_CR2,0,214,317_AL_.jpg"
+    },
+    {
+        "word": "Mark zuckerberg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Mark_Zuckerberg_em_setembro_de_2014.jpg/220px-Mark_Zuckerberg_em_setembro_de_2014.jpg"
+    },
+    {
+        "word": "Adele",
+        "imageUrl": "https://a4-images.myspacecdn.com/images04/11/d8655ff67d444404bd893f6a659093c1/300x300.jpg"
+    },
+    {
+        "word": "Angela merkel",
+        "imageUrl": "http://cdn1.relevantmediagroup.com/sites/default/files/field/thumbnail/german-angela-merkel.jpg"
+    },
+    {
+        "word": "Barack obama",
+        "imageUrl": "http://a5.files.biography.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTE4MDAzNDEwNzg5ODI4MTEw.jpg"
+    },
+    {
+        "word": "Michael jackson",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTM1NjExNjg1OV5BMl5BanBnXkFtZTcwMTQ0NzIwMw@@._V1_UY317_CR1,0,214,317_AL_.jpg"
+    },
+    {
+        "word": "Michael Schumacher",
+        "imageUrl": "https://d.ibtimes.co.uk/en/full/1384233/michael-schumacher-clinically-awake-f1-star-out-coma.jpg"
+    },
+    {
+        "word": "Valentino Rossi",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Valentino_Rossi_suiting_up.jpg/220px-Valentino_Rossi_suiting_up.jpg"
+    },
+    {
+        "word": "Paris Hilton",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA0OTg1MzE1Ml5BMl5BanBnXkFtZTcwNTQ0NzgwNA@@._V1_UX214_CR0,0,214,317_AL_.jpg"
+    },
+    {
+        "word": "Sebastian Vettel",
+        "imageUrl": "http://news.bbcimg.co.uk/media/images/67955000/jpg/_67955731_vettel_afp.jpg"
+    },
+    {
+        "word": "Lewis Hamilton",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Lewis_Hamilton_2016_Malaysia_2.jpg/220px-Lewis_Hamilton_2016_Malaysia_2.jpg"
+    },
+    {
+        "word": "Felipe Massa",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Felipe_Massa_2016_Malaysia.jpg/220px-Felipe_Massa_2016_Malaysia.jpg"
+    },
+    {
+        "word": "Fernando Alonso",
+        "imageUrl": "http://i.dailymail.co.uk/i/pix/2016/03/31/11/32B2D81500000578-0-image-m-16_1459420293209.jpg"
+    },
+    {
+        "word": "Zac Efron",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTA5NjEwODI2NDBeQTJeQWpwZ15BbWU3MDM0NTc3NjM@._V1_UX214_CR0,0,214,317_AL_.jpg"
+    },
+    {
+        "word": "Jim Parsons",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA3MzIzMjM5Nl5BMl5BanBnXkFtZTgwOTI5OTQzMjE@._V1_UY317_CR56,0,214,317_AL_.jpg"
+    },
+    {
+        "word": "Nail",
+        "imageUrl": "http://media2.s-nbcnews.com/j/MSNBC/Components/Video/151218/x_tdy_orig_nails_151218.today-inline-vid-featured-desktop.jpg"
+    },
+    {
+        "word": "Sock",
+        "imageUrl": "http://www.realmenrealstyle.com/wp-content/uploads/2013/09/Checkmate-400.jpg"
+    },
+    {
+        "word": "IKEA",
+        "imageUrl": "http://www.ikea.com/gb/en/img/4-5-14-2/asset/logo.svg"
+    },
+    {
+        "word": "Nissan",
+        "imageUrl": "http://blog.caranddriver.com/wp-content/uploads/2016/02/Nissan-Winter-Warrior-concept-PLACEMENT-626x382.jpg"
+    },
+    {
+        "word": "Chevrolet",
+        "imageUrl": "http://buyersguide.caranddriver.com/media/assets/submodel/7671.jpg"
+    },
+    {
+        "word": "PayPal",
+        "imageUrl": "https://www.bouncepad.com/wp-content/uploads/2014/03/new-paypal-logo.jpg"
+    },
+    {
+        "word": "Lidl",
+        "imageUrl": "https://lh5.ggpht.com/JdjFkmc8NgO0JDWkegjFpIVXHq4oveTsMm9FN9de2Dt0ZYuB1_jaTT4CxskrRvY9i7kh=w300"
+    },
+    {
+        "word": "Kaufland",
+        "imageUrl": "https://www.toytowngermany.com/forum/uploads/post-7158-1194974959.png"
+    },
+    {
+        "word": "Ebay",
+        "imageUrl": "https://www.docker.com/sites/default/files/ebay_0.png"
+    },
+    {
+        "word": "Opel",
+        "imageUrl": "https://yt3.ggpht.com/-3xJWUvC4NKk/AAAAAAAAAAI/AAAAAAAAAAA/pPrPhTEqpyE/s900-c-k-no-mo-rj-c0xffffff/photo.jpg"
+    },
+    {
+        "word": "Mitsubishi",
+        "imageUrl": "http://www.caranddriver.com/images/16q1/665019/2015-mitsubishi-lancer-evolution-final-edition-test-review-car-and-driver-photo-667032-s-429x262.jpg"
+    },
+    {
+        "word": "Android",
+        "imageUrl": "https://index.tnwcdn.com/images/8704ed207d8689786620c47c93620aa1487367de.jpg"
+    },
+    {
+        "word": "Windows",
+        "imageUrl": "https://c.s-microsoft.com/en-us/CMSImages/Devices_Compete_HelloIcon__Blue.svg?version=4ff0ef77-8a69-a3ba-75ed-92518d0b5ab5"
+    },
+    {
+        "word": "Microsoft",
+        "imageUrl": "https://c.s-microsoft.com/en-us/CMSImages/lrn-share-site-ms-logo.png?version=bf62922f-fda3-d328-e220-b699eac0d6c0"
+    },
+    {
+        "word": "Google",
+        "imageUrl": "https://santatracker.google.com/images/og.png"
+    },
+    {
+        "word": "Apple",
+        "imageUrl": "https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?201608081039"
+    },
+    {
+        "word": "Samsung",
+        "imageUrl": "http://www.samsung.com/common/img/logo-square-letter.png"
+    },
+    {
+        "word": "Amazon",
+        "imageUrl": "https://img.grouponcdn.com/coupons/dsh9cCJiSizPRWtZH7DRrg/amazon_com-500x500"
+    },
+    {
+        "word": "Microsoft",
+        "imageUrl": "https://c.s-microsoft.com/en-us/CMSImages/lrn-share-site-ms-logo.png?version=bf62922f-fda3-d328-e220-b699eac0d6c0"
+    },
+    {
+        "word": "Walmart",
+        "imageUrl": "https://img.grouponcdn.com/coupons/svWS786jtP7X3Y2JHsBTRQ/walmart_com-500x500"
+    },
+    {
+        "word": "Tesco",
+        "imageUrl": "http://pbs.twimg.com/profile_images/766551585614770176/0VJvpmIS.jpg"
+    },
+    {
+        "word": "lidl",
+        "imageUrl": "https://lh5.ggpht.com/JdjFkmc8NgO0JDWkegjFpIVXHq4oveTsMm9FN9de2Dt0ZYuB1_jaTT4CxskrRvY9i7kh=w300"
+    },
+    {
+        "word": "Vodafone",
+        "imageUrl": "https://image.slidesharecdn.com/vodafone-1226938689294276-9/95/vodafone-1-728.jpg?cb=1226911969"
+    },
+    {
+        "word": "Facebook",
+        "imageUrl": "http://www.longevitygraphics.com/wp-content/uploads/2016/12/fb_icon_325x325.png"
+    },
+    {
+        "word": "Mercedes",
+        "imageUrl": "http://clevelandcarstar.com/wp-content/uploads/2016/05/Mercedes-12.jpg"
+    },
+    {
+        "word": "Disney",
+        "imageUrl": "http://is5.mzstatic.com/image/thumb/Purple71/v4/6f/c2/a6/6fc2a667-7b51-fa71-b45c-3cc8b9a0a0eb/source/1200x630bf.jpg"
+    },
+    {
+        "word": "Starbucks",
+        "imageUrl": "https://cdn-starbucks.netdna-ssl.com/uploads/images/_framed/T8roeBHm-4500-3000.JPG"
+    },
+    {
+        "word": "HP",
+        "imageUrl": "http://static.techspot.com/images2/downloads/topdownload/2015/10/hp.png"
+    },
+    {
+        "word": "BMW",
+        "imageUrl": "https://i.ytimg.com/vi/mVeklIh3xAo/hqdefault.jpg"
+    },
+    {
+        "word": "Kobe Bryant",
+        "imageUrl": "http://ll-media.tmz.com/2016/08/26/0826-genes-kobe-launch-3.jpg"
+    },
+    {
+        "word": "Novak Djokovic",
+        "imageUrl": "http://allsportsintheworld.com/wp-content/uploads/2016/10/454482-novak-djokovic-v-1.jpg"
+    },
+    {
+        "word": "Roger Federer",
+        "imageUrl": "http://static.sportskeeda.com/wp-content/uploads/2014/03/roger-federer2-2142450.jpg"
+    },
+    {
+        "word": "Rafael Nadal",
+        "imageUrl": "http://a1.files.biography.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTIwNjA4NjMzNTU1NTUxNzU2.jpg"
+    },
+    {
+        "word": "Serena Williams",
+        "imageUrl": "http://sportshub.cbsistatic.com/i/r/2016/07/01/95a54976-d224-4588-9b4f-a6b639a0a324/thumbnail/770x433/8a849e7c1c2378e3df746264cb897616/serenawilliams070116.jpg"
+    },
+    {
+        "word": "Lebron James",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/LeBron_James_(15662939969).jpg/220px-LeBron_James_(15662939969).jpg"
+    },
+    {
+        "word": "Pele",
+        "imageUrl": "http://a5.files.biography.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTE1ODA0OTcxMzI4Mzc0Mjg1.jpg"
+    },
+    {
+        "word": "Javascript",
+        "imageUrl": "http://seravo.fi/uploads/seravo/2013/06/JavaScript-logo.png"
+    },
+    {
+        "word": "Monitor",
+        "imageUrl": "http://www.staples-3p.com/s7/is/image/Staples/s1007769_sc7?$splssku$"
+    },
+    {
+        "word": "HTML",
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/courses/2479876/14570828119302_illu-cours_html5-css3.png"
+    },
+    {
+        "word": "Robot",
+        "imageUrl": "https://qzprod.files.wordpress.com/2015/10/dash-robot.jpg?quality=80&strip=all"
+    },
+    {
+        "word": "Laser",
+        "imageUrl": "http://bear.joneskilmartingr.netdna-cdn.com/news/wp-content/uploads/laser.jpg"
+    },
+    {
+        "word": "Hair",
+        "imageUrl": "http://www.aphroditesanctuary.com/hair_henna.jpg"
+    },
+    {
+        "word": "Moustache",
+        "imageUrl": "https://www.thetrendspotter.net/wp-content/uploads/2016/02/Moustache-grow-faster.jpg"
+    },
+    {
+        "word": "Beard",
+        "imageUrl": "http://static.fashionbeans.com/wp-content/uploads/2016/04/patchybeard2.jpg"
+    },
+    {
+        "word": "Eyebrows",
+        "imageUrl": "https://i.ytimg.com/vi/RdZttWjRqlQ/hqdefault.jpg"
+    },
+    {
+        "word": "Eyelashes",
+        "imageUrl": "https://secure.polyvoreimg.com/cgi/img-thing/size/l/tid/16575929.jpg"
+    },
+    {
+        "word": "earrings",
+        "imageUrl": "http://i.ebayimg.com/00/s/NTAwWDUwMA==/z/Q5wAAMXQVT9S-ph9/$_3.JPG?set_id=2"
+    },
+    {
+        "word": "Donut",
+        "imageUrl": "http://cdn.inquisitr.com/wp-content/uploads/2010/06/national-donut-day-2010.jpg"
+    },
+    {
+        "word": "Pizza",
+        "imageUrl": "http://www.artofpizzachicago.com/wp-content/uploads/2015/05/pizza-photo-07.jpg"
+    },
+    {
+        "word": "KFC",
+        "imageUrl": "https://img.grouponcdn.com/coupons/e5joXU6pSDq2v383b1tnXZ/kfc-highres-500x500"
+    },
+    {
+        "word": "McDonalds",
+        "imageUrl": "https://lh3.ggpht.com/alKKkv8dT2iflF_flilrxqSHJGa9CmGuNB6lXYElTyQloXkwVjPg0tu_6oGKFcz0lA=w300"
+    },
+    {
+        "word": "Burger King",
+        "imageUrl": "https://lh4.ggpht.com/S3GUKxn95ihjayGjfZcVjx6YMdub723eg1wItYVYZeJya1TMlFPdjPjOWHOJv82VPG7a=w300"
+    },
+    {
+        "word": "Burger",
+        "imageUrl": "http://waybackburgers.com/wp-content/themes/wayback/images/the-cheeeesy-burger.jpg"
+    },
+    {
+        "word": "Sandwich",
+        "imageUrl": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/image/images/1309/pork-cucumber_gal.jpg?itok=eb6bYsMl"
+    },
+    {
+        "word": "Adidas",
+        "imageUrl": "https://www.tillys.com/Tillys/content/images/adidas-blackbird-logo.gif"
+    },
+    {
+        "word": "Nike",
+        "imageUrl": "https://yt3.ggpht.com/-Q8jolvY4uUw/AAAAAAAAAAI/AAAAAAAAAAA/vTOgdhghgt8/s900-c-k-no-mo-rj-c0xffffff/photo.jpg"
+    },
+    {
+        "word": "Suit",
+        "imageUrl": "http://images.express.com/is/image/expressfashion/39_607_1498_098_F01?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0"
+    },
+    {
+        "word": "Tie",
+        "imageUrl": "http://www.mountainandsackett.com/ProductCart/pc/catalog/regimentOA_sm.jpg"
+    },
+    {
+        "word": "Maradona",
+        "imageUrl": "https://i.ytimg.com/vi/rHXtnAwH8Js/hqdefault.jpg"
+    },
+    {
+        "word": "Zidane",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Football_against_poverty_2014_-_Zidane_(4).jpg/220px-Football_against_poverty_2014_-_Zidane_(4).jpg"
+    },
+    {
+        "word": "Di Stefano",
+        "imageUrl": "http://montyentertainment.com/wp-content/uploads/2014/07/db338__DI-Stefano.jpg"
+    },
+    {
+        "word": "Ronaldinho",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ronaldinho_olympics-soccer-6_cropped.jpg/170px-Ronaldinho_olympics-soccer-6_cropped.jpg"
+    },
+    {
+        "word": "David Beckham",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA3ODA0MDI4OF5BMl5BanBnXkFtZTgwMjEyNzI3MDE@._V1_UY317_CR131,0,214,317_AL_.jpg"
+    },
+    {
+        "word": "Victoria Beckham",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNjg2ODg0OV5BMl5BanBnXkFtZTcwMDUzNjA1Mw@@._V1_UY317_CR22,0,214,317_AL_.jpg"
+    },
+    {
+        "word": "Shakira",
+        "imageUrl": "https://media1.popsugar-assets.com/files/thumbor/XmlqlN7rzPpWAwqRFM22Yj7dEzU/fit-in/500x500/filters:format_auto-!!-:strip_icc-!!-/2013/01/01/5/192/1922398/d3d77581dfe4609c_Shakira.jpg"
+    },
+    {
+        "word": "Madonna",
+        "imageUrl": "https://img.discogs.com/KH8qI8-sz-_yUWNpsMrbcJn4Uq4=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/A-8760-1418547319-5121.jpeg.jpg"
+    },
+    {
+        "word": "Ibrahimovic",
+        "imageUrl": "http://cdn.images.express.co.uk/img/dynamic/67/590x/Zlatan-Ibrahimovic-623921.jpg"
+    },
+    {
+        "word": "Kaka",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Kaka_portrait,_February_2009.jpg/220px-Kaka_portrait,_February_2009.jpg"
+    },
+    {
+        "word": "Cristiano Ronaldo",
+        "imageUrl": "http://cdn.images.express.co.uk/img/dynamic/67/590x/cristiano-ronaldo-576777.jpg"
+    },
+    {
+        "word": "Lionel Messi",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/2015_UEFA_Super_Cup_64_crop.jpg/220px-2015_UEFA_Super_Cup_64_crop.jpg"
+    },
+    {
+        "word": "Wayne Rooney",
+        "imageUrl": "https://static.independent.co.uk/s3fs-public/styles/story_medium/public/thumbnails/image/2015/12/25/20/1-wayne-rooney-pa.jpg"
+    },
+    {
         "word": "cat",
         "imageUrl": "http://cdn.playbuzz.com/cdn/3b83df18-d0e8-4b96-95a8-7a041835b978/92ea8554-0eed-4e2f-9815-794c84191683.jpg"
     },
@@ -88,8 +456,40 @@
         "imageUrl": "http://i.dailymail.co.uk/i/pix/2016/08/17/12/3752E32800000578-0-image-a-39_1471434611389.jpg"
     },
     {
-        "word": "iasi",
-        "imageUrl": "http://static.wixstatic.com/media/91f3c4_f2795b50b4854d73a1d188d7658f1992~mv2.jpg_srz_980_735_85_22_0.50_1.20_0.00_jpg_srz"
+        "word": "Justin bieber",
+        "imageUrl": "https://a4-images.myspacecdn.com/images04/8/62c0440fef5049ada62246ac983501c8/300x300.jpg"
+    },
+    {
+        "word": "Selena gomez",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg/220px-Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg"
+    },
+    {
+        "word": "Donald trump",
+        "imageUrl": "http://static4.businessinsider.com/image/56c640526e97c625048b822a-480/donald-trump.jpg"
+    },
+    {
+        "word": "Niagara falls",
+        "imageUrl": "http://www.niagarafallsstatepark.com/img/TheGrandNiagara.jpg"
+    },
+    {
+        "word": "Rushmore",
+        "imageUrl": "http://img.bleacherreport.net/img/images/photos/003/035/421/66fb1d8b9fcc1fd324a2440f572cdcb4_crop_north.jpg?w=759&h=506&q=75"
+    },
+    {
+        "word": "The grand canyon",
+        "imageUrl": "http://foundtheworld.com/wp-content/uploads/2016/01/Grand-Canyon-6.jpg"
+    },
+    {
+        "word": "The pope",
+        "imageUrl": "http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/06/19/102774263-pope-francis.530x298.jpg?v=1434743808"
+    },
+    {
+        "word": "Sydney opera",
+        "imageUrl": "http://www.travelchannel.com/content/dam/images/travel/fullset/2013/12/04/7f/sydney-opera-house-2.rend.tccom.616.462.jpeg"
+    },
+    {
+        "word": "iași",
+        "imageUrl": "https://images.webcams.travel/webcam/1419510183-Weather-Ia%C8%99i-Ia%C5%9Fi,-Romania-Ia%C8%99i.jpg?token=5uw5WQduEdd"
     },
     {
         "word": "eiffel tower",
@@ -104,8 +504,12 @@
         "imageUrl": "http://icowebsolutions.com/wp-content/uploads/2015/11/Ninja-Shadow-2.png"
     },
     {
-        "word": "samurai",
+        "word": "Samurai",
         "imageUrl": "http://www.thinkgeek.com/images/products/zoom/irhj_sw_ronin_samurai_boba_fett.jpg"
+    },
+    {
+        "word": "einstein",
+        "imageUrl": "https://3c1703fe8d.site.internapcdn.net/newman/csz/news/800/2015/alberteinste.jpg"
     },
     {
         "word": "clothes",
@@ -118,10 +522,6 @@
     {
         "word": "drawer",
         "imageUrl": "https://dilogrenme.com/assets/img/uploads/drawer.jpg"
-    },
-    {
-        "word": "gold",
-        "imageUrl": "http://cdn.inquisitr.com/wp-content/uploads/2016/04/Gold-Apple.jpg"
     },
     {
         "word": "kettle",
@@ -238,10 +638,6 @@
     {
         "word": "salami",
         "imageUrl": "http://www.germandeli.com/product-images/Bende-Teli-Hungarian-Style-Salami-0-85-pounds_main-1.jpg"
-    },
-    {
-        "word": "lizard",
-        "imageUrl": "http://cdn.images.express.co.uk/img/dynamic/128/590x/secondary/lizard-510639.jpg"
     },
     {
         "word": "wizard",
@@ -372,10 +768,6 @@
         "imageUrl": "https://www.gpzmedlab.com/resize/shared/images/product/bd-sn.jpg?lr=t&bh=250"
     },
     {
-        "word": "berries",
-        "imageUrl": "http://www.naturalarthritistreatments.net/wp-content/uploads/Berries-for-gout.jpg"
-    },
-    {
         "word": "casette",
         "imageUrl": "https://ih1.redbubble.net/image.120439344.7080/sticker,375x360.png"
     },
@@ -398,10 +790,6 @@
     {
         "word": "valley",
         "imageUrl": "http://www.turfvalley.com/resourcefiles/home-modules-banner-3/play-at-turf-valley-resort-ellicott-city.jpg"
-    },
-    {
-        "word": "plastic bag",
-        "imageUrl": "http://cdn.images.express.co.uk/img/dynamic/130/590x/secondary/PLastic-bags-359349.jpg"
     },
     {
         "word": "whiskey",
@@ -430,10 +818,6 @@
     {
         "word": "cinderella",
         "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxODYyODEzN15BMl5BanBnXkFtZTgwMDk4OTU0MzE@._V1_UX182_CR0,0,182,268_AL_.jpg"
-    },
-    {
-        "word": "dust",
-        "imageUrl": "https://i.ytimg.com/vi/XhkmHU2kStA/maxresdefault.jpg"
     },
     {
         "word": "ring",
@@ -620,10 +1004,6 @@
         "imageUrl": "https://www.magictricks.com/assets/images/trickspix/airbornecokecan2.jpg"
     },
     {
-        "word": "ocean",
-        "imageUrl": "https://i.ytimg.com/vi/dygfsoyijVo/hqdefault.jpg"
-    },
-    {
         "word": "ferret",
         "imageUrl": "http://www.petmd.com/sites/default/files/first-ferret.jpg"
     },
@@ -688,20 +1068,12 @@
         "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIyODA2NDg4NV5BMl5BanBnXkFtZTcwMjg4NDAwMw@@._V1_UX182_CR0,0,182,268_AL_.jpg"
     },
     {
-        "word": "water",
-        "imageUrl": "https://lh3.googleusercontent.com/vZl9Gh52QCw2NubAtKDgpSpBdROySRocmSUtUUQh7b5aX_XZRHxqSJZelCxueyUAM3U=w300"
-    },
-    {
         "word": "faucet",
         "imageUrl": "http://www.macobserver.com/imgs/teaser_images/20131231bitcoinfaucet.jpg"
     },
     {
         "word": "toilet",
         "imageUrl": "http://cainsableplumbing.com/wp-content/uploads/2013/09/water-efficient-toilet.jpg"
-    },
-    {
-        "word": "paper",
-        "imageUrl": "https://lh3.googleusercontent.com/w3MA6GeOjbP2tanUnp6J6I1t-wMFzeAuuN7rvEMXCYDKntCjTiDtgdieRWNq8RELhyQQ=w300"
     },
     {
         "word": "laptop",
@@ -762,10 +1134,6 @@
     {
         "word": "lamp",
         "imageUrl": "http://scene7.targetimg1.com/is/image/Target/14544305?wid=360&hei=360&qlt=80&fmt=pjpeg"
-    },
-    {
-        "word": "deer",
-        "imageUrl": "https://lh3.googleusercontent.com/bf9O7G5DNT0h15Hi7JOKmfCpp2NlTrUUq7N0nevpf4L5kjYaNQ3XYf2LMane15dlMmE=h310"
     },
     {
         "word": "taxi",
@@ -860,8 +1228,8 @@
         "imageUrl": "https://lh3.googleusercontent.com/qzX7sPgNRK01q0dJMfd6S1I5ICpuML2GWBs0V1wqDtrRodV_izQBl4mhAWgSzrvqvF8=w300"
     },
     {
-        "word": "matchbox",
-        "imageUrl": "https://thumbs.dreamstime.com/x/matchbox-isolated-hazard-sign-16169277.jpg"
+        "word": "matches",
+        "imageUrl": "http://static3.businessinsider.com/image/56e6df8952bcd029008b6261-480/led-matches.png"
     },
     {
         "word": "candle",
@@ -1256,10 +1624,6 @@
         "imageUrl": "http://www.alabamanews.net/wp-content/uploads/2015/10/lakia-baseball1.jpg"
     },
     {
-        "word": "farmer",
-        "imageUrl": "https://i.ytimg.com/vi/oa4ZshB3Jyg/maxresdefault.jpg"
-    },
-    {
         "word": "gate",
         "imageUrl": "https://thumbs.dreamstime.com/x/forged-iron-gate-3141888.jpg"
     },
@@ -1280,10 +1644,6 @@
         "imageUrl": "https://img.washingtonpost.com/news/volokh-conspiracy/wp-content/uploads/sites/14/2015/08/Warning-2.gif"
     },
     {
-        "word": "breath",
-        "imageUrl": "http://www.medicalnewstoday.com/images/articles/271813-exhale.jpg"
-    },
-    {
         "word": "chest",
         "imageUrl": "http://image.shutterstock.com/display_pic_with_logo/52959/323799149/stock-photo-muscular-fit-athletic-male-chest-323799149.jpg"
     },
@@ -1302,10 +1662,6 @@
     {
         "word": "insect",
         "imageUrl": "http://cdn.playbuzz.com/cdn/d85bc304-8b4b-44f1-8d1b-2591f0b695d1/695e174b-aa73-4bcf-8cb5-8c687e7753ec_560_420.jpg"
-    },
-    {
-        "word": "king",
-        "imageUrl": "http://www.conn-selmer.com/files/1313/3670/6086/1950_King_Logo_bw.jpg"
     },
     {
         "word": "piano",
@@ -1380,24 +1736,44 @@
         "imageUrl": "http://miriadna.com/desctopwalls/images/max/Across-the-field.jpg"
     },
     {
-        "word": "fish",
-        "imageUrl": "http://i.imgur.com/prm1a8l.jpg"
-    },
-    {
         "word": "back",
         "imageUrl": "http://i1319.photobucket.com/albums/t667/biancazen2/MyFatPocket%202014/women-back-medium_zps778ffb68.jpg"
     },
     {
-        "word": "hand",
+        "word": "Hand",
         "imageUrl": "http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2016/01/29/103344622-GettyImages-182925103.530x298.jpg?v=1454071805"
+    },
+    {
+        "word": "Canon",
+        "imageUrl": "http://www.canon.ie/Images/Canon_Logo_350_tcm24-959888.jpg"
+    },
+    {
+        "word": "Xbox",
+        "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2016/01/xbox-logo-640x386.jpg"
+    },
+    {
+        "word": "Playstation",
+        "imageUrl": "https://lh3.googleusercontent.com/s7pAv2ne1q3xH3xfaISTliNiFHTV5tm_6WbtYmI_Xs8FcDv7GIjKlPSB8J9IYeYW5k8=w300"
+    },
+    {
+        "word": "Dove",
+        "imageUrl": "http://dreamstop.com/wp-content/uploads/2013/11/dove-dream.jpg"
+    },
+    {
+        "word": "youtube",
+        "imageUrl": "http://www.thatericalper.com/wp-content/uploads/2015/06/YouTube-logo-full_color.png?w=640"
     },
     {
         "word": "book",
         "imageUrl": "http://1.bp.blogspot.com/-qJA7dW3W-M0/VH4l2LQUIEI/AAAAAAAAACo/ZJqeqHgpmBs/s1600/books.png"
     },
     {
-        "word": "market",
+        "word": "Market",
         "imageUrl": "http://myamarket.com/wp-content/uploads/2016/03/A-Market-Banner-Website8_OrganicProduce1200600-e1471531458717.jpg"
+    },
+    {
+        "word": "letter",
+        "imageUrl": "http://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Einstein_Szilard_p1.jpg/220px-Einstein_Szilard_p1.jpg"
     },
     {
         "word": "radio",
@@ -1410,10 +1786,6 @@
     {
         "word": "card",
         "imageUrl": "https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1397407/300/200/m2/fpnw/wm0/palm-geometry-business-card-template-all-.jpg?1466845593&s=55ec8a702540d1260252d84035798692"
-    },
-    {
-        "word": "list",
-        "imageUrl": "http://www.reneweveryday.com/assets/1/7/Make_a_List.jpg"
     },
     {
         "word": "fat",
@@ -1472,8 +1844,8 @@
         "imageUrl": "https://i.ytimg.com/vi/GvBdmIgfntU/maxresdefault.jpg"
     },
     {
-        "word": "eye",
-        "imageUrl": "http://images.onhealth.com/images/slideshow/pink-eye-conjunctivitis-s7-conjunctivitis-eye-pus.jpg"
+        "word": "eyes",
+        "imageUrl": "https://lh5.ggpht.com/FTfySuf5HQsTgIZco5HjOFAWpP_eiIXc7eIIV9kHy79GHlEbEhGv1LwC-KA9QKzyDUg=w300"
     },
     {
         "word": "fire",
@@ -1502,10 +1874,6 @@
     {
         "word": "shape",
         "imageUrl": "https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/multiple-shapes.png"
-    },
-    {
-        "word": "tool",
-        "imageUrl": "http://images1.laweekly.com/imager/u/745xauto/6471026/tool-by-levan-tk2.jpg"
     },
     {
         "word": "wind",
@@ -1562,10 +1930,6 @@
     {
         "word": "spot",
         "imageUrl": "http://static1.squarespace.com/static/55ca5c3ee4b00863c0b9cfae/t/55ca6276e4b060e921677f12/1460063425953/"
-    },
-    {
-        "word": "summer",
-        "imageUrl": "http://nick.mtvnimages.com/nick/promos-thumbs/games/nick-summer-sports-stars/nick-summer-sports-stars-game-screenshot-16x9.jpg?quality=0.75&maxdimension=600"
     },
     {
         "word": "track",
@@ -1648,10 +2012,6 @@
         "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY0NjI3MzM2Nl5BMl5BanBnXkFtZTcwNDgxNjA5Nw@@._V1_UX182_CR0,0,182,268_AL_.jpg"
     },
     {
-        "word": "character",
-        "imageUrl": "http://media02.hongkiat.com/cartoon-character-design-tutorials/26-blue-vector-character.jpg"
-    },
-    {
         "word": "club",
         "imageUrl": "http://assets.nydailynews.com/polopoly_fs/1.2802526.1474623767!/img/httpImage/image.jpg_gen/derivatives/article_750/stripxx-7-web.jpg"
     },
@@ -1724,10 +2084,6 @@
         "imageUrl": "http://howafrica.com/wp-content/uploads/2016/09/Road-Trip.jpg"
     },
     {
-        "word": "vegetable",
-        "imageUrl": "http://toriavey.com/images/2012/07/Lemon-Pesto-Vegetable-Skewers-640x480.jpg"
-    },
-    {
         "word": "chart",
         "imageUrl": "https://www.smashingmagazine.com/wp-content/uploads/2014/12/simple-line-chart.png"
     },
@@ -1778,14 +2134,6 @@
     {
         "word": "path",
         "imageUrl": "https://lh5.ggpht.com/0rz9IRFrKhPvveP_LiT85z_M2GXSz7lAoq8d3lzToZwZL7HBfnU5FYcp-9SXU69G7z4=w300"
-    },
-    {
-        "word": "sea",
-        "imageUrl": "https://i.ytimg.com/vi/CxOpLWjiBZY/maxresdefault.jpg"
-    },
-    {
-        "word": "ticket",
-        "imageUrl": "https://lh3.googleusercontent.com/s9m8r3C6m5eXa_9l5Un8bkZjjYy6FoFBGKPrv1_wXNfC3GmIzR3WhFlCyv-wS5_SVzM=w300"
     },
     {
         "word": "angle",
@@ -1942,10 +2290,6 @@
     {
         "word": "rice",
         "imageUrl": "http://i.ndtvimg.com/i/2015-03/rice-625_625x350_71426749881.jpg"
-    },
-    {
-        "word": "telephone",
-        "imageUrl": "http://i.ebayimg.com/00/s/MzAwWDMwMA==/z/krcAAOSwR0JUNg6S/$_35.JPG?set_id=2"
     },
     {
         "word": "winter",
@@ -2152,10 +2496,6 @@
         "imageUrl": "http://riversinsgroup.com/wp-content/uploads/front-lawn.jpg"
     },
     {
-        "word": "alarm",
-        "imageUrl": "http://thecharmalarm.com/wp-content/uploads/2014/04/alarm.png"
-    },
-    {
         "word": "bottle",
         "imageUrl": "http://packagingoptionsdirect.com/content/images/thumbs/0000068_12-oz-ring-neck-clear-glass-sauce-bottle.jpeg"
     },
@@ -2308,10 +2648,6 @@
         "imageUrl": "http://ghk.h-cdn.co/assets/cm/15/12/5508fc2eca95a-ghk-scott-extra-soft-toilet-paper-mdn.jpg"
     },
     {
-        "word": "solid",
-        "imageUrl": "http://3.imimg.com/data3/WL/FE/MY-3545487/solid-bricks-500x500.jpg"
-    },
-    {
         "word": "round",
         "imageUrl": "https://dilogrenme.com/assets/img/uploads/round.png"
     },
@@ -2328,24 +2664,132 @@
         "imageUrl": "http://www.prohuntersjournal.com/img/articles/hunter@sunsetV3.jpg"
     },
     {
-        "word": "survey",
+        "word": "Survey",
         "imageUrl": "http://www.survey-reviews.net/wp-content/uploads/2012/02/survey-software.jpg"
+    },
+    {
+        "word": "A",
+        "imageUrl": "http://images.landofnod.com/is/image/LandOfNod/Letter_Giant_Enough_A_231533_LL/$web_zoom$&wid=550&hei=550&/130831065658/not-giant-enough-letter-a.jpg"
+    },
+    {
+        "word": "B",
+        "imageUrl": "http://www.allthetests.com/quiz19/picture/pic_1143361335_1.gif"
+    },
+    {
+        "word": "C",
+        "imageUrl": "http://images.landofnod.com/is/image/LandOfNod/Letter_Giant_Enough_C_231789_LL/$web_zoom$&wid=550&hei=550&/130831065658/not-giant-enough-letter-c.jpg"
+    },
+    {
+        "word": "D",
+        "imageUrl": "http://www.okclipart.com/img73/ixpdjpgaqcffkkxbddea.png"
+    },
+    {
+        "word": "E",
+        "imageUrl": "https://pmcvariety.files.wordpress.com/2015/04/e-logo.jpg?w=670&h=377&crop=1"
+    },
+    {
+        "word": "F",
+        "imageUrl": "http://images.landofnod.com/is/image/LandOfNod/Letter_Giant_Enough_F_231843_LL/$web_zoom$&wid=550&hei=550&/130831065658/not-giant-enough-letter-f.jpg"
+    },
+    {
+        "word": "G",
+        "imageUrl": "http://static1.squarespace.com/static/5540df52e4b0a59829b4d70f/t/56250391e4b0530dc6cd80fb/1479293688718/"
+    },
+    {
+        "word": "I",
+        "imageUrl": "http://upload.wikimedia.org/wikipedia/commons/5/52/I,_heavily_serifed.png"
+    },
+    {
+        "word": "J",
+        "imageUrl": "https://ae01.alicdn.com/kf/HTB1CgXqHVXXXXaJXFXXq6xXFXXX3/10pcs-lot-High-quality-Silver-Plated-Crystal-font-b-Letter-b-font-font-b-J-b.jpg"
+    },
+    {
+        "word": "L",
+        "imageUrl": "http://www.iconsdb.com/icons/download/black/letter-l-512.png"
+    },
+    {
+        "word": "M",
+        "imageUrl": "http://cdn3.volusion.com/swkxh.awrcc/v/vspfiles/photos/ught-iron-house-letter-m-LET-M-2.jpg?1447069989"
+    },
+    {
+        "word": "N",
+        "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2016/04/image09-640x640.png"
+    },
+    {
+        "word": "O",
+        "imageUrl": "http://www.okclipart.com/img14/opczebpdhggygtytszua.jpg"
+    },
+    {
+        "word": "P",
+        "imageUrl": "http://numbersandletters.com/images/products/1576.gif"
+    },
+    {
+        "word": "Q",
+        "imageUrl": "http://static1.squarespace.com/static/56f9adfa2b8dde80022de4f2/56febdfbb6aa607e4cea10b5/584b4445ff7c50172590a994/1481327869773/Q.jpg?format=1000w"
+    },
+    {
+        "word": "R",
+        "imageUrl": "https://lh5.ggpht.com/TCT6Y-RcekfLDsmbafOgbQap0jbUucoy9k0c2n8LgkFZB2hzXj-garQB9p9UinPBiM8=w300"
+    },
+    {
+        "word": "S",
+        "imageUrl": "http://www.okclipart.com/img17/isbvcmrxmxukimjsshma.jpg"
+    },
+    {
+        "word": "T",
+        "imageUrl": "http://static1.squarespace.com/static/55ad5011e4b026cf2525000a/55ef3698e4b0f68e0e7069ec/55ef36a4e4b0f68e0e706ae9/1383957720000/the-letter-t.jpg?format=original"
+    },
+    {
+        "word": "U",
+        "imageUrl": "http://fsa.zedge.net/scale.php?img=Ny83LzkvOC8xLTk2NjgwNTktNzc5ODY5OC5qcGc&ctype=1&v=4&q=71&xs=300&ys=266&sig=38624a18a6bcfce49502fc1a21cfbf0bc84e00f0"
+    },
+    {
+        "word": "V",
+        "imageUrl": "http://imgs.abduzeedo.com/files/tutorials/GTA_V_Logo_in_Illustrator_and_Photoshop/media_1351463923244.jpg"
+    },
+    {
+        "word": "W",
+        "imageUrl": "http://numbersandletters.com/images/products/1600.gif"
+    },
+    {
+        "word": "X",
+        "imageUrl": "http://cdn.playbuzz.com/cdn/0dfae1f6-2f08-4c47-89ab-dccfec18d583/1956225f-b110-4fa0-8583-61bc3997e124.png"
+    },
+    {
+        "word": "Y",
+        "imageUrl": "http://www.iconsdb.com/icons/preview/black/letter-y-xxl.png"
+    },
+    {
+        "word": "z",
+        "imageUrl": "https://lh6.ggpht.com/BHJferYH5u8dK7HgNkVzkZSslUMNkZo7BpHNRqtlL1rch1bxUPvEzLzXClxWyQPLo-I=w300"
     },
     {
         "word": "tie",
         "imageUrl": "http://www.mountainandsackett.com/ProductCart/pc/catalog/regimentOA_sm.jpg"
     },
     {
-        "word": "adult",
+        "word": "Adult",
         "imageUrl": "https://sh-prod.seniorhomes.com/img_wp/2014/08/bully.jpg"
+    },
+    {
+        "word": "The beatles",
+        "imageUrl": "http://www.tranquilitycremation.com/wp-content/uploads/2013/06/The_Beatles.jpg"
+    },
+    {
+        "word": "ac/dc",
+        "imageUrl": "http://investorplace.com/wp-content/uploads/2015/12/ACDC.png"
+    },
+    {
+        "word": "Twitter",
+        "imageUrl": "http://thenationonlineng.net/wp-content/uploads/2016/10/Twitter.png"
+    },
+    {
+        "word": "suzuki",
+        "imageUrl": "https://media.consumeraffairs.com/files/cache/news/Suzuki_Kizashi_Wikipedia_large.jpg"
     },
     {
         "word": "scratch",
         "imageUrl": "http://sm.pcmag.com/t/pcmag_in/review/s/scratch/scratch_1xgb.640.jpg"
-    },
-    {
-        "word": "laugh",
-        "imageUrl": "https://i.ytimg.com/vi/UdfXYZ0RsZs/maxresdefault.jpg"
     },
     {
         "word": "Mobile",
@@ -2376,8 +2820,72 @@
         "imageUrl": "https://lh3.googleusercontent.com/GXRdOwOm_A-hYcQFVg_qdegTHU7tItKMZVRBPNrqeX3H7KIQMizrtoF6mX8TFQp_r14=w300"
     },
     {
-        "word": "hide",
+        "word": "Hide",
         "imageUrl": "http://dri6hp6j35hoh.cloudfront.net/blog/wp-content/uploads/2016/01/shutterstock_248461363-e1452965549753.jpg"
+    },
+    {
+        "word": "Eminem",
+        "imageUrl": "http://www.hotnewhiphop.com/image/500x500/artist/1346353449_4159240d68a922ee4ecdfd8e85d179c6.jpg/5ff918ae98729db164974a69801c47d8/1346353449_eminem.jpg"
+    },
+    {
+        "word": "Vladimir putin",
+        "imageUrl": "http://a2.files.biography.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTE5NTU2MzE2MzUyMzgyNDc1.jpg"
+    },
+    {
+        "word": "50 cent",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjY0NTc2NTAxNV5BMl5BanBnXkFtZTgwMjYwMDMzNjE@._V1_UX214_CR0,0,214,317_AL_.jpg"
+    },
+    {
+        "word": "Nicki minaj",
+        "imageUrl": "http://i.dailymail.co.uk/i/pix/2014/08/14/article-0-206D09D700000578-920_306x619.jpg"
+    },
+    {
+        "word": "Elvis presley",
+        "imageUrl": "https://img.discogs.com/0Zl64fYnRiSTSsvjzqFrCPf1Iug=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/A-27518-1475269906-4953.jpeg.jpg"
+    },
+    {
+        "word": "Mariah carey",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY2OTQzOTM0OF5BMl5BanBnXkFtZTcwNTI4MTMxMw@@._V1_UY317_CR16,0,214,317_AL_.jpg"
+    },
+    {
+        "word": "Tim berners-lee",
+        "imageUrl": "http://speakerdata2.s3.amazonaws.com/photo/image/775120/sir-tim-berners-lee.jpg"
+    },
+    {
+        "word": "Bill gates",
+        "imageUrl": "http://www.gbandsmith.com/wp-content/uploads/2016/04/bill-gates-security.jpeg"
+    },
+    {
+        "word": "Steve jobs",
+        "imageUrl": "http://talentdevelop.com/WordPress/wp-content/uploads/2014/03/Steve-Jobs-Think-Different.jpg"
+    },
+    {
+        "word": "Snoop dogg",
+        "imageUrl": "http://a3.files.biography.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTE4MDAzNDEwMjg1MTM1Mzc0.jpg"
+    },
+    {
+        "word": "Kanye west",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Kanyewestdec2008.jpg/188px-Kanyewestdec2008.jpg"
+    },
+    {
+        "word": "Kim kardashiam",
+        "imageUrl": "http://a3.files.biography.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTE4MDAzNDEwMzg3NDM3MDcw.jpg"
+    },
+    {
+        "word": "Drake",
+        "imageUrl": "http://static4.businessinsider.com/image/561f14239dd7cc10008c1f30-480/drake.jpg"
+    },
+    {
+        "word": "skrillex",
+        "imageUrl": "http://f4.bcbits.com/img/0006466530_10.jpg"
+    },
+    {
+        "word": "Lil wayne",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ1NTE3ODI0MV5BMl5BanBnXkFtZTcwOTQ1MjYxMw@@._V1_UY317_CR5,0,214,317_AL_.jpg"
+    },
+    {
+        "word": "future",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Future_Summer_Sixteen_Tour.jpg/220px-Future_Summer_Sixteen_Tour.jpg"
     },
     {
         "word": "quote",
@@ -2432,10 +2940,6 @@
         "imageUrl": "http://updatepedia.com/wp-content/uploads/2016/02/Smile-11-1.jpg"
     },
     {
-        "word": "stretch",
-        "imageUrl": "http://www.thecoveringchurch.com/wp-content/uploads/2015/12/STRETCH.jpg"
-    },
-    {
         "word": "spain",
         "imageUrl": "https://wwwnc.cdc.gov/travel/images/map-spain.png"
     },
@@ -2452,7 +2956,299 @@
         "imageUrl": "http://fact.geoba.se/gr/flags/hu-t.gif"
     },
     {
-        "word": "norway",
-        "imageUrl": "http://static4.uk.businessinsider.com/image/5799146fdd0895d2528b4a6b-480/norway.jpg"
+        "word": "Norway",
+        "imageUrl": "https://travelvisabookings.com/wp-content/uploads/2016/06/norway-visa-application-requirements.jpg"
+    },
+    {
+        "word": "Sphinx",
+        "imageUrl": "https://cache-graphicslib.viator.com/graphicslib/media/70/kissing-the-sphinx-photo_14889072-fit468x296.jpg"
+    },
+    {
+        "word": "Pyramid",
+        "imageUrl": "https://discoveringegypt.com/wp-content/uploads/2014/07/Giza10.jpg"
+    },
+    {
+        "word": "The great wall",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA3MjAzOTQxNF5BMl5BanBnXkFtZTgwOTc5OTY1OTE@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+        "word": "Taj mahal",
+        "imageUrl": "http://www.history.com/s3static/video-thumbnails/AETN-History_VMS/21/115/History_Engineering_the_Taj_Mahal_42712_reSF_HD_still_624x352.jpg"
+    },
+    {
+        "word": "Big ben",
+        "imageUrl": "https://media-cdn.tripadvisor.com/media/photo-s/08/dd/25/05/big-ben.jpg"
+    },
+    {
+        "word": "Tower of pisa",
+        "imageUrl": "https://resources.stuff.co.nz/content/dam/images/1/b/5/x/7/v/image.related.StuffLandscapeSixteenByNine.620x349.1b5x6a.png/1461279329514.jpg"
+    },
+    {
+        "word": "Mecca",
+        "imageUrl": "http://www.mostresource.org/wp-content/uploads/sites/146/2015/07/SnapChat-Spotlights-Mecca.jpg"
+    },
+    {
+        "word": "Lochness",
+        "imageUrl": "http://cdn.images.express.co.uk/img/dynamic/80/590x/Monster-635042.jpg"
+    },
+    {
+        "word": "Dracula",
+        "imageUrl": "http://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1453263463i/17804362.jpg"
+    },
+    {
+        "word": "Sagrada Familia",
+        "imageUrl": "http://suitelife.com/wp-content/uploads/2015/03/sagrada1.jpg"
+    },
+    {
+        "word": "Everest",
+        "imageUrl": "http://cdn.images.express.co.uk/img/dynamic/128/590x/Everest-575683.jpg"
+    },
+    {
+        "word": "Stonehenge",
+        "imageUrl": "http://www.thetimes.co.uk/tto/multimedia/archive/00245/99928853_Stonehenge_245423c.jpg"
+    },
+    {
+        "word": "Obama",
+        "imageUrl": "http://cdn1.relevantmediagroup.com/sites/default/files/field/thumbnail/OUoCVEXG.jpg"
+    },
+    {
+        "word": "Titanic",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZDNiMjE0NDgtZWRhNC00YTlhLTk2ZjItZTQzNTU2NjAzNWNkXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+        "word": "Hollywood",
+        "imageUrl": "http://lifewayfilms.s3.amazonaws.com/films/wp-content/uploads/sites/24/2016/11/hollywood.jpg"
+    },
+    {
+        "word": "Las vegas",
+        "imageUrl": "http://champfactory.com/wp-content/uploads/2016/10/visit-las-vegas.jpg"
+    },
+    {
+        "word": "Casino",
+        "imageUrl": "http://www.i-online-casinos.com/images/casino-illustration11.jpg"
+    },
+    {
+        "word": "Italy",
+        "imageUrl": "http://kids.nationalgeographic.com/content/dam/kids/photos/Countries/H-P/italy-flag.gif"
+    },
+    {
+        "word": "pasta",
+        "imageUrl": "http://i.ndtvimg.com/i/2015-12/pasta_625x350_41450937320.jpg"
+    },
+    {
+        "word": "Britney spears",
+        "imageUrl": "http://hdwallpapershdpics.com/wp-content/uploads/2016/12/britney-spears_416x416.jpg"
+    },
+    {
+        "word": "Shakespeare",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Title_page_William_Shakespeare's_First_Folio_1623.jpg/170px-Title_page_William_Shakespeare's_First_Folio_1623.jpg"
+    },
+    {
+        "word": "Red john",
+        "imageUrl": "http://www.adagio.com/images2/custom_blends/42484.jpg"
+    },
+    {
+        "word": "Eggs",
+        "imageUrl": "http://www.medicalnewstoday.com/content/images/articles/283/283659/eggs.jpg"
+    },
+    {
+        "word": "Mozzarella",
+        "imageUrl": "http://atmedia.imgix.net/d3b9fbfb7d8a295b7a4c405ac926347d8aad7bf1?auto=compress&w=540.0&h=540.0&fit=max"
+    },
+    {
+        "word": "Mexico",
+        "imageUrl": "http://kids.nationalgeographic.com/content/dam/kids/photos/Countries/H-P/mexico_large.gif"
+    },
+    {
+        "word": "Envelop",
+        "imageUrl": "http://images.clipshrine.com/download/downloadsvg/Envelop-10947-svg.svg"
+    },
+    {
+        "word": "Pepsi",
+        "imageUrl": "http://advertiseweek.com/wp-content/uploads/2016/09/pepsi-page2015.png"
+    },
+    {
+        "word": "Freddie mercury",
+        "imageUrl": "http://i1.mirror.co.uk/incoming/article8710729.ece/ALTERNATES/s615/Freddie-Mercury.jpg"
+    },
+    {
+        "word": "The beatles",
+        "imageUrl": "http://www.tranquilitycremation.com/wp-content/uploads/2013/06/The_Beatles.jpg"
+    },
+    {
+        "word": "Tiesto",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Ti%C3%ABsto5,_Tallinn,_2007.jpg/200px-Ti%C3%ABsto5,_Tallinn,_2007.jpg"
+    },
+    {
+        "word": "David guetta",
+        "imageUrl": "http://images.sk-static.com/images/media/img/col3/20100303-203548-465407.jpg"
+    },
+    {
+        "word": "Angela merkel",
+        "imageUrl": "http://cdn1.relevantmediagroup.com/sites/default/files/field/thumbnail/german-angela-merkel.jpg"
+    },
+    {
+        "word": "Forrest gump",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU5MjI1MjUyOV5BMl5BanBnXkFtZTgwNzc1NTU0NzE@._V1_CR0,60,640,360_AL_UX477_CR0,0,477,268_AL_.jpg"
+    },
+    {
+        "word": "Sandals",
+        "imageUrl": "https://secure.polyvoreimg.com/cgi/img-thing/size/l/tid/167967668.jpg"
+    },
+    {
+        "word": "High heels",
+        "imageUrl": "http://i.dailymail.co.uk/i/pix/2016/07/25/21/369638B400000578-3707334-Last_week_Helen_Sewell_a_communication_coach_told_MPs_high_heels-a-21_1469480088864.jpg"
+    },
+    {
+        "word": "Steering wheel",
+        "imageUrl": "http://i.ebayimg.com/00/$(KGrHqZHJ!wFBtR+el75BRY0lb(pPw~~_35.JPG"
+    },
+    {
+        "word": "Tomato",
+        "imageUrl": "http://cdn1-www.wholesomebabyfood.momtastic.com/assets/uploads/2015/04/tomato.jpg"
+    },
+    {
+        "word": "Salad",
+        "imageUrl": "http://assets.simplyrecipes.com/wp-content/uploads/2006/06/cobb-salad-600-wm-b.jpg"
+    },
+    {
+        "word": "Corn",
+        "imageUrl": "https://financialtribune.com/sites/default/files/field/image/november/04-corn_127-ab.jpg"
+    },
+    {
+        "word": "Popcorn",
+        "imageUrl": "http://assets.simplyrecipes.com/wp-content/uploads/2007/08/perfect-popcorn-new-640-b.jpg"
+    },
+    {
+        "word": "Sheep",
+        "imageUrl": "http://cdn.images.express.co.uk/img/dynamic/109/590x/Lamb-in-the-grass-567099.jpg"
+    },
+    {
+        "word": "Crow",
+        "imageUrl": "http://blurbrain.com/wp-content/uploads/2016/11/crow.jpg"
+    },
+    {
+        "word": "Wolf",
+        "imageUrl": "http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/A-G/gray-wolf-closeup.jpg.adapt.945.1.jpg"
+    },
+    {
+        "word": "Cigar",
+        "imageUrl": "http://cigarhunk.com/wp-content/uploads/2016/05/cigar-light-orange-glow.jpg"
+    },
+    {
+        "word": "Library",
+        "imageUrl": "https://www.decalgirl.com/assets/designs/large/library.jpg"
+    },
+    {
+        "word": "Notebook",
+        "imageUrl": "https://dri1.img.digitalrivercontent.net/Storefront/Company/msintl/images/English/en-INTL-HP-Notebook-15-ay091ms-QF9-00442/en-INTL-L-HP-Notebook-15-ay091ms-QF9-00442-mnco.jpg"
+    },
+    {
+        "word": "Keychain",
+        "imageUrl": "http://bpc.h-cdn.co/assets/16/01/480x480/streamlight-key-mate-keychain-flashlight.jpg"
+    },
+    {
+        "word": "Scarf",
+        "imageUrl": "http://esq.h-cdn.co/assets/cm/15/07/54d9537f6fe3c_-_1-scarves-1.jpg"
+    },
+    {
+        "word": "Theatre",
+        "imageUrl": "https://static1.squarespace.com/static/55b02091e4b01db83f81c615/t/570c2a2c9f72664c4927578a/1460415026251/"
+    },
+    {
+        "word": "Crib",
+        "imageUrl": "http://scene7.targetimg1.com/is/image/Target/15283397?wid=360&hei=360&qlt=80&fmt=pjpeg"
+    },
+    {
+        "word": "Lawn mower",
+        "imageUrl": "http://www.richardsonsaw.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/h/r/hrs216k3sda-honda-grapevine-lawnmower.jpg"
+    },
+    {
+        "word": "Jesus Christ",
+        "imageUrl": "http://www.godisreal.today/wp-content/uploads/2015/02/faith-in-jesus-christ-720x420.jpg"
+    },
+    {
+        "word": "God",
+        "imageUrl": "http://wordup411ng.com/wp-content/uploads/2016/12/God.jpg"
+    },
+    {
+        "word": "Napoleon",
+        "imageUrl": "http://a2.files.biography.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTIwNjA4NjMzMjIxNzExMzcy.jpg"
+    },
+    {
+        "word": "Shakespeare",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Title_page_William_Shakespeare's_First_Folio_1623.jpg/170px-Title_page_William_Shakespeare's_First_Folio_1623.jpg"
+    },
+    {
+        "word": "Hitler",
+        "imageUrl": "http://a1.files.biography.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTE4MDAzNDEwNTU1MDc4MTU4.jpg"
+    },
+    {
+        "word": "Vlad Tepes",
+        "imageUrl": "https://i.ytimg.com/vi/a8PEVV6tt14/hqdefault.jpg"
+    },
+    {
+        "word": "Dracula",
+        "imageUrl": "http://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1453263463i/17804362.jpg"
+    },
+    {
+        "word": "George Bush",
+        "imageUrl": "http://cp91279.biography.com/BRAND_BIO_BIO_George-W-Bush-Mini-Biography_0_172234_SF_HD_768x432-16x9.jpg"
+    },
+    {
+        "word": "Pokemon",
+        "imageUrl": "http://stech4.firstpost.com/tech2images/640x359/proportional/jpeg/2016/07/Pokemon-GO-Tech2-720-624x351.jpg"
+    },
+    {
+        "word": "Minecraft",
+        "imageUrl": "https://lh3.googleusercontent.com/30koN0eGl-LHqvUZrCj9HT4qVPQdvN508p2wuhaWUnqKeCp6nrs9QW8v6IVGvGNauA=w300"
+    },
+    {
+        "word": "Word of warcraft",
+        "imageUrl": "http://gameranx.com/wp-content/uploads/2016/04/world-of-warcraft-classic-vanilla-960x368-690x350.jpg"
+    },
+    {
+        "word": "Mario",
+        "imageUrl": "http://images.pocketgamer.co.uk/artwork/na-wrds/mario-2.png"
+    },
+    {
+        "word": "Pacman",
+        "imageUrl": "https://farm6.staticflickr.com/5818/23419103689_108fb560bb_o.png"
+    },
+    {
+        "word": "GTA",
+        "imageUrl": "http://assets1.ignimgs.com/thumbs/userUploaded/2014/12/18/05881418-photo-grand-theft-auto-5-1418944409461_large.jpg"
+    },
+    {
+        "word": "Counter Strike",
+        "imageUrl": "http://cdn.akamai.steamstatic.com/steam/apps/10/0000000135.600x338.jpg?t=1447887426"
+    },
+    {
+        "word": "Dota 2",
+        "imageUrl": "https://heavyeditorial.files.wordpress.com/2015/08/virulentwalrus.jpeg?quality=65&strip=all&strip=all"
+    },
+    {
+        "word": "Ping pong",
+        "imageUrl": "http://scelnews.com/wp-content/uploads/2012/04/Ping-Pong-Paddle-193484.jpg"
+    },
+    {
+        "word": "Cricket",
+        "imageUrl": "https://i.ytimg.com/vi/VRmz8PiyvvI/hqdefault.jpg"
+    },
+    {
+        "word": "Voleyball",
+        "imageUrl": "https://img2.cgtrader.com/items/651253/dc0bfea445/large/ball-for-voleyball-or-waterpolo-3d-model-max-stl.jpg"
+    },
+    {
+        "word": "Sims",
+        "imageUrl": "http://sims-extremos.com.ar/wp-content/uploads/sites/19/2016/07/ZSyayBRu.jpg"
+    },
+    {
+        "word": "Shrek",
+        "imageUrl": "https://lh3.googleusercontent.com/rEUe8A2Dzw7Kbkhkv3Zzp7VOl8mi0NteVfbvWtppi04eiL3jKVrgUa2pUblfRGdYPkrW=w300"
+    },
+    {
+        "word": "Donkey",
+        "imageUrl": "http://www.calvarybirmingham.com/wp-content/uploads/2016/12/laughing_donkey.jpg"
     }
 ]

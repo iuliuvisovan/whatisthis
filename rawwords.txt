@@ -206,7 +206,6 @@ savanna
 cinderella
 ring
 airplane
-mane
 yoghurt
 salvador dali
 cheese
@@ -232,7 +231,6 @@ panther
 mr. bean
 clover
 atlantis
-vulkano
 carrot
 pirate
 belt
@@ -672,7 +670,6 @@ C
 D
 E
 F
-G
 I
 J
 L
@@ -700,7 +697,6 @@ scratch
 Mobile
 royal
 strain
-swimming
 wash
 crash
 grab
