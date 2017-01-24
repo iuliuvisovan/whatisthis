@@ -19,6 +19,7 @@ var RushManager = function () {
         socket.emit('playerUpdated', JSON.stringify({
             name: self.CurrentPlayerName(),
             score: self.CurrentPlayerScore(),
+            winCount: self.CurrentPlayerWinCount()
         }));
     });
 
@@ -27,7 +28,12 @@ var RushManager = function () {
     self.CurrentQuestion = ko.observable('');
     self.CurrentAnswer = ko.observable('');
     self.CurrentCorrectAnswer = ko.observable('');
+    self.CurrentPlayerWinCount = ko.observable(0);
+    self.CurrentPlayerWinCount.subscribe(newValue => {
+        sessionStorage.setItem('winCount', newValue);
+    });
     self.CurrentCorrectAnswerHidden = '';
+
     self.LoadingNextImage = ko.observable(true);
     self.SomeoneRageQuit = ko.observable(false);
     self.CountDownSeconds = ko.observable(3);
@@ -76,6 +82,9 @@ var RushManager = function () {
             clearInterval(intervalCountdownSound);
             self.Loading(false);
             self.CountDownSeconds(3);
+            setTimeout(() => {
+                $("#inputCurrentAnswer").focus();
+            }, 150);
         }, 3000);
     }
 
@@ -99,8 +108,32 @@ var RushManager = function () {
             self.CurrentPlayerName(savedName);
             ga('send', 'event', 'Game', 'playerRejoin', savedName);
         }
+        var savedWinCount = sessionStorage.getItem('winCount');
+        if (savedWinCount && savedWinCount.length) {
+            self.CurrentPlayerWinCount(savedWinCount);
+            socket.emit('playerUpdated', JSON.stringify({
+                name: self.CurrentPlayerName(),
+                score: self.CurrentPlayerScore(),
+                winCount: self.CurrentPlayerWinCount()
+            }));
+        }
+
         socket.on('playerlistupdate', players => {
             self.Players(JSON.parse(players).filter(x => x.id != socket.id));
+            var currentPlayerWinCount = JSON.parse(players).find(x => x.id == socket.id).winCount;
+            if (currentPlayerWinCount < 1) {
+                var savedWinCount = sessionStorage.getItem('winCount');
+                if (savedWinCount && savedWinCount.length) {
+                    self.CurrentPlayerWinCount(savedWinCount);
+                    socket.emit('playerUpdated', JSON.stringify({
+                        name: self.CurrentPlayerName(),
+                        score: self.CurrentPlayerScore(),
+                        winCount: self.CurrentPlayerWinCount()
+                    }));
+                }
+            } else {
+                self.CurrentPlayerWinCount(currentPlayerWinCount);
+            }
         });
         socket.on('playermissed', (playerDataJson) => {
             var playerData = JSON.parse(playerDataJson);
@@ -143,8 +176,27 @@ var RushManager = function () {
             self.CurrentPlayerScore(self.CurrentPlayerScore() + 1);
             setTimeout(() => {
                 self.End();
-                self.Winner(winner);
+                if (JSON.parse(winner).socketId == socket.id)
+                    self.CurrentPlayerWinCount(self.CurrentPlayerWinCount() + 1);
+                self.Winner(JSON.parse(winner).name);
             }, 500);
         });
     }
 }
+
+ko.components.register('player-list', {
+    viewModel: function (params) {
+        this.Players = params.Players;
+    },
+    template: `
+        <div data-bind="foreach: Players().sort((a,b) => { return a.winCount > b.winCount ? -1 : 1 })">
+            <div class="player">
+                <i class="player-win-count">
+                    <span>wins: </span>
+                    <b data-bind="text: winCount"></b>
+                </i>
+                <span data-bind="text: name" class="player-name"></span>
+            </div>
+        </div>
+        <i style="font-size: 12px" data-bind="visible: !Players().length">Looks like nobody's here..</i>`
+});

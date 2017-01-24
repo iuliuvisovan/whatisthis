@@ -24,9 +24,10 @@ module.exports = {
         io.on('connection', socket => {
             players.push({
                 id: socket.id,
-                name: '<some unknown guy>',
+                name: '<no name>',
                 score: 0,
-                questionIndex: 0
+                questionIndex: 0,
+                winCount: 0
             });
             io.emit('playerlistupdate', J(players));
             if (isGameStarted) {
@@ -34,14 +35,15 @@ module.exports = {
                 socket.emit('questionArrived', JSON.stringify({
                     question: questions[questions.length - 1].imageUrl,
                     answer: questions[questions.length - 1].word,
-                    currentPlayerScore: 0
+                    currentPlayerScore: 0,
                 }));
             }
             socket.on('playerUpdated', playerJson => {
                 var player = JSON.parse(playerJson);
                 var localPlayer = findPlayer(socket.id);
-                localPlayer.name = player.name || '<some unknown guy>';
+                localPlayer.name = player.name || '<no name>';
                 localPlayer.score = player.score;
+                localPlayer.winCount = player.winCount;
                 socket.broadcast.emit('playerlistupdate', J(players));
             });
             socket.on('disconnect', playerJson => {
@@ -82,21 +84,31 @@ module.exports = {
                 if (isRightAnswer)
                     currentPlayer.score = currentPlayer.score + 1;
                 else {
-                    io.emit('playermissed', JSON.stringify({ playerId: socket.id, playerMissedWord: response}));
+                    io.emit('playermissed', JSON.stringify({
+                        playerId: socket.id,
+                        playerMissedWord: response
+                    }));
                 }
 
                 io.emit('playerlistupdate', J(players));
                 if (currentPlayer.score > 8) {
                     isGameStarted = false;
-                    io.emit('end', currentPlayer.name);
+                    currentPlayer.winCount++;
+                    io.emit('end', JSON.stringify(currentPlayer));
+                    questions = [];
+                    populateQuestions();
                     players.forEach((player) => {
                         player.score = 0;
                         player.questionIndex = 0;
                     })
+                    io.emit('playerlistupdate', J(players));
                     return;
                 }
-                if (currentPlayer.questionIndex > questions.length - 1)
+                if (currentPlayer.questionIndex > questions.length - 5) //They ran out of questions
+                {
                     populateQuestions();
+                }
+
                 socket.emit('questionArrived', JSON.stringify({
                     question: questions[questions.length - 1 - currentPlayer.questionIndex].imageUrl,
                     answer: questions[questions.length - 1 - currentPlayer.questionIndex].word,

@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -21,6 +21,7 @@ input {
     padding: 15px;
     border: 1px solid #BF360C;
     margin: 10px;
+    position: relative;
 }
 
 .progress-area {
@@ -134,4 +135,19 @@ input {
     #inputCurrentAnswer {
         margin-right: 30vw;
     }
+}
+
+.score-count {
+    margin-top: 5px;
+    font-weight: 100;
+}
+
+.score-count span {
+    font-weight: 800;
+}
+
+.player-win-count {
+    color: #00BCD4;
+        position: absolute;
+    left: -66px;
 }

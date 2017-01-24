@@ -123,7 +123,7 @@ Rushmore
 The grand canyon
 The pope
 Sydney opera
-iasi
+iași
 eiffel tower
 world trade center
 ninja
@@ -161,7 +161,6 @@ skirt
 passport
 hippo
 salami
-lizard
 wizard
 sweater
 anne frank
@@ -200,7 +199,6 @@ starfish
 ash
 wires
 valley
-plastic bag
 whiskey
 yellow
 orange juice
@@ -208,7 +206,6 @@ tukan
 lion
 savanna
 cinderella
-dust
 ring
 airplane
 mane
@@ -473,7 +470,6 @@ ball
 gift
 machine
 shape
-tool
 wind
 pot
 sign
@@ -526,7 +522,6 @@ joint
 muscle
 red
 trip
-vegetable
 chart
 gear
 kitchen
@@ -540,7 +535,6 @@ street
 tree
 wave
 path
-ticket
 angle
 blue
 breakfast
@@ -685,7 +679,6 @@ F
 G
 I
 J
-K
 L
 M
 N
@@ -810,7 +803,6 @@ Hitler
 Vlad Tepes
 Dracula
 George Bush
-Super Mario
 Pokemon
 Minecraft
 Word of warcraft
@@ -822,7 +814,6 @@ Dota 2
 Ping pong
 Cricket
 Voleyball
-Football
 Sims
 Shrek
 Donkey
