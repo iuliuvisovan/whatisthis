@@ -85,6 +85,9 @@
             </div>
         </div>
     </div>
+    <div data-bind="foreach: PrecachedImages" style="display: none">
+        <img data-bind="attr: { src: $data }"/>
+    </div>
     <input type="hidden" id="nToken" value="3/4,5,7/645-432-651" />
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/socket.io-client/dist/socket.io.js"></script>

@@ -33,6 +33,7 @@ var RushManager = function () {
         sessionStorage.setItem('winCount', newValue);
     });
     self.CurrentCorrectAnswerHidden = '';
+    self.PrecachedImages = ko.observableArray();
 
     self.LoadingNextImage = ko.observable(true);
     self.SomeoneRageQuit = ko.observable(false);
@@ -144,6 +145,10 @@ var RushManager = function () {
                 $(`[data-playerId="${playerData.playerId}"]`).addClass('missed');
                 $(`[data-playerId="${playerData.playerId}"]`).attr('data-lastmissedword', playerData.playerMissedWord);
             }, 0);
+        });
+        socket.on('imagesPrecache', (images) => {
+            debugger;
+            self.PrecachedImages(JSON.parse(images));
         });
         socket.on('questionArrived', (question) => {
             self.CurrentQuestion(JSON.parse(question).question);

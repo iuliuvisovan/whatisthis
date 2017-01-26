@@ -68,6 +68,9 @@ module.exports = {
                     player.questionIndex = 0;
                 });
                 populateQuestions();
+                io.emit('imagesPrecache', J(questions
+                        .map(x => x.imageUrl)
+                        .slice(questions.length - 10)));
                 socket.broadcast.emit('go');
                 isGameStarted = true;
                 io.emit('playerlistupdate', J(players));
@@ -91,7 +94,11 @@ module.exports = {
                         playerMissedWord: response
                     }));
                 }
-
+                if (currentPlayer.questionIndex % 5 == 0) {
+                    socket.emit('imagesPrecache', J(questions
+                        .map(x => x.imageUrl)
+                        .slice(questions.length - 1 - currentPlayer.questionIndex - 10)));
+                }
                 io.emit('playerlistupdate', J(players));
                 if (currentPlayer.score > 8) {
                     isGameStarted = false;
@@ -106,7 +113,7 @@ module.exports = {
                     io.emit('playerlistupdate', J(players));
                     return;
                 }
-                if (currentPlayer.questionIndex > questions.length - 5) //They ran out of questions
+                if (currentPlayer.questionIndex > questions.length - 11) //They ran out of questions
                 {
                     populateQuestions();
                 }
@@ -125,7 +132,7 @@ module.exports = {
 
 var isGameStarted = false;
 var findPlayer = (id) => players.find(x => x.id == id);
-var J = (string) => JSON.stringify(string);
+var J = (object) => JSON.stringify(object);
 
 var questions = [];
 var operators = ['+', '-'];
