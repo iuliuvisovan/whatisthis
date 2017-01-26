@@ -41,6 +41,9 @@ var RushManager = function () {
 
     self.WinnerName = ko.observable('');
     self.WinnerId = ko.observable('');
+    self.IsWinnerCurrentPlayer = ko.pureComputed(() => {
+        return self.WinnerId() == (socket && socket.id);
+    });
 
     self.SendAnswer = function (forced) {
         if (self.LoadingNextImage() && !forced)
@@ -147,7 +150,6 @@ var RushManager = function () {
             }, 0);
         });
         socket.on('imagesPrecache', (images) => {
-            debugger;
             self.PrecachedImages(JSON.parse(images));
         });
         socket.on('questionArrived', (question) => {
@@ -191,7 +193,7 @@ ko.components.register('player-list', {
     template: `
         <div data-bind="foreach: Players().sort((a,b) => { return a.winCount > b.winCount ? -1 : 1 })">
             <div class="player">
-                <i class="player-win-count">
+                <i class="player-win-count" style="color: #FF5722">
                     <span>wins: </span>
                     <b data-bind="text: winCount"></b>
                 </i>

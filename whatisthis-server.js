@@ -100,7 +100,7 @@ module.exports = {
                         .slice(questions.length - 1 - currentPlayer.questionIndex - 10)));
                 }
                 io.emit('playerlistupdate', J(players));
-                if (currentPlayer.score > 8) {
+                if (currentPlayer.score > 2) {
                     isGameStarted = false;
                     currentPlayer.winCount++;
                     io.emit('end', JSON.stringify(currentPlayer));

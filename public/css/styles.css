@@ -144,6 +144,7 @@ input {
 
 .score-count span {
     font-weight: 800;
+    color: #00BCD4;
 }
 
 .player-win-count {

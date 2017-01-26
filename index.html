@@ -41,7 +41,8 @@
     <div class="page flex-centered" data-bind="visible: !IsStarted() && WinnerId() && !SomeoneRageQuit()" style="padding: 15px; display: none">
         <h1>Game over!</h1>
         <h3 style="margin: 0">Winner:</h3>
-        <h1 style="margin: 0" data-bind="text: WinnerName, style: { color: WinnerId() == (socket && socket.id) ? '#00BCD4' : '#FF5722' }"></h1>
+        <h1 style="margin-bottom: 0;color: rgb(0, 188, 212);" data-bind="visible: IsWinnerCurrentPlayer()">You!</h1>
+        <h1 style="margin-top: 0" data-bind="text: (IsWinnerCurrentPlayer() ? '(' : '') + WinnerName() + (IsWinnerCurrentPlayer() ? ')' : ''), style: { color: IsWinnerCurrentPlayer() ? '#00BCD4' : '#FF5722' }"></h1>
         <h3>Your name:</h3>
         <input data-bind="textInput: CurrentPlayerName" placeholder="My name's'">
         <h5 class="score-count">You have <span data-bind="text: CurrentPlayerWinCount">0</span> wins thus far.</h5>
@@ -63,7 +64,7 @@
                 </div>
                 <div class="player-progress my-progress">
                     <div data-bind="style: { width: ((CurrentPlayerScore() * 11) + 10) + '%'}" class="progress"></div>
-                    <h3 class="player-progress-name">You</h3>
+                    <h3 class="player-progress-name" data-bind="text: 'You (' + (CurrentPlayerName() || 'no name yet') + ')'">You</h3>
                 </div>
                 <!-- ko foreach: Players -->
                 <div class="player-progress" data-bind="attr: { 'data-playerid': id }">
