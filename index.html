@@ -36,8 +36,14 @@
     </div>
     <div class="page flex-centered" data-bind="visible: !IsStarted() && !WinnerId() && SomeoneRageQuit()" style="padding: 15px; display: none">
         <h1 style="text-align: center">Your opponent left, game can't continue :(</h1>
-        <input data-bind="textInput: CurrentPlayerName" placeholder="My name's'">
-        <h5 class="score-count">You have <span data-bind="text: CurrentPlayerWinCount">0</span> wins thus far.</h5>
+        <h3>What's your name?</h3>
+        <div style="position: relative; text-align: center">
+            <input data-bind="textInput: CurrentPlayerName" maxlength="50" placeholder="My name's">
+            <div class="player-win-count mine" data-bind="visible: CurrentPlayerWinCount() > 0">
+                <span data-bind="text: 'x' +  CurrentPlayerWinCount(), visible:  CurrentPlayerWinCount() > 1"></span>
+                <img style="width: 30px" src="img/winner.png"></span>
+            </div>
+        </div>
         <br/>
         <div data-bind='component: { name: "player-list", params: { Players: AllPlayers, ExtraPlayersCount: ExtraPlayersCount }}'></div>
         <h3 data-bind="visible: Players().length" style="text-align: center;">
@@ -50,8 +56,13 @@
         <h1 style="margin-bottom: 0;color: rgb(0, 188, 212);" data-bind="visible: IsWinnerCurrentPlayer()">You!</h1>
         <h1 style="margin-top: 0" data-bind="text: (IsWinnerCurrentPlayer() ? '(' : '') + WinnerName() + (IsWinnerCurrentPlayer() ? ')' : ''), style: { color: IsWinnerCurrentPlayer() ? '#00BCD4' : '#FF5722' }"></h1>
         <h3>Your name:</h3>
-        <input data-bind="textInput: CurrentPlayerName" placeholder="My name's'">
-        <h5 style="margin-bottom: 0" class="score-count">You have <span data-bind="text: CurrentPlayerWinCount">0</span> wins thus far.</h5>
+        <div style="position: relative; text-align: center">
+            <input data-bind="textInput: CurrentPlayerName" maxlength="50" placeholder="My name's">
+            <div class="player-win-count mine" data-bind="visible: CurrentPlayerWinCount() > 0">
+                <span data-bind="text: 'x' +  CurrentPlayerWinCount(), visible:  CurrentPlayerWinCount() > 1"></span>
+                <img style="width: 30px" src="img/winner.png"></span>
+            </div>
+        </div>
         <br/>
         <div data-bind='component: { name: "player-list", params: { Players: AllPlayers, ExtraPlayersCount: ExtraPlayersCount }}'></div>
         <h3 data-bind="visible: Players().length" style="text-align: center;">
