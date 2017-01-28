@@ -306,11 +306,8 @@ Argentina
 Chile
 Venezuela
 Colombia
-Alphabetical list of countries in Europe
-A
 Albania
 Andorra
-Armenia
 Austria
 Belarus
 Belgium
@@ -331,7 +328,6 @@ Iceland
 Ireland
 Italy
 Kazakhstan
-Kosovo
 Latvia
 Liechtenstein
 Lithuania

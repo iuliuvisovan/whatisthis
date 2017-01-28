@@ -21,12 +21,11 @@
         <h3>Do you have a name?</h3>
         <div style="position: relative; text-align: center">
             <input data-bind="textInput: CurrentPlayerName" maxlength="50" placeholder="Yes sir. My name is..">
-            <div class="player-win-count mine" data-bind="visible: CurrentPlayerWinCount() > 0">
+            <div style="display: none" class="player-win-count mine" data-bind="visible: CurrentPlayerWinCount() > 0">
                 <span data-bind="text: 'x' +  CurrentPlayerWinCount(), visible:  CurrentPlayerWinCount() > 1"></span>
                 <img style="width: 30px" src="img/winner.png"></span>
             </div>
         </div>
-        <!--<h5 class="score-count">You have <span data-bind="text: CurrentPlayerWinCount">0</span> wins thus far.</h5>-->
         <br/>
         <h3 style="margin-top: 0">Other players:</h3>
         <div data-bind='component: { name: "player-list", params: { Players: AllPlayers, ExtraPlayersCount: ExtraPlayersCount }}'></div>
@@ -35,7 +34,7 @@
         </h3>
     </div>
     <div class="page flex-centered" data-bind="visible: !IsStarted() && !WinnerId() && SomeoneRageQuit()" style="padding: 15px; display: none">
-        <h1 style="text-align: center">Your opponent left, game can't continue :(</h1>
+        <h1 style="text-align: center">Your opponent left,<br/> game can't continue :(</h1>
         <h3>What's your name?</h3>
         <div style="position: relative; text-align: center">
             <input data-bind="textInput: CurrentPlayerName" maxlength="50" placeholder="My name's">
