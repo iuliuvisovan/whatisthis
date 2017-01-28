@@ -1,23 +1,62 @@
 
 Colosseum
 Johnny depp
-Arnold schwarzenegger
-Leonardo dicaprio
+schwarzenegger
+dicaprio
 Brad pitt
 Morgan freeman
 Will smith
-Mark zuckerberg
+Zuckerberg
 Adele
-Angela merkel
-Barack obama
+Apricot
+Aspargus
+Aubergine
+Avocado
+Banana
+Condom
+Broccoli
+Carrot
+Cherry
+Clementine
+Garlic
+Grape
+Honeydew
+Kiwi
+Lemon
+Mango
+Melon
+Mushroom
+Nectarine
+Nut
+Cauliflower
+Cabbage
+Corn
+nettle
+mint
+Olive
+Pea
+Peanut
+Pear
+Pepper
+Pineapple
+Pumpkin
+Radish
+Raisin
+Strawberry
+watermelon
+tomato
+Merkel
+Obama
 Michael jackson
 Michael Schumacher
 Valentino Rossi
+Freezer
+Fire extinguisher
 Paris Hilton
 Sebastian Vettel
-Lewis Hamilton
-Felipe Massa
-Fernando Alonso
+Hamilton
+Massa
+Alonso
 Zac Efron
 Jim Parsons
 Nail
@@ -50,10 +89,10 @@ Starbucks
 HP
 BMW
 Kobe Bryant
-Novak Djokovic
-Roger Federer
-Rafael Nadal
-Serena Williams
+Djokovic
+Federer
+Nadal
+Williams
 Lebron James
 Pele
 Javascript
@@ -89,8 +128,8 @@ Madonna
 Ibrahimovic
 Kaka
 Cristiano Ronaldo
-Lionel Messi
-Wayne Rooney
+Messi
+Rooney
 cat
 house
 mouse
@@ -111,8 +150,9 @@ sunshine
 jeans
 bread
 cfr cluj
-steaua bucharest
-dinamo bucharest
+Steaua
+forehead
+dinamo
 Justin bieber
 Selena gomez
 Donald trump
@@ -242,7 +282,11 @@ cookie
 ham
 plate
 boat
-oil
+Oil
+Butterfly
+Grasshopper
+Mosquito
+
 rain
 butcher
 kiosk
@@ -254,7 +298,78 @@ train
 steam
 coffee
 bucket
-basketball
+Basketball
+United states
+Canada
+Mexico
+Brazil
+Argentina
+Chile
+Venezuela
+Colombia
+Alphabetical list of countries in Europe
+A
+Albania
+Andorra
+Armenia
+Austria
+Belarus
+Belgium
+Bosnia and Herzegovina
+Bulgaria
+Croatia
+Cyprus
+Czech Republic
+Denmark
+Estonia
+Finland
+France
+Georgia
+Germany
+Greece
+Hungary
+Iceland
+Ireland
+Italy
+Kazakhstan
+Kosovo
+Latvia
+Liechtenstein
+Lithuania
+Luxembourg
+Macedonia
+Malta
+Moldova
+Monaco
+Montenegro
+Netherlands
+Norway
+Poland
+Portugal
+Romania
+Algeria
+Australia
+New zealand
+South korea
+North korea
+india
+Egypt
+Russia
+China
+Japan
+dubai
+Russia
+San Marino
+Serbia
+Slovakia
+Slovenia
+Spain
+Sweden
+Switzerland
+Turkey
+Ukraine
+United Kingdom
+Vatican
 honey
 pie
 frame
@@ -275,7 +390,10 @@ tv
 ice cream
 candy
 nail polish
-moon
+Moon
+Mercury
+Venus
+
 universe
 hijab
 hammer
@@ -292,7 +410,6 @@ door
 goat
 brick
 ladder
-throne
 wings
 snow
 snowman
@@ -317,8 +434,21 @@ stingray
 steve irwin
 seahorse
 vuvuzela
-bank
-bench
+Bank
+walrus
+Bench
+Aligator
+Bear
+Bat
+Camel
+Eagle
+Frog
+Fox
+Gorilla
+Monkey
+Owl
+Penguin
+snake
 bridge
 sculpture
 collar
@@ -409,11 +539,13 @@ river
 village
 warning
 chest
-chocolate
+Chocolate
+Caterpillar
 desk
 garbage
 insect
-piano
+Piano
+ant
 potato
 salad
 tongue
@@ -452,11 +584,24 @@ board
 garden
 space
 weather
-earth
+Earth
+Neptune
+Monday
+Tuesday
+Wednesday
+Thursday
+Firday
+Saturday
+sunday
+Mars
+Jupiter
+Saturn
+uranus
 chicken
 rock
 dog
-scale
+Scale
+razor
 sun
 eyes
 fire
@@ -596,12 +741,15 @@ border
 branch
 chips
 coach
-floor
+Floor
+helicopter
 golf
 iron
 judge
 knife
-landscape
+Landscape
+Jar
+socket
 mail
 pool
 shelter
@@ -747,6 +895,7 @@ Dracula
 Sagrada Familia
 Everest
 Stonehenge
+curtains
 Obama
 Titanic
 Hollywood
@@ -760,7 +909,7 @@ Red john
 Eggs
 Mozzarella
 Mexico
-Envelop
+Envelope
 Pepsi
 Freddie mercury
 The beatles
@@ -802,6 +951,8 @@ Mario
 Pacman
 GTA
 Counter Strike
+Scorpion
+Spider
 Dota 2
 Ping pong
 Cricket
@@ -809,3 +960,7 @@ Voleyball
 Sims
 Shrek
 Donkey
+Fork
+Spoon
+Teaspoon
+Ceiling
