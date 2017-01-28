@@ -128,6 +128,8 @@ var RushManager = function () {
         socket.on('playerlistupdate', players => {
             var allPlayers = (JSON.parse(players).filter(x => x.id != socket.id));
             var maxPlayerCount = (window.innerWidth < 1024) ? 3 : 10;
+            if(allPlayers.length < maxPlayerCount)
+                maxPlayerCount = allPlayers.length;
             var criteria = self.IsStarted() ? "score" : "winCount";
             var remainingPlayers = allPlayers.sort((a, b) => a[criteria] > b[criteria] ? -1 : 1).slice(0, maxPlayerCount);
             self.ExtraPlayersCount(allPlayers.length - maxPlayerCount);
@@ -192,6 +194,18 @@ var RushManager = function () {
     }
 }
 
+var Θ = () => {
+    let α = document.createRange(),
+    ρ = window.getSelection();
+    α.selectNodeContents($(`#pageLink`)[0]);
+    ρ.removeAllRanges();
+    ρ.addRange(α);
+    document.execCommand('copy') && $(`#C span`).addClass('shown');
+    setTimeout(() => {
+        $(`#C span`).removeClass('shown');
+    }, 5000);
+}
+
 ko.components.register('player-list', {
     viewModel: function (params) {
         this.Players = params.Players;
@@ -209,10 +223,19 @@ ko.components.register('player-list', {
                 </div>
             </div>
             <i style="font-size: 12px" data-bind="visible: !Players().length">Looks like nobody's here..</i>
-            <i style="font-size: 12px" data-bind="visible: Players().length > 3">
+            <i style="font-size: 12px" data-bind="visible: (Players().length > 3) || (ExtraPlayersCount() > 0)">
                 +<span data-bind="text: ExtraPlayersCount() + (Players().length - 3)">0</span>
-                <span> other player</span><span data-bind="visible: Players().length > 4">s</span>
+                <span> other player</span><span data-bind="visible: Players().length > 4 || ExtraPlayersCount() > 1">s</span>
             </i>
+            <span id="pageLink" style="opacity: 0; font-size: 1px">http://iuliu.net/whatisthis</span>
+            <div style="margin-top: 20px">
+                Invite your friends!
+                <div id="C" onclick="Θ()">
+                    Copy link
+                    <span>✓</span>
+                </div>
+            </div>
         </div>
+
         `
 });

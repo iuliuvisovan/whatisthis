@@ -4,6 +4,17 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+a:hover {
+    filter: brightness(80%);
+}
+
+h3 {
+    text-align: center;
+}
+
 .flex-centered {
     position: relative;
     display: flex;
@@ -19,7 +30,7 @@ input {
 .player {
     background: #FF5722;
     color: white;
-    padding: 15px;
+    padding: 10px;
     border: 1px solid #BF360C;
     margin: 10px;
     position: relative;
@@ -182,4 +193,39 @@ input {
     color: #bbb;
     font-style: italic;
     z-index: -1;
+}
+
+
+#C {
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #00BCD4;
+    border-radius: 5px;
+    margin-right: -12px;
+}
+
+[onclick]:hover {
+    filter: brightness(50%);
+}
+
+#C span {
+    opacity: 0;
+    margin-left: 5px;
+}
+
+@keyframes show {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+#C span.shown {
+    animation-name: show;
+    animation-duration: 5s;
 }

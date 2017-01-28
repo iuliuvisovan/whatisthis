@@ -24,8 +24,8 @@
         <br/>
         <h3 style="margin-top: 0">Other players:</h3>
         <div data-bind='component: { name: "player-list", params: { Players: Players, ExtraPlayersCount: ExtraPlayersCount }}'></div>
-        <h3 data-bind="visible: Players().length" style="text-align: center;">
-            Great. <br/>You can wait invite more friends or <a href="#" style="color: #FF5722" data-bind="click: Go">start right now</a>.
+        <h3 data-bind="visible: Players().length" style="display: none" style="text-align: center;">
+            Great. <br/>You can invite more friends or <a href="#" style="color: #FF5722" data-bind="click: Go">start right now</a>.
         </h3>
     </div>
     <div class="page flex-centered" data-bind="visible: !IsStarted() && !WinnerId() && SomeoneRageQuit()" style="padding: 15px; display: none">
@@ -45,7 +45,7 @@
         <h1 style="margin-top: 0" data-bind="text: (IsWinnerCurrentPlayer() ? '(' : '') + WinnerName() + (IsWinnerCurrentPlayer() ? ')' : ''), style: { color: IsWinnerCurrentPlayer() ? '#00BCD4' : '#FF5722' }"></h1>
         <h3>Your name:</h3>
         <input data-bind="textInput: CurrentPlayerName" placeholder="My name's'">
-        <h5 class="score-count">You have <span data-bind="text: CurrentPlayerWinCount">0</span> wins thus far.</h5>
+        <h5 style="margin-bottom: 0" class="score-count">You have <span data-bind="text: CurrentPlayerWinCount">0</span> wins thus far.</h5>
         <br/>
         <div data-bind='component: { name: "player-list", params: { Players: Players, ExtraPlayersCount: ExtraPlayersCount }}'></div>
         <h3 data-bind="visible: Players().length" style="text-align: center;">
