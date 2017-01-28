@@ -30,9 +30,9 @@ input {
 .player {
     background: #FF5722;
     color: white;
-    padding: 10px;
+    padding: 10px 15px;
     border: 1px solid #BF360C;
-    margin: 10px;
+    margin: 10px 30px;
     position: relative;
 }
 
@@ -160,9 +160,24 @@ input {
 }
 
 .player-win-count {
-    color: #00BCD4;
+    left: -15px;
+    top: 5px;
     position: absolute;
-    left: -66px;
+    color: white;
+}
+
+.player-win-count.mine {
+    left: -30px;
+}
+
+.player-win-count span {
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 3px;
+    bottom: 0;
 }
 
 @media(max-width: 1024px) {

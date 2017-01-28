@@ -10,12 +10,15 @@ $(document).ready(() => {
 
 var RushManager = function () {
     var self = this;
-    self.Players = ko.observableArray();
+    self.Players = ko.observableArray(); //This one filters based on screensize
+    self.AllPlayers = ko.observableArray(); //This one doesnt
     self.ExtraPlayersCount = ko.observable();
     self.CurrentPlayerName = ko.observable('');
     self.CurrentPlayerScore = ko.observable(0);
 
     self.CurrentPlayerName.subscribe(newValue => {
+        if (newValue.length > 50)
+            return;
         localStorage.setItem('currentPlayerName', newValue);
         socket.emit('playerUpdated', JSON.stringify({
             name: self.CurrentPlayerName(),
@@ -128,12 +131,13 @@ var RushManager = function () {
         socket.on('playerlistupdate', players => {
             var allPlayers = (JSON.parse(players).filter(x => x.id != socket.id));
             var maxPlayerCount = (window.innerWidth < 1024) ? 3 : 10;
-            if(allPlayers.length < maxPlayerCount)
+            if (allPlayers.length < maxPlayerCount)
                 maxPlayerCount = allPlayers.length;
             var criteria = self.IsStarted() ? "score" : "winCount";
             var remainingPlayers = allPlayers.sort((a, b) => a[criteria] > b[criteria] ? -1 : 1).slice(0, maxPlayerCount);
             self.ExtraPlayersCount(allPlayers.length - maxPlayerCount);
             self.Players(remainingPlayers);
+            self.AllPlayers(allPlayers);
             var currentPlayerWinCount = JSON.parse(players).find(x => x.id == socket.id).winCount;
             if (currentPlayerWinCount < 1) {
                 var savedWinCount = sessionStorage.getItem('winCount');
@@ -196,7 +200,7 @@ var RushManager = function () {
 
 var Θ = () => {
     let α = document.createRange(),
-    ρ = window.getSelection();
+        ρ = window.getSelection();
     α.selectNodeContents($(`#pageLink`)[0]);
     ρ.removeAllRanges();
     ρ.addRange(α);
@@ -212,21 +216,17 @@ ko.components.register('player-list', {
         this.ExtraPlayersCount = params.ExtraPlayersCount;
     },
     template: `
-          <div style="text-align: center">
-            <div data-bind="foreach: Players().sort((a,b) => { return a.winCount > b.winCount ? -1 : 1 }).slice(0,3)">
+          <div style="text-align: center;">
+            <div data-bind="foreach: Players().sort((a,b) => { return a.winCount > b.winCount ? -1 : 1 })" style="max-height: 250px; overflow: auto">
                 <div class="player">
-                    <i class="player-win-count" style="color: #FF5722">
-                        <span>wins: </span>
-                        <b data-bind="text: winCount"></b>
-                    </i>
+                    <div class="player-win-count" data-bind="visible: winCount > 0">
+                        <span data-bind="text: 'x' + winCount, visible: winCount > 1"></span>
+                        <img style="width: 30px" src="img/winner.png"></span>
+                    </div>
                     <span data-bind="text: name" class="player-name"></span>
                 </div>
             </div>
             <i style="font-size: 12px" data-bind="visible: !Players().length">Looks like nobody's here..</i>
-            <i style="font-size: 12px" data-bind="visible: (Players().length > 3) || (ExtraPlayersCount() > 0)">
-                +<span data-bind="text: ExtraPlayersCount() + (Players().length - 3)">0</span>
-                <span> other player</span><span data-bind="visible: Players().length > 4 || ExtraPlayersCount() > 1">s</span>
-            </i>
             <span id="pageLink" style="opacity: 0; font-size: 1px">http://iuliu.net/whatisthis</span>
             <div style="margin-top: 20px">
                 Invite your friends!

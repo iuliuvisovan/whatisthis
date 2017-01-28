@@ -19,11 +19,17 @@
     <div class="page flex-centered" data-bind="visible: !IsStarted() && !WinnerId() && !SomeoneRageQuit()" style="padding: 15px">
         <h1 style="margin: 0">Hi</h1>
         <h3>Do you have a name?</h3>
-        <input data-bind="textInput: CurrentPlayerName" placeholder="Yes sir. My name is..">
-        <h5 class="score-count">You have <span data-bind="text: CurrentPlayerWinCount">0</span> wins thus far.</h5>
+        <div style="position: relative; text-align: center">
+            <input data-bind="textInput: CurrentPlayerName" maxlength="50" placeholder="Yes sir. My name is..">
+            <div class="player-win-count mine" data-bind="visible: CurrentPlayerWinCount() > 0">
+                <span data-bind="text: 'x' +  CurrentPlayerWinCount(), visible:  CurrentPlayerWinCount() > 1"></span>
+                <img style="width: 30px" src="img/winner.png"></span>
+            </div>
+        </div>
+        <!--<h5 class="score-count">You have <span data-bind="text: CurrentPlayerWinCount">0</span> wins thus far.</h5>-->
         <br/>
         <h3 style="margin-top: 0">Other players:</h3>
-        <div data-bind='component: { name: "player-list", params: { Players: Players, ExtraPlayersCount: ExtraPlayersCount }}'></div>
+        <div data-bind='component: { name: "player-list", params: { Players: AllPlayers, ExtraPlayersCount: ExtraPlayersCount }}'></div>
         <h3 data-bind="visible: Players().length" style="display: none" style="text-align: center;">
             Great. <br/>You can invite more friends or <a href="#" style="color: #FF5722" data-bind="click: Go">start right now</a>.
         </h3>
@@ -33,7 +39,7 @@
         <input data-bind="textInput: CurrentPlayerName" placeholder="My name's'">
         <h5 class="score-count">You have <span data-bind="text: CurrentPlayerWinCount">0</span> wins thus far.</h5>
         <br/>
-        <div data-bind='component: { name: "player-list", params: { Players: Players, ExtraPlayersCount: ExtraPlayersCount }}'></div>
+        <div data-bind='component: { name: "player-list", params: { Players: AllPlayers, ExtraPlayersCount: ExtraPlayersCount }}'></div>
         <h3 data-bind="visible: Players().length" style="text-align: center;">
             Ok. <br/><a href="#" style="color: #FF5722" data-bind="click: Go">Go?</a>
         </h3>
@@ -47,7 +53,7 @@
         <input data-bind="textInput: CurrentPlayerName" placeholder="My name's'">
         <h5 style="margin-bottom: 0" class="score-count">You have <span data-bind="text: CurrentPlayerWinCount">0</span> wins thus far.</h5>
         <br/>
-        <div data-bind='component: { name: "player-list", params: { Players: Players, ExtraPlayersCount: ExtraPlayersCount }}'></div>
+        <div data-bind='component: { name: "player-list", params: { Players: AllPlayers, ExtraPlayersCount: ExtraPlayersCount }}'></div>
         <h3 data-bind="visible: Players().length" style="text-align: center;">
             Wanna <br/><a href="#" style="color: #FF5722" data-bind="click: Go">Go again?</a>
         </h3>
@@ -97,7 +103,7 @@
     <script src="/bower_components/socket.io-client/dist/socket.io.js"></script>
     <script src="/bower_components/knockout/dist/knockout.debug.js"></script>
     <script src="/js/levenstein.js"></script>
-    <script src="/js/whatisthis-client.js?v=28jan2017"></script>
+    <script src="/js/whatisthis-client.js?v=28JAN2017"></script>
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
