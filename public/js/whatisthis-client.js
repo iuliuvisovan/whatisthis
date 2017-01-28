@@ -11,6 +11,7 @@ $(document).ready(() => {
 var RushManager = function () {
     var self = this;
     self.Players = ko.observableArray();
+    self.ExtraPlayersCount = ko.observable();
     self.CurrentPlayerName = ko.observable('');
     self.CurrentPlayerScore = ko.observable(0);
 
@@ -125,7 +126,12 @@ var RushManager = function () {
         }
 
         socket.on('playerlistupdate', players => {
-            self.Players(JSON.parse(players).filter(x => x.id != socket.id));
+            var allPlayers = (JSON.parse(players).filter(x => x.id != socket.id));
+            var maxPlayerCount = (window.innerWidth < 1024) ? 3 : 10;
+            var criteria = self.IsStarted() ? "score" : "winCount";
+            var remainingPlayers = allPlayers.sort((a, b) => a[criteria] > b[criteria] ? -1 : 1).slice(0, maxPlayerCount);
+            self.ExtraPlayersCount(allPlayers.length - maxPlayerCount);
+            self.Players(remainingPlayers);
             var currentPlayerWinCount = JSON.parse(players).find(x => x.id == socket.id).winCount;
             if (currentPlayerWinCount < 1) {
                 var savedWinCount = sessionStorage.getItem('winCount');
@@ -189,16 +195,24 @@ var RushManager = function () {
 ko.components.register('player-list', {
     viewModel: function (params) {
         this.Players = params.Players;
+        this.ExtraPlayersCount = params.ExtraPlayersCount;
     },
     template: `
-        <div data-bind="foreach: Players().sort((a,b) => { return a.winCount > b.winCount ? -1 : 1 })">
-            <div class="player">
-                <i class="player-win-count" style="color: #FF5722">
-                    <span>wins: </span>
-                    <b data-bind="text: winCount"></b>
-                </i>
-                <span data-bind="text: name" class="player-name"></span>
+          <div style="text-align: center">
+            <div data-bind="foreach: Players().sort((a,b) => { return a.winCount > b.winCount ? -1 : 1 }).slice(0,3)">
+                <div class="player">
+                    <i class="player-win-count" style="color: #FF5722">
+                        <span>wins: </span>
+                        <b data-bind="text: winCount"></b>
+                    </i>
+                    <span data-bind="text: name" class="player-name"></span>
+                </div>
             </div>
+            <i style="font-size: 12px" data-bind="visible: !Players().length">Looks like nobody's here..</i>
+            <i style="font-size: 12px" data-bind="visible: Players().length > 3">
+                +<span data-bind="text: ExtraPlayersCount() + (Players().length - 3)">0</span>
+                <span> other player</span><span data-bind="visible: Players().length > 4">s</span>
+            </i>
         </div>
-        <i style="font-size: 12px" data-bind="visible: !Players().length">Looks like nobody's here..</i>`
+        `
 });

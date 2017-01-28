@@ -5,6 +5,7 @@ body {
 }
 
 .flex-centered {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +110,7 @@ input {
 .nope {
     position: absolute;
     width: 171px;
-    top: 268px;
+    top: 60%;
     color: #F44336;
     background: rgba(255, 255, 255, 0.7);
     padding: 5px;
@@ -149,6 +150,36 @@ input {
 
 .player-win-count {
     color: #00BCD4;
-        position: absolute;
+    position: absolute;
     left: -66px;
+}
+
+@media(max-width: 1024px) {
+    .player-progress {
+        margin: 0;
+        border: 0;
+        height: 17px;
+        padding: 0;
+    }
+    #h3WhatIsThis {
+        margin-top: -345px;
+        font-size: 15px;
+    }
+    .nope {
+        /*top: 235px;*/
+        font-size: 12px;
+    }
+}
+
+.other-players {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+    right: 0;
+    bottom: 0;
+    height: 0px;
+    color: #bbb;
+    font-style: italic;
+    z-index: -1;
 }

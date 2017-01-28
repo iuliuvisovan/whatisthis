@@ -1,5 +1,24 @@
 (function (exports) {
-    exports.isLevenshteinMatch = function (s1, s2) {
+    exports.isLevenshteinMatch = function (guessedValue, correctValue) {
+        var isMatch = false;
+        var guessedWords = guessedValue.split(" "); //Check individual words
+        guessedWords.push(guessedValue); //Also check the entire word
+        guessedWords.forEach((s1) => {
+            var longer = s1;
+            var shorter = correctValue;
+            if (s1.length < correctValue.length) {
+                longer = correctValue;
+                shorter = s1;
+            }
+            var longerLength = longer.length;
+            if (longerLength == 0) {
+                return 1.0;
+            }
+            if (((longerLength - editDistance(longer, shorter)) / parseFloat(longerLength)) > 0.7)
+                isMatch = true;
+        });
+        return isMatch;
+
         function editDistance(s1, s2) {
             s1 = s1.toLowerCase().trim();
             s2 = s2.toLowerCase().trim();
@@ -26,17 +45,5 @@
             }
             return costs[s2.length];
         }
-        var longer = s1;
-        var shorter = s2;
-        if (s1.length < s2.length) {
-            longer = s2;
-            shorter = s1;
-        }
-        var longerLength = longer.length;
-        if (longerLength == 0) {
-            return 1.0;
-        }
-        return ((longerLength - editDistance(longer, shorter)) / parseFloat(longerLength)) > 0.7;
     }
-
 })(typeof exports === 'undefined' ? this['stringMatcher'] = {} : exports);

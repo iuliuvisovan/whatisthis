@@ -23,7 +23,7 @@
         <h5 class="score-count">You have <span data-bind="text: CurrentPlayerWinCount">0</span> wins thus far.</h5>
         <br/>
         <h3 style="margin-top: 0">Other players:</h3>
-        <div data-bind='component: { name: "player-list", params: { Players: Players }}'></div>
+        <div data-bind='component: { name: "player-list", params: { Players: Players, ExtraPlayersCount: ExtraPlayersCount }}'></div>
         <h3 data-bind="visible: Players().length" style="text-align: center;">
             Great. <br/>You can wait invite more friends or <a href="#" style="color: #FF5722" data-bind="click: Go">start right now</a>.
         </h3>
@@ -33,7 +33,7 @@
         <input data-bind="textInput: CurrentPlayerName" placeholder="My name's'">
         <h5 class="score-count">You have <span data-bind="text: CurrentPlayerWinCount">0</span> wins thus far.</h5>
         <br/>
-        <div data-bind='component: { name: "player-list", params: { Players: Players }}'></div>
+        <div data-bind='component: { name: "player-list", params: { Players: Players, ExtraPlayersCount: ExtraPlayersCount }}'></div>
         <h3 data-bind="visible: Players().length" style="text-align: center;">
             Ok. <br/><a href="#" style="color: #FF5722" data-bind="click: Go">Go?</a>
         </h3>
@@ -47,7 +47,7 @@
         <input data-bind="textInput: CurrentPlayerName" placeholder="My name's'">
         <h5 class="score-count">You have <span data-bind="text: CurrentPlayerWinCount">0</span> wins thus far.</h5>
         <br/>
-        <div data-bind='component: { name: "player-list", params: { Players: Players }}'></div>
+        <div data-bind='component: { name: "player-list", params: { Players: Players, ExtraPlayersCount: ExtraPlayersCount }}'></div>
         <h3 data-bind="visible: Players().length" style="text-align: center;">
             Wanna <br/><a href="#" style="color: #FF5722" data-bind="click: Go">Go again?</a>
         </h3>
@@ -66,12 +66,15 @@
                     <div data-bind="style: { width: ((CurrentPlayerScore() * 11) + 10) + '%'}" class="progress"></div>
                     <h3 class="player-progress-name" data-bind="text: 'You (' + (CurrentPlayerName() || 'no name yet') + ')'">You</h3>
                 </div>
-                <!-- ko foreach: Players -->
+                <!-- ko foreach: Players-->
                 <div class="player-progress" data-bind="attr: { 'data-playerid': id }">
                     <div data-bind="style: { width: ((score * 11) + 10) + '%' }" class="progress"></div>
                     <h3 class="player-progress-name" data-bind="text: name"></h3>
                 </div>
                 <!-- /ko -->
+                <div class="other-players" data-bind="visible: ExtraPlayersCount() > 0">
+                    +<span data-bind="text: ExtraPlayersCount()">0</span> <span>other player</span><span data-bind="visible: ExtraPlayersCount() > 1">s</span>
+                </div>
             </div>
             <div class="nope" data-bind="visible: CurrentCorrectAnswer().length">
                 Nope, Google says that was <span style="text-shadow: 1px 1px rgba(0,0,0,0.4);" data-bind="text: '\'' + CurrentCorrectAnswer() + '\''"></span>.
@@ -79,15 +82,15 @@
             <div class="question-image-wrapper">
                 <img id="questionImage" class="question-image" data-bind="attr: { src: CurrentQuestion }" /><br/>
             </div>
-            <div style="display: flex;justify-content: space-between; align-items: center; margin: 212px 5px 0 0px">
-                <h3 id="h3WhatIsThis" style="margin: 0; background: transparent; color: #FF5722; padding: 6px; margin-top: -418px; text-shadow: 1px 1px 2px white;">What is this?</h3>
+            <div style="display: flex;justify-content: space-between; align-items: center; margin: 185px 3px 0 0px">
+                <h3 id="h3WhatIsThis" style="margin: 0; background: transparent; color: #FF5722; padding: 6px; margin-top: -378px; text-shadow: 1px 1px 2px white;">What is this?</h3>
                 <input id="inputCurrentAnswer" autofocus placeholder="Your answer here..." onkeydown="event.keyCode == 13 && manager.SendAnswer()"
                     data-bind="textInput: CurrentAnswer" />
             </div>
         </div>
     </div>
     <div data-bind="foreach: PrecachedImages" style="display: none">
-        <img data-bind="attr: { src: $data }"/>
+        <img data-bind="attr: { src: $data }" />
     </div>
     <input type="hidden" id="nToken" value="3/4,5,7/645-432-651" />
     <script src="/bower_components/jquery/dist/jquery.js"></script>
