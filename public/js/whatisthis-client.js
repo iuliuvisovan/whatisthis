@@ -217,7 +217,7 @@ ko.components.register('player-list', {
     },
     template: `
           <div style="text-align: center;">
-            <div style="display: none" data-bind="foreach: Players().sort((a,b) => { return a.winCount > b.winCount ? -1 : 1 }), visible: Players().length" style="max-height: 250px; overflow: auto">
+            <div style="display: none; max-height: 185px; overflow: auto" data-bind="foreach: Players().sort((a,b) => { return a.winCount > b.winCount ? -1 : 1 }), visible: Players().length" style="max-height: 250px; overflow: auto">
                 <div class="player">
                     <div class="player-win-count" data-bind="visible: winCount > 0">
                         <span data-bind="text: 'x' + winCount, visible: winCount > 1"></span>
