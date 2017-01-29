@@ -229,7 +229,7 @@ ko.components.register('player-list', {
             <i style="font-size: 12px" data-bind="visible: !Players().length">Looks like you're alone here..</i>
             <span id="pageLink" style="opacity: 0; font-size: 1px">http://iuliu.net/whatisthis</span>
             <div style="margin-top: 20px">
-                Invite your friends🙃!
+                Invite your friends<img style="width: 26px; margin: -8px 2px;" src="img/emojis/invitefriends.png"/>!
                 <div id="C" onclick="Θ()">
                     Copy link
                     <span>✓</span>
