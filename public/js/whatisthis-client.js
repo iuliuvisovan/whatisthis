@@ -226,10 +226,10 @@ ko.components.register('player-list', {
                     <span data-bind="text: name" class="player-name"></span>
                 </div>
             </div>
-            <i style="font-size: 12px" data-bind="visible: !Players().length">Looks like nobody's here..</i>
+            <i style="font-size: 12px" data-bind="visible: !Players().length">Looks like you're alone here..</i>
             <span id="pageLink" style="opacity: 0; font-size: 1px">http://iuliu.net/whatisthis</span>
             <div style="margin-top: 20px">
-                Invite your friends!
+                Invite your friends🙃!
                 <div id="C" onclick="Θ()">
                     Copy link
                     <span>✓</span>

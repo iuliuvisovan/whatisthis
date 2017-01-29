@@ -11,14 +11,14 @@
     <meta name="author" content="Iuliu Vișovan">
     <meta name="theme-color" content="#FF5722">
     <link rel="stylesheet" href="css/styles.css">
-    <link id="favicon" rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link id="favicon" rel="icon" href="img/favicon.png?v=3" type="image/png" sizes="16x16">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
 <body>
     <div class="page flex-centered" data-bind="visible: !IsStarted() && !WinnerId() && !SomeoneRageQuit()" style="padding: 15px">
-        <h1 style="margin: 0">Hi</h1>
-        <h3>Do you have a name?</h3>
+        <img style="width: 150px;" src="img/designs/logo_blue.png" />
+        <h3>Hi! Got a name?</h3>
         <div style="position: relative; text-align: center">
             <input data-bind="textInput: CurrentPlayerName" maxlength="50" placeholder="Yes sir. My name is..">
             <div style="display: none" class="player-win-count mine" data-bind="visible: CurrentPlayerWinCount() > 0">
@@ -30,11 +30,12 @@
         <h3 style="margin-top: 0">Other players:</h3>
         <div data-bind='component: { name: "player-list", params: { Players: AllPlayers, ExtraPlayersCount: ExtraPlayersCount }}'></div>
         <h3 data-bind="visible: Players().length" style="display: none" style="text-align: center;">
-            Great. <br/>You can invite more friends or <a href="#" style="color: #FF5722" data-bind="click: Go">start right now</a>.
+            Awesome. <br/>You can invite more friends or <a href="#" style="color: #FF5722" data-bind="click: Go">start right now</a>.
         </h3>
     </div>
     <div class="page flex-centered" data-bind="visible: !IsStarted() && !WinnerId() && SomeoneRageQuit()" style="padding: 15px; display: none">
-        <h1 style="text-align: center">Your opponent left,<br/> game can't continue :(</h1>
+        <img style="width: 100px;" src="img/designs/logo_blue.png" />
+        <h2 style="text-align: center">Your opponent left 😕</h1>
         <h3>What's your name?</h3>
         <div style="position: relative; text-align: center">
             <input data-bind="textInput: CurrentPlayerName" maxlength="50" placeholder="My name's">
@@ -50,9 +51,10 @@
         </h3>
     </div>
     <div class="page flex-centered" data-bind="visible: !IsStarted() && WinnerId() && !SomeoneRageQuit()" style="padding: 15px; display: none">
-        <h1>Game over!</h1>
+        <img style="width: 100px;" data-bind="attr: { src: 'img/designs/logo_' + (IsWinnerCurrentPlayer() ? 'blue.png' : 'orange.png')}" />
+        <h1>Game over!<span data-bind="text: IsWinnerCurrentPlayer() ? '😀' : '😣'"></span> </h1>
         <h3 style="margin: 0">Winner:</h3>
-        <h1 style="margin-bottom: 0;color: rgb(0, 188, 212);" data-bind="visible: IsWinnerCurrentPlayer()">You!</h1>
+        <h1 style="margin: 0;color: rgb(0, 188, 212);" data-bind="visible: IsWinnerCurrentPlayer()">You!</h1>
         <h1 style="margin-top: 0" data-bind="text: (IsWinnerCurrentPlayer() ? '(' : '') + WinnerName() + (IsWinnerCurrentPlayer() ? ')' : ''), style: { color: IsWinnerCurrentPlayer() ? '#00BCD4' : '#FF5722' }"></h1>
         <h3>Your name:</h3>
         <div style="position: relative; text-align: center">
