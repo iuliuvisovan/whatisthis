@@ -853,7 +853,7 @@ Bill gates
 Steve jobs
 Snoop dogg
 Kanye west
-Kim kardashiam
+Kim kardashian
 Drake
 skrillex
 Lil wayne
@@ -948,7 +948,7 @@ Spider
 Dota 2
 Ping pong
 Cricket
-Voleyball
+Volleyball
 Sims
 Shrek
 Donkey
@@ -956,3 +956,81 @@ Fork
 Spoon
 Teaspoon
 Ceiling
+Batman
+Superman
+Spiderman
+Zombie
+Sponge
+Spongebob
+Milky way
+Pineapple
+Monopoly
+Puzzle
+Credit card
+Puma
+Nemo
+Shark
+Jelly fish
+Vocabulary
+Lavender
+Bubble
+Alien
+Spaceship
+Butter
+Butterly
+Hummingbird
+Rainbow
+Glitter
+Seed
+Bamboo
+Panda
+Husky
+Barbie
+Surfing
+Coconut
+Pig
+Scuba diving
+Cowboy
+Macaron
+Sled
+Chimney
+Huawei
+Vodka
+Iceberg
+Pitbull
+Bull
+Red bull
+Dollar
+Ruler
+Pencil case
+Bookmark
+Sword
+Armor
+Broom
+Duster
+Rolling pin
+Corkscrew
+Bulldozer
+Rug
+Hut
+Jam
+Kite
+Igloo
+Yacht
+Goose
+Almond
+Stork
+Bob marley
+Avengers
+lincoln
+Bow
+Bowtie
+Chameleon
+Toothbrush
+Joker
+Poker
+Microphone
+Rocking chair
+Minions
+Fifa
+Pacifier
