@@ -234,7 +234,6 @@ casette
 ballet
 starfish
 ash
-wires
 valley
 whiskey
 yellow
@@ -334,7 +333,6 @@ Lithuania
 Luxembourg
 Macedonia
 Malta
-Moldova
 Monaco
 Montenegro
 Netherlands
@@ -880,7 +878,6 @@ hungary
 Norway
 Sphinx
 Pyramid
-The great wall
 Taj mahal
 Big ben
 Tower of pisa

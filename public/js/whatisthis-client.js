@@ -162,7 +162,7 @@ var RushManager = function () {
             }, 0);
         });
         socket.on('imagesPrecache', (images) => {
-            self.PrecachedImages(JSON.parse(images));
+            self.PrecachedImages(JSON.parse(images).reverse());
         });
         socket.on('questionArrived', (question) => {
             self.CurrentQuestion(JSON.parse(question).question);
@@ -174,11 +174,16 @@ var RushManager = function () {
             var img = new Image();
             img.addEventListener('load', () => {
                 self.LoadingNextImage(false);
+                img.sucessfullyLoaded = true;
             }, false);
             img.addEventListener('error', () => {
                 self.SendAnswer(true);
             }, false);
             img.src = JSON.parse(question).question;
+            setTimeout(() => {
+                if(!img.sucessfullyLoaded)
+                    
+            }, 1000);
             photo.src = img.src;
         });
         socket.on('go', () => {
