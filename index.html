@@ -1,8 +1,5 @@
-<!doctype html>
-<html lang="en">
-
 <head>
-    <title>whatisthis</title>
+  <title>whatisthis</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -10,128 +7,11 @@
     <meta name="description" content="do you think like google">
     <meta name="author" content="Iuliu Vișovan">
     <meta name="theme-color" content="#FF5722">
-    <link rel="stylesheet" href="css/styles.css">
-    <link id="favicon" rel="icon" href="img/favicon.png?v=3" type="image/png" sizes="16x16">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link id="favicon" rel="icon" href="favicon.png?v=2" type="image/png" sizes="16x16">
 </head>
 
-<body>
-    <div class="page flex-centered" data-bind="visible: !IsStarted() && !WinnerId() && !SomeoneRageQuit()" style="padding: 15px">
-        <img class="logo" style="width: 150px;" src="img/designs/logo_blue.png" />
-        <h3>Hi! Got a name?</h3>
-        <div style="position: relative; text-align: center">
-            <input data-bind="textInput: CurrentPlayerName" maxlength="50" placeholder="Yes sir. My name is..">
-            <div style="display: none" class="player-win-count mine" data-bind="visible: CurrentPlayerWinCount() > 0">
-                <span data-bind="text: 'x' +  CurrentPlayerWinCount(), visible:  CurrentPlayerWinCount() > 1"></span>
-                <img style="width: 30px" src="img/winner.png"></span>
-            </div>
-        </div>
-        <br/>
-        <h3 style="margin-top: 0">Other players:</h3>
-        <div data-bind='component: { name: "player-list", params: { Players: AllPlayers, ExtraPlayersCount: ExtraPlayersCount }}'></div>
-        <h3 data-bind="visible: Players().length" style="display: none" style="text-align: center;">
-            Awesome. <br/>You can invite more friends or <a href="#" style="color: #FF5722" data-bind="click: Go">start right now</a>.
-        </h3>
-    </div>
-    <div class="page flex-centered" data-bind="visible: !IsStarted() && !WinnerId() && SomeoneRageQuit()" style="padding: 15px; display: none">
-        <img style="width: 100px;" src="img/designs/logo_blue.png" />
-        <h2 style="text-align: center">Your opponent left <img style="width: 35px; margin: -8px 2px;" src="img/emojis/youropponentleft.PNG"></h1>
-        <h3>What's your name?</h3>
-        <div style="position: relative; text-align: center">
-            <input data-bind="textInput: CurrentPlayerName" maxlength="50" placeholder="My name's">
-            <div class="player-win-count mine" data-bind="visible: CurrentPlayerWinCount() > 0">
-                <span data-bind="text: 'x' +  CurrentPlayerWinCount(), visible:  CurrentPlayerWinCount() > 1"></span>
-                <img style="width: 30px" src="img/winner.png"></span>
-            </div>
-        </div>
-        <br/>
-        <div data-bind='component: { name: "player-list", params: { Players: AllPlayers, ExtraPlayersCount: ExtraPlayersCount }}'></div>
-        <h3 data-bind="visible: Players().length" style="text-align: center;">
-            Ok. <br/><a href="#" style="color: #FF5722" data-bind="click: Go">Go?</a>
-        </h3>
-    </div>
-    <div class="page flex-centered" data-bind="visible: !IsStarted() && WinnerId() && !SomeoneRageQuit()" style="padding: 15px; display: none">
-        <img style="width: 100px;" data-bind="attr: { src: 'img/designs/logo_' + (IsWinnerCurrentPlayer() ? 'blue.png' : 'orange.png')}" />
-        <h1>Game over!<img style="width: 35px; margin: -5px 5px;" data-bind="attr: { src: 'img/emojis/game' + (IsWinnerCurrentPlayer() ? 'won.PNG' : 'lost.PNG')}" /> </h1>
-        <h3 style="margin: 0">Winner:</h3>
-        <h1 style="margin: 0;color: rgb(0, 188, 212);" data-bind="visible: IsWinnerCurrentPlayer()">You!</h1>
-        <h1 style="margin-top: 0" data-bind="text: (IsWinnerCurrentPlayer() ? '(' : '') + WinnerName() + (IsWinnerCurrentPlayer() ? ')' : ''), style: { color: IsWinnerCurrentPlayer() ? '#00BCD4' : '#FF5722' }"></h1>
-        <h3>Your name:</h3>
-        <div style="position: relative; text-align: center">
-            <input data-bind="textInput: CurrentPlayerName" maxlength="50" placeholder="My name's">
-            <div class="player-win-count mine" data-bind="visible: CurrentPlayerWinCount() > 0">
-                <span data-bind="text: 'x' +  CurrentPlayerWinCount(), visible:  CurrentPlayerWinCount() > 1"></span>
-                <img style="width: 30px" src="img/winner.png"></span>
-            </div>
-        </div>
-        <br/>
-        <div data-bind='component: { name: "player-list", params: { Players: AllPlayers, ExtraPlayersCount: ExtraPlayersCount }}'></div>
-        <h3 data-bind="visible: Players().length" style="text-align: center;">
-            Wanna <br/><a href="#" style="color: #FF5722" data-bind="click: Go">Go again?</a>
-        </h3>
-    </div>
-    <div style="display: none" class="flex-centered" data-bind="visible: IsStarted() && !WinnerId()">
-        <div data-bind="visible: Loading">
-            <h3>Ready?</h3>
-            <h1 style="text-align: center" data-bind="text: CountDownSeconds">Ready?</h1>
-        </div>
-        <div data-bind="visible: !Loading()" style="text-align: center; width: 100%">
-            <div class="progress-area">
-                <div class="loading-next-image" data-bind="visible: LoadingNextImage">
-                    <img src="http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif" />
-                </div>
-                <div class="player-progress my-progress">
-                    <div data-bind="style: { width: ((CurrentPlayerScore() * 11) + 10) + '%'}" class="progress"></div>
-                    <h3 class="player-progress-name" data-bind="text: 'You (' + (CurrentPlayerName() || 'no name yet') + ')'">You</h3>
-                </div>
-                <!-- ko foreach: Players-->
-                <div class="player-progress" data-bind="attr: { 'data-playerid': id }">
-                    <div data-bind="style: { width: ((score * 11) + 10) + '%' }" class="progress"></div>
-                    <h3 class="player-progress-name" data-bind="text: name"></h3>
-                </div>
-                <!-- /ko -->
-                <div class="other-players" data-bind="visible: ExtraPlayersCount() > 0">
-                    +<span data-bind="text: ExtraPlayersCount()">0</span> <span>other player</span><span data-bind="visible: ExtraPlayersCount() > 1">s</span>
-                </div>
-            </div>
-            <div class="nope" data-bind="visible: CurrentCorrectAnswer().length">
-                Nope, Google says that was <span style="text-shadow: 1px 1px rgba(0,0,0,0.4);" data-bind="text: '\'' + CurrentCorrectAnswer() + '\''"></span>.
-            </div>
-            <div class="question-image-wrapper">
-                <img id="questionImage" class="question-image" data-bind="attr: { src: CurrentQuestion }" /><br/>
-            </div>
-            <div style="display: flex;justify-content: space-between; align-items: center; margin: 185px 3px 0 0px">
-                <h3 id="h3WhatIsThis" style="margin: 0; background: transparent; color: #FF5722; padding: 6px; margin-top: -378px; text-shadow: 1px 1px 2px white;">What is this?</h3>
-                <input id="inputCurrentAnswer" autofocus placeholder="Your answer here..." onkeydown="event.keyCode == 13 && manager.SendAnswer()"
-                    data-bind="textInput: CurrentAnswer" />
-            </div>
-        </div>
-    </div>
-    <div data-bind="foreach: PrecachedImages" style="display: none">
-        <img data-bind="attr: { src: $data }" />
-    </div>
-    <input type="hidden" id="nToken" value="3/4,5,7/645-432-651" />
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/socket.io-client/dist/socket.io.js"></script>
-    <script src="/bower_components/knockout/dist/knockout.debug.js"></script>
-    <script src="/js/levenstein.js"></script>
-    <script src="/js/whatisthis-client.js?v=30jan2017"></script>
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-63838941-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+<body style="margin: 0; overflow-x: hidden">
+    <iframe style="width: 100%; height: 100vh; border: none" src="https://doyouthinklikegoogle.herokuapp.com/">
+        <p>Your browser does not support iframes.</p>
+    </iframe>
 </body>
-
-</html>
