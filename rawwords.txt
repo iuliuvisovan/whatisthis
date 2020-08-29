@@ -827,7 +827,7 @@ z
 tie
 Adult
 The beatles
-ac/dc
+acdc
 Twitter
 suzuki
 scratch
