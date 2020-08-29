@@ -192,6 +192,8 @@ const downloadImages = async () => {
     x.imageUrlBroken = x.imageUrl;
     x.imageUrl = undefined;
     x.word = x.word.toLowerCase();
+    x.imageUrl = x.word.toLowerCase();
+    x.localImageUrl = `/img/guessable/${x.word}.jpg`;
   });
 
   await Promise.all(
@@ -215,18 +217,18 @@ const downloadImages = async () => {
 const downloadImageToLocal = async (word, isSecondAttempt) => {
   const targetPath = `${__dirname}/public/img/guessable/${word.word}.jpg`;
 
-  // if (fs.existsSync(targetPath)) {
-  //   fs.rename(targetPath, targetPath.toLowerCase(), function (err) {
-  //     if (err) {
-  //       console.log("ERROR: " + err);
-  //     } else {
-  //       console.log("Renamed: " + targetPath);
-  //     }
-  //   });
-  //   // console.log("Skipping download for word: " + word.word);
+  if (fs.existsSync(targetPath)) {
+    fs.rename(targetPath, targetPath.toLowerCase(), function (err) {
+      if (err) {
+        console.log("ERROR: " + err);
+      } else {
+        console.log("Renamed: " + targetPath);
+      }
+    });
+    // console.log("Skipping download for word: " + word.word);
 
-  //   return targetPath;
-  // }
+    return targetPath;
+  }
 
   console.log("Beginning download for word: " + word.word);
 
