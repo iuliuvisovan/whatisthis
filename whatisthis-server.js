@@ -22,7 +22,7 @@ var googleClient;
 module.exports = {
   init: (io) => {
     // setWordImages();
-    // downloadImages();
+    downloadImages();
     io.on("connection", (socket) => {
       players.push({
         id: socket.id,

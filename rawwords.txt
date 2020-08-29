@@ -1,4 +1,3 @@
-
 colosseum
 johnny depp
 schwarzenegger
@@ -923,7 +922,6 @@ scarf
 theatre
 crib
 lawn mower
-
 jesus christ
 god
 napoleon
