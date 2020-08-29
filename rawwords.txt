@@ -1,134 +1,134 @@
 
-Colosseum
-Johnny depp
+colosseum
+johnny depp
 schwarzenegger
 dicaprio
-Brad pitt
-Morgan freeman
-Will smith
-Zuckerberg
-Adele
-Apricot
-Aspargus
-Aubergine
-Avocado
-Banana
-Condom
-Broccoli
-Carrot
-Clementine
-Garlic
-Grape
-Honeydew
-Kiwi
-Lemon
-Mango
-Melon
-Mushroom
-Nectarine
-Nut
-Cauliflower
-Cabbage
-Corn
+brad pitt
+morgan freeman
+will smith
+zuckerberg
+adele
+apricot
+aspargus
+aubergine
+avocado
+banana
+condom
+broccoli
+carrot
+clementine
+garlic
+grape
+honeydew
+kiwi
+lemon
+mango
+melon
+mushroom
+nectarine
+nut
+cauliflower
+cabbage
+corn
 nettle
 mint
-Olive
-Pea
-Peanut
-Pear
-Pepper
-Pineapple
-Pumpkin
-Radish
-Raisin
-Strawberry
+olive
+pea
+peanut
+pear
+pepper
+pineapple
+pumpkin
+radish
+raisin
+strawberry
 watermelon
 tomato
-Merkel
-Obama
-Michael jackson
-Michael Schumacher
-Valentino Rossi
-Freezer
-Fire extinguisher
-Paris Hilton
-Sebastian Vettel
-Hamilton
-Massa
-Alonso
-Zac Efron
-Jim Parsons
-Nail
-Sock
-IKEA
-Nissan
-Chevrolet
-PayPal
-Lidl
-Kaufland
-Ebay
-Opel
-Mitsubishi
-Android
-Windows
-Microsoft
-Google
-Apple
-Samsung
-Amazon
-Microsoft
-Walmart
-Tesco
+merkel
+obama
+michael jackson
+michael schumacher
+valentino rossi
+freezer
+fire extinguisher
+paris hilton
+sebastian vettel
+hamilton
+massa
+alonso
+zac efron
+jim parsons
+nail
+sock
+ikea
+nissan
+chevrolet
+paypal
 lidl
-Vodafone
-Facebook
-Mercedes
-Disney
-Starbucks
-HP
-BMW
-Kobe Bryant
-Djokovic
-Federer
-Nadal
-Williams
-Lebron James
-Pele
-Javascript
-Monitor
-HTML
-Robot
-Laser
-Hair
-Moustache
-Beard
-Eyebrows
-Eyelashes
+kaufland
+ebay
+opel
+mitsubishi
+android
+windows
+microsoft
+google
+apple
+samsung
+amazon
+microsoft
+walmart
+tesco
+lidl
+vodafone
+facebook
+mercedes
+disney
+starbucks
+hp
+bmw
+kobe bryant
+djokovic
+federer
+nadal
+williams
+lebron james
+pele
+javascript
+monitor
+html
+robot
+laser
+hair
+moustache
+beard
+eyebrows
+eyelashes
 earrings
-Donut
-Pizza
-KFC
-McDonalds
-Burger King
-Burger
-Sandwich
-Adidas
-Nike
-Suit
-Tie
-Maradona
-Zidane
-Di Stefano
-Ronaldinho
-David Beckham
-Victoria Beckham
-Shakira
-Madonna
-Ibrahimovic
-Kaka
-Cristiano Ronaldo
-Messi
-Rooney
+donut
+pizza
+kfc
+mcdonalds
+burger king
+burger
+sandwich
+adidas
+nike
+suit
+tie
+maradona
+zidane
+di stefano
+ronaldinho
+david beckham
+victoria beckham
+shakira
+madonna
+ibrahimovic
+kaka
+cristiano ronaldo
+messi
+rooney
 cat
 house
 mouse
@@ -149,22 +149,22 @@ sunshine
 jeans
 bread
 cfr cluj
-Steaua
+steaua
 forehead
 dinamo
-Justin bieber
-Selena gomez
-Donald trump
-Niagara falls
-Rushmore
-The grand canyon
-The pope
-Sydney opera
+justin bieber
+selena gomez
+donald trump
+niagara falls
+rushmore
+the grand canyon
+the pope
+sydney opera
 iași
 eiffel tower
 world trade center
 ninja
-Samurai
+samurai
 einstein
 clothes
 tupac
@@ -280,10 +280,10 @@ cookie
 ham
 plate
 boat
-Oil
-Butterfly
-Grasshopper
-Mosquito
+oil
+butterfly
+grasshopper
+mosquito
 
 rain
 butcher
@@ -296,72 +296,72 @@ train
 steam
 coffee
 bucket
-Basketball
-United states
-Canada
-Mexico
-Brazil
-Argentina
-Chile
-Venezuela
-Colombia
-Albania
-Andorra
-Austria
-Belarus
-Belgium
-Bosnia and Herzegovina
-Bulgaria
-Croatia
-Cyprus
-Czech Republic
-Denmark
-Estonia
-Finland
-France
-Georgia
-Germany
-Greece
-Hungary
-Iceland
-Ireland
-Italy
-Kazakhstan
-Latvia
-Lithuania
-Luxembourg
-Macedonia
-Malta
-Monaco
-Montenegro
-Netherlands
-Norway
-Poland
-Portugal
-Romania
-Algeria
-Australia
-New zealand
-South korea
-North korea
+basketball
+united states
+canada
+mexico
+brazil
+argentina
+chile
+venezuela
+colombia
+albania
+andorra
+austria
+belarus
+belgium
+bosnia and herzegovina
+bulgaria
+croatia
+cyprus
+czech republic
+denmark
+estonia
+finland
+france
+georgia
+germany
+greece
+hungary
+iceland
+ireland
+italy
+kazakhstan
+latvia
+lithuania
+luxembourg
+macedonia
+malta
+monaco
+montenegro
+netherlands
+norway
+poland
+portugal
+romania
+algeria
+australia
+new zealand
+south korea
+north korea
 india
-Egypt
-Russia
-China
-Japan
+egypt
+russia
+china
+japan
 dubai
-Russia
-San Marino
-Serbia
-Slovakia
-Slovenia
-Spain
-Sweden
-Switzerland
-Turkey
-Ukraine
-United Kingdom
-Vatican
+russia
+san marino
+serbia
+slovakia
+slovenia
+spain
+sweden
+switzerland
+turkey
+ukraine
+united kingdom
+vatican
 honey
 pie
 frame
@@ -382,9 +382,9 @@ tv
 ice cream
 candy
 nail polish
-Moon
-Mercury
-Venus
+moon
+mercury
+venus
 
 universe
 hijab
@@ -426,20 +426,20 @@ stingray
 steve irwin
 seahorse
 vuvuzela
-Bank
+bank
 walrus
-Bench
-Aligator
-Bear
-Bat
-Camel
-Eagle
-Frog
-Fox
-Gorilla
-Monkey
-Owl
-Penguin
+bench
+aligator
+bear
+bat
+camel
+eagle
+frog
+fox
+gorilla
+monkey
+owl
+penguin
 snake
 bridge
 sculpture
@@ -501,13 +501,13 @@ message
 heart
 recipe
 highway
-Currency
+currency
 classroom
 football
 hotel
 bath
 construction
-Elevator
+elevator
 mall
 reflection
 refrigerator
@@ -531,12 +531,12 @@ river
 village
 warning
 chest
-Chocolate
-Caterpillar
+chocolate
+caterpillar
 desk
 garbage
 insect
-Piano
+piano
 ant
 potato
 salad
@@ -549,20 +549,20 @@ beer
 birthday
 passenger
 pizza
-Shirt
+shirt
 money
 game
-Air
+air
 field
 back
-Hand
-Canon
-Xbox
-Playstation
-Dove
+hand
+canon
+xbox
+playstation
+dove
 youtube
 book
-Market
+market
 letter
 radio
 price
@@ -575,23 +575,23 @@ board
 garden
 space
 weather
-Earth
-Neptune
-Monday
-Tuesday
-Wednesday
-Thursday
-Firday
-Saturday
+earth
+neptune
+monday
+tuesday
+wednesday
+thursday
+firday
+saturday
 sunday
-Mars
-Jupiter
-Saturn
+mars
+jupiter
+saturn
 uranus
 chicken
 rock
 dog
-Scale
+scale
 razor
 sun
 eyes
@@ -718,7 +718,7 @@ farm
 horse
 mountain
 nail
-Race
+race
 shoulder
 smoke
 stomach
@@ -731,14 +731,14 @@ border
 branch
 chips
 coach
-Floor
+floor
 helicopter
 golf
 iron
 judge
 knife
-Landscape
-Jar
+landscape
+jar
 socket
 mail
 pool
@@ -800,59 +800,59 @@ round
 slide
 digging
 hunting
-Survey
-A
-B
-C
-D
-E
-F
-I
-J
-L
-M
-N
-O
-P
-Q
-R
-S
-T
-U
-V
-W
-X
-Y
+survey
+a
+b
+c
+d
+e
+f
+i
+j
+l
+m
+n
+o
+p
+q
+r
+s
+t
+u
+v
+w
+x
+y
 z
 tie
-Adult
-The beatles
+adult
+the beatles
 acdc
-Twitter
+twitter
 suzuki
 scratch
-Mobile
+mobile
 royal
 strain
 wash
 crash
 grab
-Hide
-Eminem
-Vladimir putin
+hide
+eminem
+vladimir putin
 50 cent
-Nicki minaj
-Elvis presley
-Mariah carey
-Tim berners-lee
-Bill gates
-Steve jobs
-Snoop dogg
-Kanye west
-Kim kardashian
-Drake
+nicki minaj
+elvis presley
+mariah carey
+tim berners-lee
+bill gates
+steve jobs
+snoop dogg
+kanye west
+kim kardashian
+drake
 skrillex
-Lil wayne
+lil wayne
 future
 quote
 sink
@@ -871,161 +871,161 @@ spain
 italy
 romania
 hungary
-Norway
-Sphinx
-Pyramid
-Taj mahal
-Big ben
-Tower of pisa
-Mecca
-Lochness
-Dracula
-Sagrada Familia
-Everest
-Stonehenge
+norway
+sphinx
+pyramid
+taj mahal
+big ben
+tower of pisa
+mecca
+lochness
+dracula
+sagrada familia
+everest
+stonehenge
 curtains
-Obama
-Titanic
-Hollywood
-Las vegas
-Casino
-Italy
+obama
+titanic
+hollywood
+las vegas
+casino
+italy
 pasta
-Britney spears
-Shakespeare
-Red john
-Eggs
-Mozzarella
-Mexico
-Envelope
-Pepsi
-Freddie mercury
-The beatles
-Tiesto
-David guetta
-Angela merkel
-Forrest gump
-Sandals
-High heels
-Steering wheel
-Tomato
-Salad
-Corn
-Popcorn
-Sheep
-Crow
-Wolf
-Cigar
-Library
-Notebook
-Keychain
-Scarf
-Theatre
-Crib
-Lawn mower
+britney spears
+shakespeare
+red john
+eggs
+mozzarella
+mexico
+envelope
+pepsi
+freddie mercury
+the beatles
+tiesto
+david guetta
+angela merkel
+forrest gump
+sandals
+high heels
+steering wheel
+tomato
+salad
+corn
+popcorn
+sheep
+crow
+wolf
+cigar
+library
+notebook
+keychain
+scarf
+theatre
+crib
+lawn mower
 
-Jesus Christ
-God
-Napoleon
-Shakespeare
-Hitler
-Vlad Tepes
-Dracula
-George Bush
-Pokemon
-Minecraft
-Word of warcraft
-Mario
-Pacman
-GTA
-Counter Strike
-Scorpion
-Spider
-Dota 2
-Ping pong
-Cricket
-Volleyball
-Sims
-Shrek
-Donkey
-Fork
-Spoon
-Teaspoon
-Ceiling
-Batman
-Superman
-Spiderman
-Zombie
-Sponge
-Spongebob
-Milky way
-Pineapple
-Monopoly
-Puzzle
-Credit card
-Puma
-Nemo
-Shark
-Jelly fish
-Vocabulary
-Lavender
-Bubble
-Alien
-Spaceship
-Butter
-Butterly
-Hummingbird
-Rainbow
-Glitter
-Seed
-Bamboo
-Panda
-Husky
-Barbie
-Surfing
-Coconut
-Pig
-Scuba diving
-Cowboy
-Macaron
-Sled
-Chimney
-Huawei
-Vodka
-Iceberg
-Pitbull
-Bull
-Red bull
-Dollar
-Ruler
-Pencil case
-Bookmark
-Sword
-Armor
-Broom
-Duster
-Rolling pin
-Corkscrew
-Bulldozer
-Rug
-Hut
-Jam
-Kite
-Igloo
-Yacht
-Goose
-Almond
-Stork
-Bob marley
-Avengers
+jesus christ
+god
+napoleon
+shakespeare
+hitler
+vlad tepes
+dracula
+george bush
+pokemon
+minecraft
+word of warcraft
+mario
+pacman
+gta
+counter strike
+scorpion
+spider
+dota 2
+ping pong
+cricket
+volleyball
+sims
+shrek
+donkey
+fork
+spoon
+teaspoon
+ceiling
+batman
+superman
+spiderman
+zombie
+sponge
+spongebob
+milky way
+pineapple
+monopoly
+puzzle
+credit card
+puma
+nemo
+shark
+jelly fish
+vocabulary
+lavender
+bubble
+alien
+spaceship
+butter
+butterly
+hummingbird
+rainbow
+glitter
+seed
+bamboo
+panda
+husky
+barbie
+surfing
+coconut
+pig
+scuba diving
+cowboy
+macaron
+sled
+chimney
+huawei
+vodka
+iceberg
+pitbull
+bull
+red bull
+dollar
+ruler
+pencil case
+bookmark
+sword
+armor
+broom
+duster
+rolling pin
+corkscrew
+bulldozer
+rug
+hut
+jam
+kite
+igloo
+yacht
+goose
+almond
+stork
+bob marley
+avengers
 lincoln
-Bow
-Bowtie
-Chameleon
-Toothbrush
-Joker
-Poker
-Microphone
-Rocking chair
-Minions
-Fifa
+bow
+bowtie
+chameleon
+toothbrush
+joker
+poker
+microphone
+rocking chair
+minions
+fifa

@@ -152,6 +152,10 @@
         "imageUrl": "https://www.rareseeds.com/media/catalog/product/cache/c47cc5acc2b9ab2a357f100ee4780008/S/h/Sheepnose-Pepper-web.jpg"
     },
     {
+        "word": "pineapple",
+        "imageUrl": "https://www.cookforyourlife.org/wp-content/uploads/2018/08/Roasted-Pineapple-1-696x464.jpg"
+    },
+    {
         "word": "pumpkin",
         "imageUrl": "http://www.gannett-cdn.com/-mm-/3cbab90e8df8651cd251a597c6dafd3408f2a531/c=0-198-2800-2298&r=x404&c=534x401/local/-/media/2015/10/03/Indianapolis/B9318980300Z.1_20151003131122_000_GG8C3U3QQ.1-0.jpg"
     },
@@ -241,7 +245,7 @@
     },
     {
         "word": "ikea",
-        "imageUrl": "http://upload.wikimedia.org/wikipedia/commons/c/c5/Ikea_logo.svg"
+        "imageUrl": "https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/d/e4/de43af12-e6eb-5571-90d5-ac9f1767372b/53addca876642.image.jpg"
     },
     {
         "word": "nissan",
@@ -281,7 +285,7 @@
     },
     {
         "word": "windows",
-        "imageUrl": "https://c.s-microsoft.com/en-us/CMSImages/Devices_Compete_HelloIcon__Blue.svg?version=4ff0ef77-8a69-a3ba-75ed-92518d0b5ab5"
+        "imageUrl": "https://www.computerhope.com/jargon/w/windows.gif"
     },
     {
         "word": "microsoft",
@@ -349,7 +353,7 @@
     },
     {
         "word": "federer",
-        "imageUrl": "http://www.tennisracquetcenter.com/wp-content/uploads/2016/05/Roger-Federer-Wilson-BLX-Six.-One-Tennis-Racket.jpg"
+        "imageUrl": "https://ss.thgim.com/third-party/opta/article31427278.ece/alternates/FREE_380/roger-federer-cropped1fwi3jtofry8z1cs9907pp8dfpjpg"
     },
     {
         "word": "nadal",
@@ -465,7 +469,149 @@
     },
     {
         "word": "di stefano",
-        "imageUrl": "http://montyentertainment.com/wp-content/uploads/2014/07/db338__DI-Stefano.jpg"
+        "imageUrl": "https://www.stark-stark.com/wp-content/uploads/2016/05/Stephen-M.-Di-Stefano-Attorney.jpg",
+        "rawResponse": [
+            {
+                "type": "image/jpeg",
+                "width": 990,
+                "height": 557,
+                "size": 207274,
+                "url": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/06/13/15920436758935.jpg",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXma2KhLBQB5A76it3v6URMo1d2QzCBh-iqkmBOvNKVPgCAAm-cwYlo90&s",
+                    "width": 149,
+                    "height": 84
+                },
+                "description": "Estadio Alfredo Di Stefano: A dream that started in Florida ...",
+                "parentPage": "https://www.football-addict.com/en/article/la-liga/estadio-alfredo-di-stefano-a-dream-that-started-in-florida/5ee621ee1fa90a0008e25d8f"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 600,
+                "height": 600,
+                "size": 153390,
+                "url": "https://www.greytowers.org/wp-content/uploads/DianeDiStefano2.jpg",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7SDpYm59o-tcymFyM6tU64FNSMEJLs-_fvg8KqTo6bKdTzY-ruYRQHp-u&s",
+                    "width": 135,
+                    "height": 135
+                },
+                "description": "Diana L. Di Stefano | Grey Towers Heritage Association",
+                "parentPage": "https://www.greytowers.org/scholars/stefano/"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 1200,
+                "height": 675,
+                "size": 151275,
+                "url": "https://en.as.com/futbol/imagenes/2020/04/20/primera/1587399794_741981_1587400104_noticia_normal.jpg",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK8QxBAmXThfn3IMIRLOkU9kAL_f2RSmPTRKkustPwUofKbBSIVqYD_78&s",
+                    "width": 150,
+                    "height": 84
+                },
+                "description": "Coronavirus | Real Madrid study playing remaining home games at ...",
+                "parentPage": "https://en.as.com/en/2020/04/20/football/1587403940_797090.html"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 1280,
+                "height": 720,
+                "size": 98903,
+                "url": "https://i.ytimg.com/vi/3tYsRVo8ZGg/maxresdefault.jpg",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdT2N2Zbml2HMkafffjk970ATg1LMBEsp6kWm0yRv6eCzWWiiKLnGMQg&s",
+                    "width": 150,
+                    "height": 84
+                },
+                "description": "The power of reflection at work, by HEC Paris Prof. Giada Di ...",
+                "parentPage": "https://www.youtube.com/watch?v=3tYsRVo8ZGg"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 800,
+                "height": 600,
+                "size": 71211,
+                "url": "https://secure.static.goal.com/432800/432872_gallery.jpg",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWyDjsjWGnMumc5GAltolHu1iwdcDKHbj9l0IjOa8LiHoxK7uoFEAeZPw&s",
+                    "width": 143,
+                    "height": 107
+                },
+                "description": "Legends never die' - Ronaldo & Messi lead Di Stefano tributes ...",
+                "parentPage": "https://www.goal.com/en-us/news/88/spain/2014/07/07/4943302/ronaldo-messi-lead-di-stefano-tributes"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 640,
+                "height": 360,
+                "size": 68304,
+                "url": "http://i2.cdn.turner.com/cnn/dam/assets/140707231220-alfredo-di-stefano-11-horizontal-gallery.jpg",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO9_qfNNjTyMQVHRsmjsjAVck6uzG3Vpa7gbNZ9N-UmeWa0G7jm8LgRrI&s",
+                    "width": 137,
+                    "height": 77
+                },
+                "description": "Alfredo Di Stefano: Real Madrid great dies aged 88 - CNN.com",
+                "parentPage": "http://edition.cnn.com/2014/07/07/sport/football/alfredo-di-stefano-dead-football/index.html"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 720,
+                "height": 405,
+                "size": 61915,
+                "url": "https://as01.epimg.net/futbol/imagenes/2020/04/20/primera/1587399794_741981_1587400104_noticia_normal_recorte1.jpg",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK0hVRgQIZTNk2qzI0HzwYfRdDrWjCSTU92f06wFLr8RSvVUt7RtnzM4M&s",
+                    "width": 140,
+                    "height": 79
+                },
+                "description": "Coronavirus | Real Madrid study playing remaining home games at ...",
+                "parentPage": "https://en.as.com/en/2020/04/20/football/1587403940_797090.html"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 640,
+                "height": 360,
+                "size": 46408,
+                "url": "http://i2.cdn.turner.com/cnn/dam/assets/140707224656-alfredo-di-stefano-8-horizontal-gallery.jpg",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNwjii0WyFOkwVrYhFdwzZZp0KdljtZzQiEjeM2LzhunImORXV5gw8YT8&s",
+                    "width": 137,
+                    "height": 77
+                },
+                "description": "Alfredo Di Stefano: Real Madrid great dies aged 88 - CNN.com",
+                "parentPage": "http://edition.cnn.com/2014/07/07/sport/football/alfredo-di-stefano-dead-football/index.html"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 640,
+                "height": 360,
+                "size": 33793,
+                "url": "http://i2.cdn.turner.com/cnn/dam/assets/140707224546-alfredo-di-stefano-6-story-top.jpg",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBiDgUhQx28HvwCvEVaeaca5S4w8l-sbWkRfJEBLC8sfVT_-sV2RCzgbs&s",
+                    "width": 137,
+                    "height": 77
+                },
+                "description": "Alfredo Di Stefano: Real Madrid great dies aged 88 - CNN.com",
+                "parentPage": "http://edition.cnn.com/2014/07/07/sport/football/alfredo-di-stefano-dead-football/index.html"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 266,
+                "height": 372,
+                "size": 13668,
+                "url": "https://www.stark-stark.com/wp-content/uploads/2016/05/Stephen-M.-Di-Stefano-Attorney.jpg",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9HZAoeZ9y5tgb-9B4thk0k6CarBbzuMsk2tNmOTBkTYuekQguszBVww&s",
+                    "width": 87,
+                    "height": 122
+                },
+                "description": "Stephen Di Stefano - NJ Personal Injury Lawyer - Stark & Stark",
+                "parentPage": "https://www.stark-stark.com/attorneys/stephen-di-stefano/"
+            }
+        ]
     },
     {
         "word": "ronaldinho",
@@ -517,7 +663,7 @@
     },
     {
         "word": "mouse",
-        "imageUrl": "http://favoritefixtures.com/wp-content/uploads/2014/10/best-mouse-traps.jpg"
+        "imageUrl": "https://cdn.webshopapp.com/shops/172646/files/199021241/600x600x1/orico-rubber-mouse-pad.jpg"
     },
     {
         "word": "car",
@@ -1173,7 +1319,7 @@
     },
     {
         "word": "united states",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png"
+        "imageUrl": "https://www.distillerytrail.com/wp-content/uploads/2018/11/usa-distillery-map-color-1024x1024.png"
     },
     {
         "word": "canada",
@@ -1185,15 +1331,15 @@
     },
     {
         "word": "brazil",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg"
+        "imageUrl": "https://d1ix9yerv4y8lr.cloudfront.net/blog/wp-content/uploads/2012/08/flight-planning-in-brazil.jpg"
     },
     {
         "word": "argentina",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"
+        "imageUrl": "https://kids.nationalgeographic.com/content/dam/kids/migration-content/argentina-textimage_0.ngsversion.1548775902905.adapt.710.1.jpg"
     },
     {
         "word": "chile",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg"
+        "imageUrl": "https://qtxasset.com/styles/breakpoint_sm_default_480px_w/s3/luxurytraveladvisor/1568130070/GettyImages-913781186.jpg/GettyImages-913781186.jpg?gdkxWdpOqqxU3ECQrM0gRS5xUwd3J_tB&itok=73UkH5Xb"
     },
     {
         "word": "venezuela",
@@ -1201,11 +1347,10 @@
     },
     {
         "word": "colombia",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"
+        "imageUrl": "https://cdn.cnn.com/cnnnext/dam/assets/181124235638-map-caribbean-earthquake-large-169.jpg"
     },
     {
-        "word": "albania",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg"
+        "word": "albania"
     },
     {
         "word": "andorra",
@@ -1221,7 +1366,7 @@
     },
     {
         "word": "belgium",
-        "imageUrl": "https://ibc-static.broad.msu.edu/sites/globaledge/flags/countries/BE.svg"
+        "imageUrl": "https://www.vedi-express.com/119746-large_default/belgium-flag.jpg"
     },
     {
         "word": "bosnia and herzegovina",
@@ -1229,7 +1374,7 @@
     },
     {
         "word": "bulgaria",
-        "imageUrl": "https://tranio.com/i/flags/svg/bg.svg"
+        "imageUrl": "https://www.penguintravel.com/uploads/products/thumb/Th10_prbig_1513.jpg"
     },
     {
         "word": "croatia",
@@ -1253,7 +1398,7 @@
     },
     {
         "word": "finland",
-        "imageUrl": "https://www.w3.org/2013/share-psi/bp/Flag_of_Finland.svg"
+        "imageUrl": "https://www.verdict.co.uk/wp-content/uploads/2017/08/shutterstock_330728258.jpg"
     },
     {
         "word": "france",
@@ -1265,7 +1410,7 @@
     },
     {
         "word": "germany",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg"
+        "imageUrl": "https://www.policymed.com/wp-content/uploads/2016/08/Transparency-Update.png"
     },
     {
         "word": "greece",
@@ -1328,8 +1473,7 @@
         "imageUrl": "https://travelvisabookings.com/wp-content/uploads/2016/06/norway-visa-application-requirements.jpg"
     },
     {
-        "word": "poland",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/9/9c/Poland_map_flag.svg"
+        "word": "poland"
     },
     {
         "word": "portugal",
@@ -1337,7 +1481,7 @@
     },
     {
         "word": "romania",
-        "imageUrl": "https://www.w3.org/2013/share-psi/bp/Flag_of_Romania.svg"
+        "imageUrl": "https://i.ytimg.com/vi/zUnEi0gtxYY/maxresdefault.jpg"
     },
     {
         "word": "algeria",
@@ -1361,11 +1505,15 @@
     },
     {
         "word": "india",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
+        "imageUrl": "https://1d4vws37vmp124vlehygoxxd-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/Flag_of_India.png"
     },
     {
         "word": "egypt",
         "imageUrl": "http://aws-cdn.worldtravelguide.net/sites/default/files/new-images/753x320/pyramids-egypt-2134.jpg"
+    },
+    {
+        "word": "russia",
+        "imageUrl": "https://static01.nyt.com/images/2016/08/17/world/17syria-sub/17syria-sub-master768.jpg"
     },
     {
         "word": "china",
@@ -1378,10 +1526,6 @@
     {
         "word": "dubai",
         "imageUrl": "https://static.toiimg.com/photo/msid-69891204,width-96,height-65.cms"
-    },
-    {
-        "word": "russia",
-        "imageUrl": "https://static01.nyt.com/images/2016/08/17/world/17syria-sub/17syria-sub-master768.jpg"
     },
     {
         "word": "san marino",
@@ -1405,7 +1549,7 @@
     },
     {
         "word": "sweden",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/archive/4/4c/20140526092805!Flag_of_Sweden.svg"
+        "imageUrl": "https://dynaimage.cdn.cnn.com/cnn/maps/w_460/map_7c58cf3f-d78c-4d64-96f5-f2ecddc9e34a_16x9.jpg"
     },
     {
         "word": "switzerland",
@@ -1413,7 +1557,149 @@
     },
     {
         "word": "turkey",
-        "imageUrl": "http://liparentsource.com/wp-content/uploads/2013/11/Turkey-10.gif"
+        "imageUrl": "https://advantagenews.com/downloads/38756/download/wild-tom-turkey-in-spring.jpg?cb=80b43b3cdf98187a1fd3b9b84fe6100a",
+        "rawResponse": [
+            {
+                "type": "image/jpeg",
+                "width": 2048,
+                "height": 1066,
+                "size": 500137,
+                "url": "https://s.hdnux.com/photos/01/11/10/33/19171020/3/rawImage.jpg",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwARhxHDhMrjaGV2fD3mT1h_VXXRhc6M0iZ1DFT7u9uhB91n54ddinlA&s",
+                    "width": 150,
+                    "height": 78
+                },
+                "description": "Spring turkey outlook: A bunch of young jakes - HoustonChronicle.com",
+                "parentPage": "https://www.houstonchronicle.com/sports/article/Spring-turkey-outlook-A-bunch-of-young-jakes-15123855.php"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 1020,
+                "height": 576,
+                "size": 306713,
+                "url": "https://www.ctvnews.ca/polopoly_fs/1.5025694.1594846684!/httpImage/image.jpg_gen/derivatives/landscape_1020/image.jpg",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU_AvQgJm9eo2fX8c3Y8VVH-SHMPoSD8dxC0qRvp5jkin8EnBz7OkrLg&s",
+                    "width": 150,
+                    "height": 85
+                },
+                "description": "Petition launched to create statue for Turk the Ramsay Turkey ...",
+                "parentPage": "https://calgary.ctvnews.ca/petition-launched-to-create-statue-for-turk-the-ramsay-turkey-1.5041693?cache=a+href%3FclipId%3D104070%3FautoPlay%3Dtrue"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 1600,
+                "height": 900,
+                "size": 304959,
+                "url": "http://images.ctfassets.net/lufu0clouua1/2cSQKvJYskEqgyaAYawE48/7b71e49f5de264f38541c055926f8f5a/classic-roast-turkey.jpg",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVx6kthuyZo3Pw3Sbd91l-szocoxAxDAgPKuctHs4yVKPV4xsPresUUQ&s",
+                    "width": 150,
+                    "height": 84
+                },
+                "description": "Classic Roasted Turkey | Recipe | The Fresh Market",
+                "parentPage": "https://www.thefreshmarket.com/inspiration/recipe-and-ideas/classic-roast-turkey"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 1000,
+                "height": 563,
+                "size": 249177,
+                "url": "https://mossyoak-cezjaqp1wr.netdna-ssl.com/sites/default/files/inline-images/Shane-Smith-turkey.jpg",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgOOl2T-n5C4V1csYK3cDwN8fM0ikV6O0HGXS_IM9NLztr1QF7luYzZes&s",
+                    "width": 149,
+                    "height": 84
+                },
+                "description": "4 Early Season Turkey Tactics | Mossy Oak",
+                "parentPage": "https://www.mossyoak.com/our-obsession/blogs/turkey/4-early-season-turkey-tactics"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 1200,
+                "height": 996,
+                "size": 223643,
+                "url": "https://bloximages.newyork1.vip.townnews.com/journalpatriot.com/content/tncms/assets/v3/editorial/5/0c/50c412e4-ce99-11e9-b80f-63a02b6456cf/5d6ee816eb72d.image.jpg?resize=1200%2C996",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTurWpoNvnv2vjXDVD_7s4cEdSUR3H2nhPAcHn9UaX6Wq2hpIMqxB3uyo&s",
+                    "width": 150,
+                    "height": 125
+                },
+                "description": "5-spur turkey taken in Wilkes ranks high with NWTF | News ...",
+                "parentPage": "https://www.journalpatriot.com/news/5-spur-turkey-taken-in-wilkes-ranks-high-with-nwtf/article_e0bca0e2-ce98-11e9-bf4c-2b8d9edabaaa.html"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 1280,
+                "height": 720,
+                "size": 170621,
+                "url": "https://i.ytimg.com/vi/MfOHjKvTlP4/maxresdefault.jpg",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp3huv87PgL5zF2Ks_VRLAD-V8kV5fOTSKWzdxl7QqhZzgplL_G8I7Tw&s",
+                    "width": 150,
+                    "height": 84
+                },
+                "description": "Sweetgrass Turkeys | Tri-Colored Calico Splendor - YouTube",
+                "parentPage": "https://www.youtube.com/watch?v=MfOHjKvTlP4"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 1200,
+                "height": 800,
+                "size": 161413,
+                "url": "https://bloximages.chicago2.vip.townnews.com/thesouthern.com/content/tncms/assets/v3/editorial/e/f5/ef503859-358b-5e78-a98d-4552495c8bbd/5e7d4b2a298fe.image.jpg?resize=1200%2C800",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2c-048PtGPUyKAwp1DFaJ-CqlT_GLvfXAxIea4ZtP8xuSAZdn6zgCm-8&s",
+                    "width": 150,
+                    "height": 100
+                },
+                "description": "Outdoors | Turkey season surrounded by uncertainties | Outdoors ...",
+                "parentPage": "https://thesouthern.com/sports/outdoors/outdoors-turkey-season-surrounded-by-uncertainties/article_3dc5e3f4-b197-52e9-b907-452e46475e1e.html"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 980,
+                "height": 486,
+                "size": 121049,
+                "url": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190920-dry-brine-turkey-0139-landscape-pf-1569617322.jpg",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy3KR9xoL36YHQ9tM6vnKEzU8X9uUULVLmusHZTSc0zgwHXek1urbdfg&s",
+                    "width": 149,
+                    "height": 74
+                },
+                "description": "How to Dry-Brine a Turkey - Best Dry Brine Turkey Recipe",
+                "parentPage": "https://www.delish.com/uk/cooking/recipes/a29708864/how-to-dry-brine-turkey-recipe/"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 565,
+                "height": 425,
+                "size": 71992,
+                "url": "https://advantagenews.com/downloads/38756/download/wild-tom-turkey-in-spring.jpg?cb=80b43b3cdf98187a1fd3b9b84fe6100a",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtCQwq9jXflMEX1Rji6gcKXEHe8Gi-r_VbjybJx4lMpTqOHGTC0mH__X4&s",
+                    "width": 134,
+                    "height": 101
+                },
+                "description": "Fowl forgiveness: Presidential turkey pardon an annual tradition ...",
+                "parentPage": "https://advantagenews.com/news/fowl-forgiveness/"
+            },
+            {
+                "type": "image/jpeg",
+                "width": 400,
+                "height": 225,
+                "size": 22694,
+                "url": "https://bloximages.chicago2.vip.townnews.com/houstonherald.com/content/tncms/assets/v3/editorial/9/e3/9e333ac2-4998-11e9-aec8-b3a0aa3a70f8/5c8fc757a59d9.image.jpg?resize=400%2C225",
+                "thumbnail": {
+                    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQPjXhvD6JId3EspiTLZ-meETaMOa6174snOhSAhE7IQfChcfXKZ-Hbg&s",
+                    "width": 124,
+                    "height": 70
+                },
+                "description": "Challenges expected as spring turkey season begins | News ...",
+                "parentPage": "https://www.houstonherald.com/news/challenges-expected-as-spring-turkey-season-begins/article_0e8174f2-4998-11e9-8639-4becb3612a77.html"
+            }
+        ]
     },
     {
         "word": "ukraine",
@@ -1421,7 +1707,7 @@
     },
     {
         "word": "united kingdom",
-        "imageUrl": "http://demandware.edgesuite.net/aamv_prd/on/demandware.static/Sites-leatherman-Site/-/en_US/v1484869049188/images/flags/uk.svg"
+        "imageUrl": "https://as01.epimg.net/en/imagenes/2020/04/09/other_sports/1586417165_252750_1586478485_noticia_normal_recorte1.jpg"
     },
     {
         "word": "vatican",
@@ -1729,7 +2015,7 @@
     },
     {
         "word": "bridge",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Suspension_bridge_icon.svg/2000px-Suspension_bridge_icon.svg.png"
+        "imageUrl": "https://static.euronews.com/articles/stories/03/49/63/14/602x338_cmsv2_5df87345-7394-59aa-b875-be9e6c934659-3496314.jpg"
     },
     {
         "word": "sculpture",
@@ -1916,8 +2202,7 @@
         "imageUrl": "http://images.media-allrecipes.com/images/72408.jpg"
     },
     {
-        "word": "painting",
-        "imageUrl": "http://cdn.playbuzz.com/cdn/b19cddd2-1b79-4679-b6d3-1bf8d7235b89/93794aec-3f17-47a4-8801-a2716a9c4598_560_420.jpg"
+        "word": "painting"
     },
     {
         "word": "wood",
@@ -2028,8 +2313,7 @@
         "imageUrl": "https://thumbs.dreamstime.com/x/two-footprints-wet-mud-927065.jpg"
     },
     {
-        "word": "orange",
-        "imageUrl": "http://cdn.playbuzz.com/cdn/b20583b0-09c1-45eb-8d2f-f16bf1fa7113/372b5749-2523-479f-8443-ea13df0ec81e.png"
+        "word": "orange"
     },
     {
         "word": "police",
@@ -2100,8 +2384,7 @@
         "imageUrl": "http://cdn-frm-eu.wargaming.net/wot/eu/uploads/monthly_06_2015/post-505635010-0-37759800-1434637244.jpg"
     },
     {
-        "word": "insect",
-        "imageUrl": "http://cdn.playbuzz.com/cdn/d85bc304-8b4b-44f1-8d1b-2591f0b695d1/695e174b-aa73-4bcf-8cb5-8c687e7753ec_560_420.jpg"
+        "word": "insect"
     },
     {
         "word": "piano",
@@ -2193,7 +2476,7 @@
     },
     {
         "word": "youtube",
-        "imageUrl": "https://developers.google.com/site-assets/logo-youtube.svg?hl=cs"
+        "imageUrl": "https://9to5google.com/wp-content/uploads/sites/4/2017/08/youtube_logo_dark.jpg?quality=82&strip=all"
     },
     {
         "word": "book",
@@ -2204,12 +2487,16 @@
         "imageUrl": "https://images.wsj.net/im-88200?width=620&size=1.5"
     },
     {
+        "word": "letter",
+        "imageUrl": "https://images.wsj.net/im-117788?width=620&size=custom_2537x3276"
+    },
+    {
         "word": "radio",
         "imageUrl": "https://media2.popsugar-assets.com/files/ons1/192/1922283/28_2009/2ea7b407a8ba9d47_Radio.jpg"
     },
     {
         "word": "price",
-        "imageUrl": "https://assets.dryicons.com/uploads/icon/svg/5535/62bcad4e-f1b1-44b1-861b-a65eb011ca55.svg"
+        "imageUrl": "https://www.intuitiveaccountant.com/downloads/7449/download/Price%20increase.jpg?cb=e362c4cf13174e96cbc9e3a830b55b4b"
     },
     {
         "word": "card",
@@ -2433,7 +2720,7 @@
     },
     {
         "word": "all",
-        "imageUrl": "https://img.reelgood.com/source-logos/all_services.svg"
+        "imageUrl": "https://lh3.googleusercontent.com/Gzwk-ZmTIr2ehCXsOj_P95L5k1vE1C-ulMb8oYFQTKOHvnGK8enJgDy8MbwdjRRP3Po"
     },
     {
         "word": "distance",
@@ -2502,10 +2789,6 @@
     {
         "word": "fan",
         "imageUrl": "https://i5.walmartimages.com/asr/6ae2e094-588b-47ad-8bdb-dd6853341245_1.d35cf95318b0ec789b826e244a1f123d.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF"
-    },
-    {
-        "word": "letter",
-        "imageUrl": "https://images.wsj.net/im-117788?width=620&size=custom_2537x3276"
     },
     {
         "word": "lock",
@@ -3460,6 +3743,10 @@
         "imageUrl": "https://www.hellomagazine.com/imagenes/brides/2019072375621/britney-spears-engagement-rumours-sam-asghari/0-367-213/britney-spears-once-upon-a-time-in-hollywood-z.jpg"
     },
     {
+        "word": "shakespeare",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Title_page_William_Shakespeare's_First_Folio_1623.jpg/170px-Title_page_William_Shakespeare's_First_Folio_1623.jpg"
+    },
+    {
         "word": "red john",
         "imageUrl": "https://i.ytimg.com/vi/qF1FiKBwoJM/hqdefault.jpg"
     },
@@ -3566,10 +3853,6 @@
     {
         "word": "napoleon",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Napoleon_pic.jpg/220px-Napoleon_pic.jpg"
-    },
-    {
-        "word": "shakespeare",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Title_page_William_Shakespeare's_First_Folio_1623.jpg/170px-Title_page_William_Shakespeare's_First_Folio_1623.jpg"
     },
     {
         "word": "hitler",
@@ -3692,10 +3975,6 @@
         "imageUrl": "https://i.ytimg.com/vi/0La58bUNNzQ/maxresdefault.jpg"
     },
     {
-        "word": "pineapple",
-        "imageUrl": "https://www.cookforyourlife.org/wp-content/uploads/2018/08/Roasted-Pineapple-1-696x464.jpg"
-    },
-    {
         "word": "monopoly",
         "imageUrl": "https://media.gamestop.com/i/gamestop/10077844/Monopoly?$pdp$&bg=rgb(0,0,0)"
     },
@@ -3709,7 +3988,7 @@
     },
     {
         "word": "puma",
-        "imageUrl": "http://brandsiuse.com/wp-content/uploads/PUMA.jpeg"
+        "imageUrl": "https://is4.revolveassets.com/images/p4/n/c/PUMAF-MZ88_V1.jpg"
     },
     {
         "word": "nemo",
@@ -3833,7 +4112,6 @@
     },
     {
         "word": "bull",
-        "imageUrl": "http://cdn.playbuzz.com/cdn/013c38a2-7ac9-46b5-8d63-9e590832f166/533da6bd-1bfb-4be5-85d9-de606a57321f.jpg"
     },
     {
         "word": "red bull",

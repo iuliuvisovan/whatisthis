@@ -157,6 +157,7 @@ var setWordImages = () => {
     .split("\n")
     .map((x) => x.trim())
     .filter((x) => x.length)
+    .filter((x, i, a) => a.indexOf(x) == i)
     .map((wordString) => {
       return {
         word: wordString,
@@ -184,6 +185,10 @@ const downloadImages = async () => {
       console.log("word without image: ", x.word);
     }
 
+    if (x.imageUrl.includes(".svg")) {
+      x.imageUrl = undefined;
+    }
+
     x.imageUrlBroken = x.imageUrl;
     x.imageUrl = undefined;
     x.word = x.word.toLowerCase();
@@ -191,7 +196,6 @@ const downloadImages = async () => {
 
   await Promise.all(
     words
-      .filter((x) => x.imageUrlBroken)
       .map(async (word) => {
         const downloadedImageUrl = await downloadImageToLocal(word);
 
@@ -260,8 +264,15 @@ function updateImageForWord(word) {
         let imageUrl = "";
         images
           .sort((a, b) => (a.size < b.size ? 1 : -1))
+          .slice(2)
           .forEach((image) => {
-            if (image.height > 250 && !image.url.includes("pixabay")) {
+            if (
+              image.height > 250 &&
+              !image.url.includes("pixabay") &&
+              !image.url.includes("playbuzz") &&
+              !image.url.includes(".svg") &&
+              !image.url.includes(".gif")
+            ) {
               imageUrl = image.url;
               return;
             }
