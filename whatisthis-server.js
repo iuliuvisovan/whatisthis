@@ -185,7 +185,7 @@ const downloadImages = async () => {
       console.log("word without image: ", x.word);
     }
 
-    if (x.imageUrl.includes(".svg")) {
+    if (x.imageUrl?.includes(".svg")) {
       x.imageUrl = undefined;
     }
 
@@ -195,32 +195,38 @@ const downloadImages = async () => {
   });
 
   await Promise.all(
-    words
-      .map(async (word) => {
-        const downloadedImageUrl = await downloadImageToLocal(word);
+    words.map(async (word) => {
+      const downloadedImageUrl = await downloadImageToLocal(word);
 
-        if (downloadedImageUrl) {
-          word.imageUrl = word.imageUrlBroken;
-          word.imageUrlBroken = undefined;
-        } else {
-          console.log("No downloaded image url for word:" + word.word);
-        }
+      if (downloadedImageUrl) {
+        word.imageUrl = word.imageUrlBroken;
+        word.imageUrlBroken = undefined;
+      } else {
+        console.log("No downloaded image url for word:" + word.word);
+      }
 
-        fs.writeFileSync("./words.json", JSON.stringify(words, null, 4), () => {
-          console.log("Images downloaded to local succesfully!");
-        });
-      })
+      fs.writeFileSync("./words.json", JSON.stringify(words, null, 4), () => {
+        console.log("Images downloaded to local succesfully!");
+      });
+    })
   );
 };
 
 const downloadImageToLocal = async (word, isSecondAttempt) => {
   const targetPath = `${__dirname}/public/img/guessable/${word.word}.jpg`;
 
-  if (fs.existsSync(targetPath)) {
-    // console.log("Skipping download for word: " + word.word);
+  // if (fs.existsSync(targetPath)) {
+  //   fs.rename(targetPath, targetPath.toLowerCase(), function (err) {
+  //     if (err) {
+  //       console.log("ERROR: " + err);
+  //     } else {
+  //       console.log("Renamed: " + targetPath);
+  //     }
+  //   });
+  //   // console.log("Skipping download for word: " + word.word);
 
-    return targetPath;
-  }
+  //   return targetPath;
+  // }
 
   console.log("Beginning download for word: " + word.word);
 
