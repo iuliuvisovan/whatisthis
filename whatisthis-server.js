@@ -177,7 +177,7 @@ var setWordImages = () => {
 };
 
 const downloadImages = async () => {
-  let words = JSON.parse(fs.readFileSync("words.json", "utf8"));
+  let words = JSON.parse(fs.readFileSync("words.json", "utf8")).filter((x, i, a) => a.indexOf(a.find((y) => y.word == x.word)) == i);
 
   words.forEach((x) => {
     if (!x.imageUrl) {
@@ -188,12 +188,6 @@ const downloadImages = async () => {
     x.imageUrl = undefined;
     x.word = x.word.toLowerCase();
   });
-
-  words = words.filter((x, i, a) => a.indexOf(a.find(y => y.word == x.word)) == i);
-
-  console.log("words", words.length);
-  console.log("words.filter((x) => x.imageUrlBroken).length", words.filter((x) => x.imageUrlBroken).length);
-  console.log("words.filter((x) => x.imageUrlBroken).length", words.map(x => x.word).filter((x, i, a) => a.indexOf(x) != i));
 
   await Promise.all(
     words
