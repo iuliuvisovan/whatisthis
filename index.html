@@ -65,10 +65,10 @@
             </div>
         </div>
         <br/>
-        <div data-bind='component: { name: "player-list", params: { Players: AllPlayers, ExtraPlayersCount: ExtraPlayersCount }}'></div>
         <h3 data-bind="visible: Players().length" style="text-align: center;">
-            Wanna <br/><a href="#" style="color: #FF5722" data-bind="click: Go">Go again?</a>
+            Wanna <br/><a href="#" style="color: #FF5722" data-bind="click: Go">Play again?</a>
         </h3>
+        <div data-bind='component: { name: "player-list", params: { Players: AllPlayers, ExtraPlayersCount: ExtraPlayersCount }}'></div>
     </div>
     <div style="display: none" class="flex-centered" data-bind="visible: IsStarted() && !WinnerId()">
         <div data-bind="visible: Loading">
@@ -102,7 +102,7 @@
             </div>
             <div style="display: flex;justify-content: space-between; align-items: center; margin: 185px 3px 0 0px">
                 <h3 id="h3WhatIsThis" style="margin: 0; background: transparent; color: #FF5722; padding: 6px; margin-top: -378px; text-shadow: 1px 1px 2px white;">What is this?</h3>
-                <input id="inputCurrentAnswer" autofocus placeholder="Your answer here..." onkeydown="event.keyCode == 13 && manager.SendAnswer()"
+                <input autocomplete="off" id="inputCurrentAnswer" autofocus placeholder="Your answer here..." onkeydown="event.keyCode == 13 && manager.SendAnswer()"
                     data-bind="textInput: CurrentAnswer" />
             </div>
         </div>
