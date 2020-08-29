@@ -22,7 +22,7 @@ var googleClient;
 module.exports = {
   init: (io) => {
     // setWordImages();
-    downloadImages();
+    // downloadImages();
     io.on("connection", (socket) => {
       players.push({
         id: socket.id,
@@ -37,7 +37,7 @@ module.exports = {
         socket.emit(
           "questionArrived",
           JSON.stringify({
-            question: questions[questions.length - 1].imageUrl,
+            question: questions[questions.length - 1].localImageUrl,
             answer: questions[questions.length - 1].word,
             currentPlayerScore: 0,
           })
@@ -72,14 +72,14 @@ module.exports = {
           player.questionIndex = 0;
         });
         populateQuestions();
-        io.emit("imagesPrecache", J(questions.map((x) => x.imageUrl).slice(questions.length - 10)));
+        io.emit("imagesPrecache", J(questions.map((x) => x.localImageUrl).slice(questions.length - 10)));
         socket.broadcast.emit("go");
         isGameStarted = true;
         io.emit("playerlistupdate", J(players));
         io.emit(
           "questionArrived",
           JSON.stringify({
-            question: questions[questions.length - 1].imageUrl,
+            question: questions[questions.length - 1].localImageUrl,
             answer: questions[questions.length - 1].word,
             currentPlayerScore: 0,
           })
@@ -101,7 +101,7 @@ module.exports = {
           );
         }
         if (currentPlayer.questionIndex % 5 == 0) {
-          socket.emit("imagesPrecache", J(questions.map((x) => x.imageUrl).slice(questions.length - 1 - currentPlayer.questionIndex - 10)));
+          socket.emit("imagesPrecache", J(questions.map((x) => x.localImageUrl).slice(questions.length - 1 - currentPlayer.questionIndex - 10)));
         }
         io.emit("playerlistupdate", J(players));
         if (currentPlayer.score > 8) {
@@ -125,7 +125,7 @@ module.exports = {
         socket.emit(
           "questionArrived",
           JSON.stringify({
-            question: questions[questions.length - 1 - currentPlayer.questionIndex].imageUrl,
+            question: questions[questions.length - 1 - currentPlayer.questionIndex].localImageUrl,
             answer: questions[questions.length - 1 - currentPlayer.questionIndex].word,
             currentPlayerScore: currentPlayer.score,
           })
@@ -142,7 +142,7 @@ var J = (object) => JSON.stringify(object);
 var questions = [];
 var operators = ["+", "-"];
 var populateQuestions = () => {
-  var availableWords = JSON.parse(fs.readFileSync("words.json", "utf8")).filter((x) => x.imageUrl.length);
+  var availableWords = JSON.parse(fs.readFileSync("words.json", "utf8")).filter((x) => x.localImageUrl.length);
   for (var i = 0; i < 50; i++) {
     var randNum = Math.floor(Math.random() * (availableWords.length - 1));
     if (!questions.some((x) => x.word == availableWords[randNum].word)) questions.push(availableWords[randNum]);
